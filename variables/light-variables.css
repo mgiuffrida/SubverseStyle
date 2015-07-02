@@ -1,0 +1,178 @@
+/*
+ * Todo: replace 'inherit' also
+ *
+ * If you just want to make a few tweaks, use light & dark defaults and
+ * make the changes. If you want to control the look in both modes, link
+ * the two.
+ *
+ * Color:
+ * $bg = rgb(244, 244, 244)
+ * $container-bg = rgb(255, 255, 255)
+ * $container-bg-alt1 = rgb(245, 245, 245)
+ * $container-bg-alt2 = rgb(248, 248, 248)
+ * $container-bg-alt3 = $container-bg-alt1
+ * $container-bg-alt4 = $container-bg-alt2
+ * $container-bg-alt5 = $container-bg
+ * $container-border = rgb(209, 209, 209)
+ * $container-border-alt1 = rgb(203, 203, 203)
+ * $container-border-alt2 = rgb(128, 128, 128)
+ * $container-border-alt3 = rgb(233, 233, 233)
+ * $container-border-alt4 = $container-border
+ * $container-border-alt5 = $container-border-alt3
+ * $container-focus-border = rgb(153, 153, 153)
+ * $container-text = $text
+ *
+ * $text = rgb(64, 64, 64)
+ * $text-alt1 = rgb(51, 51, 51)
+ * $text-alt2 = rgb(72, 72, 72)
+ *
+ * $header-bg = rgb(255, 255, 255)
+ * $header-border = rgb(220, 220, 220)
+ * $header-border-alt1 = rgb(237, 237, 237)
+ * $header-border-alt2 = $header-border-alt1
+ * $header-login-bg = rgb(246, 246, 246) ($header-bg -9)
+ * $header-login-bg-mobile = transparent
+ * $header-login-border-mobile = transparent
+ * $header-login-a = $header-button
+ * $header-text = rgb(68, 68, 68)
+ * $header-bar-link = rgb(129, 129, 129)
+ * $header-subverse-title = rgb(90, 90, 90)
+ * $header-button-selected-bg = rgb(255, 255, 255)
+ * $header-button-selected-bg-gradient = rgb(250, 250, 250)
+ * $header-button-selected-bg-hover = rgb(74, 171, 231)
+ * $header-button-border = rgb(208, 208, 208)
+ * $header-button = rgb(85, 85, 85)
+ * $header-button-bg = transparent
+ * $header-button-border = transparent
+ * $header-button-contribute-bg = rgb(187, 229, 255)
+ * $header-button-contribute-bg-gradient = rgb(166, 221, 255)
+ * $header-button-contribute-border = rgb(112, 183, 227)
+ * $header-button-contribute = rgb(43, 71, 88)
+ * $header-button-contribute-hover = rgb(43, 71, 88)
+ * $header-button-contribute-bg-hover = rgb(167, 222, 255)
+ * $header-button-contribute-bg-hover-gradient = rgb(145, 213, 255)
+ * $header-button-contribute-border-hover = rgb(97, 175, 224)
+ * $header-button-selected-mobile-bg = rgb(248, 248, 248)
+ * $header-button-selected-mobile-bg-gradient = rgb(242, 242, 242)
+ * $header-button-selected-mobile-border = rgb(186, 186, 186)
+ * $header-underline = rgb(153, 153, 153)
+ * $header-more-bg = $a
+ * $header-more = $header-bg
+ *
+ * $side = inherit
+ * $side-bg = transparent
+ * $side-title = inherit
+ * $side-title-hover = rgb(74, 171, 231)
+ * $side-header = rgb(74, 171, 231)
+ * $side-header-underline = rgb(221, 221, 221)
+ * $side-border-inner = rgb(213, 213, 213)
+ * $side-status = rgb(128, 128, 128)
+ * $side-content-bg = rgb(252, 252, 252)
+ * $side-content-border = rgb(228, 228, 228)
+ * $side-box-bg = rgb(253, 253, 253)
+ * $side-box-border = rgb(211, 211, 211)
+ * $side-box = inherit
+ *
+ * $a = rgb(74, 171, 231)
+ * $a-hover = rgb(102, 194, 251)
+ * $a-visited = rgb(145, 120, 208)
+ * $a-subverse-highlight = $header-bg
+ * $a-subverse-bg-highlight = $a + 10
+ * $a-subverse-bg-highlight-gradient = $a-subverse-bg-highlight - 10
+ * $a-darker = rgb(74, 171, 231)
+ * $a-alt1 = $a
+ * $a-author-hover = $a
+ *
+ * $link-upvotes = rgb(74, 171, 231)
+ * $link-downvotes = rgb(136, 112, 255)
+ * $link-unvoted = rgb(187, 187, 187)
+ * $link-title = rgb(74, 74, 74)
+ * $link-domain = rgb(102, 102, 102)
+ * $link-domain-a = rgb(136, 136, 136)
+ * $link-subverse = rgb(109, 109, 109)
+ * $link-subverse-hover = $a
+ * $link-button = rgb(106, 106, 106)
+ * $link-button-border-mobile = rgb(222, 222, 222)
+ *
+ * $tagline = rgb(112, 112, 112)
+ * $tagline-off = rgb(85, 85, 85)
+ * $tagline-a-hover = rgb(67, 153, 205)
+ * $tagline-a-visited = $tagline-off
+ *
+ * $comment-expander = rgb(170, 170, 170)
+ * $comment-collapsed-a = rgb(136, 136, 136)
+ * $submitter = rgb(136, 112, 255)
+ * $quote-border = rgb(219, 219, 219)
+ * $comment-button = $link-button
+ * $comment-textarea-bg = $container-bg
+ * $comment-textarea-border = $container-border-alt1
+ * $comment-textarea-text = $text-alt1
+ *
+ * $button-contribute-bg = rgb(187, 229, 255)
+ * $button-contribute-bg-gradient = rgb(166, 221, 255)
+ * $button-contribute-border = rgb(112, 183, 227)
+ * $button-contribute = rgb(43, 71, 88)
+ * $button-contribute-hover = rgb(43, 71, 88)
+ * $button-contribute-bg-hover = rgb(167, 222, 255)
+ * $button-contribute-bg-hover-gradient = rgb(145, 213, 255)
+ * $button-contribute-border-hover = rgb(97, 175, 224)
+ * $button-paging-bg = $button-contribute-bg
+ * $button-paging-bg-gradient = $button-contribute-bg-gradient
+ * $button-paging-border = $button-contribute-border
+ * $button-paging = $button-contribute
+ * $button-paging-hover = $button-contribute-hover
+ * $button-paging-bg-hover = $button-contribute-bg-hover
+ * $button-paging-bg-hover-gradient = $button-contribute-bg-hover-gradient
+ * $button-paging-border-hover = $button-contribute-border-hover
+ * $button-unsub-bg = rgb(248, 248, 248)
+ * $button-unsub-bg-gradient = rgb(240, 240, 240)
+ * $button-unsub-bg-hover = rgb(196, 183, 255)
+ * $button-unsub-hover-gradient = rgb(189, 174, 255)
+ * $button-unsub-border = rgb(201, 201, 201)
+ * $button-unsub-border-hover = rgb(155, 133, 255)
+ * $button-unsub = rgb(90, 90, 90)
+ * $button-unsub-hover = rgb(91, 70, 190)
+ *
+ * $spoiler-bg = rgb(231, 119, 119)
+ *
+ * $spoiler-border = rgb(180, 79, 79)
+ * $spoiler-reveal-bg = rgb(255, 227, 227)
+ * $code-bg = rgb(255, 255, 255)
+ * $code-border = rgb(204, 204, 204)
+ *
+ * $error = rgb(255, 65, 54)
+ *
+ * $footer = rgb(109, 109, 109)
+ *
+ * $sticky-bg = rgb(162, 109, 249)
+ * $sticky-border = rgb(131, 88, 203)
+ * $sticky = rgb(255, 255, 255)
+ * $sticky-title = rgb(34, 136, 34)
+ *
+ * $label-bg = rgb(221, 221, 221)
+ * $label = rgb(85, 85, 85)
+ * $panel-header-bg = rgb(238, 238, 238)
+ * $panel-header-bg-gradient = rgb(232, 232, 232)
+ * $panel-header-border = rgb(214, 214, 214)
+ * $panel-border = rgb(221, 221, 221)
+ * $panel = rgb(51, 51, 51)
+ * $load-more-bg = rgb(253, 253, 253)
+ * $load-more-bg-gradient = rgb(247, 247, 247)
+ * $load-more = rgb(76, 76, 76)
+ * $load-more-bg-hover = rgb(248, 248, 248)
+ * $load-more-bg-hover-gradient = rgb(242, 242, 242)
+ * $load-more-border-hover = rgb(204, 204, 204)
+ * $load-more-hover = rgb(68, 68, 68)
+ *
+ * $mobile-menu-border = $text
+ *
+ * $form-control-bg = $container-bg
+ * $form-control-placeholder = rgb(153, 153, 153)
+ *
+ *
+ *
+ *
+ * By default, sidebar & header will copy main styles.
+ * "tween" -> calculated as percent between 2 colors
+ * "base-gradient" -> calculated as additive from base
+ */

@@ -1,0 +1,908 @@
+/*
+ *
+ *
+ *
+ *
+ *
+ *
+ * Color:
+ * $bg = rgb(41, 41, 41)
+ * $container-bg = rgb(51, 51, 51)
+ * $container-bg-alt1 = rgb(96, 96, 96)
+ * $container-bg-alt2 = rgb(46, 46, 46)
+ * $container-bg-alt3 = rgb(49, 45, 58)
+ * $container-bg-alt4 = $bg
+ * $container-bg-alt5 = $container-bg-alt3
+ * $container-border = rgb(34, 34, 34)
+ * $container-border-alt1 = rgb(34, 34, 34)
+ * $container-border-alt2 = rgb(128, 128, 128)
+ * $container-border-alt3 = rgb(39, 39, 39)
+ * $container-border-alt4 = rgb(39, 39, 39)
+ * $container-border-alt5 = rgb(37, 33, 44)
+ * $container-focus-border = rgb(17, 17, 17)
+ * $container-text = inherit
+ *
+ * $text = rgb(223, 223, 223)
+ * $text-alt1 = rgb(204, 204, 204)
+ * $text-alt2 = $text
+ *
+ * $header-bg = rgb(51, 51, 51)
+ * $header-border = rgb(34, 34, 34)
+ * $header-border-alt1 = rgb(58, 58, 58)
+ * $header-border-alt2 = $header-border
+ * $header-login-bg = rgb(41, 41, 41) ($header-bg -10)
+ * $header-login-bg-mobile = transparent
+ * $header-login-border-mobile = transparent
+ * $header-login-a = $header-text
+ * $header-text = rgb(221, 221, 221)
+ * $header-bar-link = rgb(170, 170, 170)
+ * $header-subverse-title = rgb(204, 204, 204)
+ * $header-button-selected-bg = $header-bg
+ * $header-button-selected-bg-gradient = $header-button-selected-bg - 6
+ * $header-button-selected-bg-hover = rgb(67, 155, 183)
+ * $header-button-border = $header-border
+ * $header-button = $header-bar-link
+ * $header-button-bg = transparent
+ * $header-button-border = transparent
+ * $header-button-contribute-bg = rgb(180, 71, 71)
+ * $header-button-contribute-bg-gradient = rgb(171, 60, 60)
+ * $header-button-contribute-border = rgb(147, 51, 51)
+ * $header-button-contribute = (255, 220, 220)
+ * $header-button-contribute-hover = $header-button-contribute
+ * $header-button-contribute-bg-hover = rgb(164, 58, 74)
+ * $header-button-contribute-bg-hover-gradient = rgb(153, 48, 48)
+ * $header-button-contribute-border-hover = rgb(128, 38, 38)
+ * $header-button-selected-mobile-bg = rgb(56, 67, 75)
+ * $header-button-selected-mobile-bg-gradient = rgb(53, 60, 68)
+ * $header-button-selected-mobile-border = rgb(36, 46, 57)
+ * $header-underline = rgb(102, 102, 102)
+ * $header-more-bg = rgb(85, 85, 85)
+ * $header-more = rgb(255, 255, 255)
+ *
+ * $side = inherit
+ * $side-bg = transparent
+ * $side-title = inherit
+ * $side-title-hover = $a-alt1
+ * $side-header = rgb(150, 122, 255)
+ * $side-header-underline = $side-border-inner
+ * $side-border-inner = $container-border
+ * $side-status = rgb(128, 128, 128)
+ * $side-content-bg = rgb(48, 48, 48)
+ * $side-content-border = rgb(39, 39, 39)
+ * $side-box-bg = rgb(49, 49, 49)
+ * $side-box-border = rgb(34, 34, 34)
+ * $side-box = inherit
+ *
+ * $a = rgb(86, 168, 218)
+ * $a-hover = rgb(220, 87, 87)
+ * $a-visited = rgb(138, 138, 138)
+ * $a-subverse-highlight = rgb(255, 255, 255)
+ * $a-subverse-bg-highlight = $a-alt1
+ * $a-subverse-bg-highlight-gradient = $a-subverse-bg-highlight - 17
+ * $a-darker = rgb(67, 153, 205)
+ * $a-alt1 = rgb(67, 139, 183)
+ * $a-author-hover = $a-hover
+ *
+ * $link-upvotes = rgb(67, 141, 183)
+ * $link-downvotes = rgb(111, 100, 186)
+ * $link-unvoted = rgb(102, 102, 102)
+ * $link-title = rgb(195, 195, 195)
+ * $link-domain = rgb(102, 102, 102)
+ * $link-domain-a = rgb(119, 119, 119)
+ * $link-subverse = rgb(171, 171, 171)
+ * $link-subverse-hover = $a-hover
+ * $link-button = rgb(188, 188, 188)
+ * $link-button-border-mobile = rgb(44, 44, 44)
+ *
+ * $tagline = rgb(155, 155, 155)
+ * $tagline-off = $a-alt1
+ * $tagline-a-hover = rgb(67, 153, 205)
+ * $tagline-a-visited = rgb(75, 138, 225)
+ *
+ * $comment-expander = rgb(170, 170, 170)
+ * $comment-collapsed-a = rgb(136, 136, 136)
+ * $submitter = rgb(111, 100, 186)
+ * $quote-border = rgb(33, 30, 38)
+ * $comment-button = rgb(106, 106, 106)
+ * $comment-textarea-bg = $bg
+ * $comment-textarea-border = $container-border
+ * $comment-textarea-text = rgb(221, 221, 221)
+ *
+ * $button-contribute-bg = rgb(180, 71, 71)
+ * $button-contribute-bg-gradient = rgb(171, 60, 60)
+ * $button-contribute-border = rgb(147, 51, 51)
+ * $button-contribute = rgb(255, 247, 247)
+ * $button-contribute-hover = $button-contribute
+ * $button-contribute-bg-hover = rgb(164, 58, 58)
+ * $button-contribute-bg-hover-gradient = rgb(153, 48, 48)
+ * $button-contribute-border-hover = rgb(128, 38, 38)
+ * $button-paging-bg = rgb(75, 75, 75)
+ * $button-paging-bg-gradient = rgb(69, 69, 69)
+ * $button-paging-border = rgb(48, 48, 48)
+ * $button-paging = rgb(255, 255, 255)
+ * $button-paging-hover = $button-paging
+ * $button-paging-bg-hover = rgb(56, 67, 75)
+ * $button-paging-bg-hover-gradient = rgb(53, 60, 68)
+ * $button-paging-border-hover = rgb(36, 46, 57)
+ * $button-unsub-bg = $button-contribute-bg
+ * $button-unsub-bg-gradient = $button-contribute-bg-gradient
+ * $button-unsub-bg-hover = $button-contribute-bg-hover
+ * $button-unsub-hover-gradient = $button-contribute-bg-hover-gradient
+ * $button-unsub-border = $button-contribute-border
+ * $button-unsub-border-hover = rgb(36, 46, 57)
+ * $button-unsub = $button-contribute
+ * $button-unsub-hover = rgb(255, 255, 255)
+ *
+ * $spoiler-bg = rgb(119, 57, 57)
+ *
+ * $spoiler-border = rgb(86, 40, 40)
+ * $spoiler-reveal-bg = rgb(78, 46, 46)
+ * $code-bg = rgb(49, 45, 58)
+ * $code-border = rgb(37, 33, 44)
+ *
+ * $error = rgb(255, 65, 54)
+ *
+ * $footer = rgb(149, 149, 149)
+ *
+ * $sticky-bg = rgb(180, 71, 71)
+ * $sticky-border = rgb(157, 49, 49)
+ * $sticky = rgb(255, 255, 255)
+ * $sticky-title = rgb(34, 136, 34)
+ *
+ * $label-bg = rgb(85, 85, 85)
+ * $label = rgb(221, 221, 221)
+ * $panel-header-bg = rgb(46, 46, 46),
+ * $panel-header-bg-gradient = rgb(43, 43, 43))
+ * $panel-header-border = rgb(39, 39, 39)
+ * $panel-border = rgb(221, 221, 221)
+ * $panel = rgb(211, 211, 211)
+ * $load-more-bg = rgb(75, 75, 75)
+ * $load-more-bg-gradient = rgb(69, 69, 69)
+ * $load-more = rgb(221, 221, 221)
+ * $load-more-bg-hover = rgb(56, 67, 75)
+ * $load-more-bg-hover-gradient = rgb(53, 60, 68)
+ * $load-more-border-hover = rgb(36, 46, 57)
+ * $load-more-hover = rgb(255, 255, 255)
+ *
+ * $mobile-menu-border = rgb(187, 187, 187)
+ *
+ * $form-control-bg = $bg
+ * $form-control-placeholder = rgb(153, 153, 153)
+ *
+ *
+ */
+
+body {
+  background-color: $bg;
+  color: $text;
+  font-size: 11px;
+  font-family: Arial, sans-serif;
+  line-height: 1.43;
+}
+
+a, a:visited {
+  color: $a;
+}
+
+a:hover {
+  color: $a-hover;
+}
+
+.md a:visited {
+  color: $a-visited;
+}
+
+.md a[href="#s"]::after {
+  background-color: $spoiler-bg;
+  color: $spoiler-bg;
+  border-color: $spoiler-border;
+}
+
+.md a[href="#s"]:hover::after, .md a[href="#s"]:focus::after, .md a[href="#s"]:active::after {
+  color: $text;
+  background-color: $spoiler-reveal-bg;
+}
+
+.link .usertext .md pre, .link .usertext .md code, pre, code {
+  background-color: $code-bg;
+  border-color: $code-border;
+  color: $text-alt1;
+}
+
+/*
+ * Header:
+ */
+#header {
+  background-color: $header-bg;
+}
+
+/*
+ * Header -> Subverse List
+ */
+#sr-header-area {
+  background-color: $header-bg;
+  border-bottom: $header-border;
+}
+
+.sr-list li a {
+  color: $a-darker;
+}
+
+.drop-arrow {
+  border-top-color: $a-darker;
+}
+
+#sr-bar li a {
+  color: $header-bar-link;
+}
+
+#sr-header-area:hover #sr-bar li a {
+  color: $header-text;
+}
+
+#sr-more-link {
+  background-color: $header-bg;
+  color: $header-text;
+}
+
+#sr-more-link:hover {
+  background-color: $header-more-bg;
+  color: $header-more;
+}
+
+/*
+ * Header -> Subverse List -> Subscription Dropdown
+ */
+.whoaSubscriptionMenu li ul {
+  border-color: rgb(58, 58, 58);
+  border-top-color: rgb(51, 51, 51);
+  box-shadow: 3px 3px 3px rgba(0,0,0,.2)
+}
+
+.whoaSubscriptionMenu li ul li a:link, .whoaSubscriptionMenu li ul li a:visited {
+  background-color: rgb(51, 51, 51);
+  border-bottom-color: rgb(34, 34, 34);
+  color: rgb(221, 221, 221);
+}
+
+.whoaSubscriptionMenu li ul li a:hover {
+  background: -webkit-linear-gradient(top,
+  rgb(67, 139, 183),
+  rgb(52, 122, 164));
+  color: rgb(255, 255, 255) !important;
+}
+
+/*
+ * Header -> Subverse Header
+ */
+#header-container {
+  background-color: rgb(51, 51, 51);
+  border-bottom-color: rgb(34, 34, 34);
+  border-top-color: rgb(34, 34, 34);
+}
+
+.pagename a {
+  color: rgb(204, 204, 204);
+}
+
+.pagename a:hover {
+  color: rgb(67, 139, 183);
+}
+
+/*
+ * Header -> Subverse Header -> Menu
+ */
+.tabmenu li.selected a {
+  background: -webkit-linear-gradient(top,
+  rgb(51, 51, 51),
+  rgb(45, 45, 45));
+  border-color: rgb(34, 34, 34);
+  color: rgb(221, 221, 221);
+}
+
+.tabmenu li.selected a:hover {
+  color: rgb(67, 155, 183);
+}
+
+.tabmenu li.disabled a {
+  background-color: transparent;
+  border-color: transparent;
+  color: rgb(170, 170, 170);
+}
+
+.tabmenu li.disabled a:hover {
+  background: -webkit-linear-gradient(top,
+  rgb(51, 51, 51),
+  rgb(45, 45, 45));
+  border-color: rgb(34, 34, 34);
+  color: rgb(221, 221, 221);
+}
+
+.tabmenu li.disabled a.contribute {
+  background: -webkit-linear-gradient(top,
+  rgb(180, 71, 71),
+  rgb(171, 60, 60));
+  border-color: rgb(147, 51, 51);
+  color: rgb(255, 220, 220);
+}
+
+.tabmenu li.disabled a.contribute:hover {
+  background: -webkit-linear-gradient(top,
+  rgb(164, 58, 74),
+  rgb(153, 48, 48));
+  border-color: rgb(128, 38, 38);
+  color: rgb(255, 220, 220);
+}
+
+/**
+ * Header -> Subverse Header -> Menu (Mobile)
+ */
+@media (max-width: 700px) {
+  .tabmenu li.selected a {
+    background: -webkit-linear-gradient(top,
+    rgb(56, 67, 75),
+    rgb(53, 60, 68));
+    border-color: rgb(36, 46, 57);
+    box-shadow: 0 1px 0 rgba(0,0,0,.35);
+    color: rgb(221, 221, 221);
+  }
+
+  .tabmenu li.disabled a {
+    background: -webkit-linear-gradient(top,
+    rgb(51, 51, 51),
+    rgb(48, 48, 48));
+    border-color: rgb(34, 34, 34);
+    box-shadow: 0 1px 0 rgba(0,0,0,.1);
+    color: rgb(221, 221, 221);
+  }
+
+  .tabmenu li.disabled a:hover {
+    background: -webkit-linear-gradient(top,
+    rgb(51, 51, 51),
+    rgb(45, 45, 45));
+    border-color: rgb(34, 34, 34);
+    color: rgb(221, 221, 221);
+  }
+}
+
+/*
+ * Header -> Subverse Header -> Account Info
+ */
+.logged-in,
+.logged-out {
+  background-color: rgb(41, 41, 41);
+  border-color: rgb(34, 34, 34);
+}
+
+@media (max-width: 870px) {
+  .logged-in,
+  .logged-out {
+    background-color: transparent;
+    border-color: transparent;
+  }
+}
+
+#header-account a {
+  color: rgb(221, 221, 221);
+}
+
+#header-account a:hover,
+#header-account .logged-out a {
+  color: rgb(67, 139, 183);
+}
+
+.user .userkarma {
+  border-bottom-color: rgb(102, 102, 102);
+}
+
+.user .upvoatsGiven a {
+  color: rgb(74, 171, 231) !important;
+  border-bottom-color: gray;
+}
+
+/**
+ * Header -> Mobile Menu Button
+ */
+#show-menu-button::before {
+  border-color: $mobile-menu-border;
+}
+
+/**
+ * Main Content
+ */
+#container {
+  background-color: rgb(51, 51, 51);
+  border-color: rgb(34, 34, 34);
+  color: inherit;
+}
+
+/**
+ * Sidebar
+ */
+.side {
+  background-color: transparent;
+  color: inherit;
+}
+
+/* Form Control (Search, Chat) */
+.form-control {
+  background-color: rgb(41, 41, 41);
+  border-color: rgb(34, 34, 34);
+  color: rgb(221, 221, 221);
+}
+
+.form-control:focus {
+  border-color: rgb(17, 17, 17);
+}
+
+.form-control::-moz-placeholder,
+.form-control:-ms-input-placeholder,
+.form-control:-webkit-input-placeholder {
+  color:rgb(153, 153, 153)
+}
+
+.field-validation-error {
+  color: rgb(255, 65, 54);
+}
+
+.btn-whoaverse.contribute {
+  background: -webkit-linear-gradient(top,
+  rgb(180, 71, 71),
+  rgb(171, 60, 60));
+  border-color: rgb(147, 51, 51);
+  color: rgb(255, 247, 247);
+}
+
+.btn-whoaverse.contribute:hover {
+  background: -webkit-linear-gradient(top,
+  rgb(164, 58, 58),
+  rgb(153, 48, 48));
+  border-color: rgb(128, 38, 38);
+  color: rgb(255, 247, 247);
+}
+
+.titlebox h1 a {
+  color: inherit;
+}
+
+.titlebox h1 a:hover {
+  color: rgb(67, 139, 183);
+}
+
+.titlebox .btn-sub.btn-whoaverse-paging {
+  background: -webkit-linear-gradient(top,
+  rgb(180, 71, 71),
+  rgb(171, 60, 60));
+  border-color: rgb(147, 51, 51);
+  color: rgb(255, 247, 247);
+}
+
+.btn-whoaverse-paging:focus,
+.titlebox .btn-whoaverse-paging:focus {
+  color: rgb(255, 255, 255);
+}
+
+.btn-sub:hover {
+  background: -webkit-linear-gradient(top,
+  rgb(164, 58, 58),
+  rgb(153, 48, 48));
+  border-color: rgb(36, 46, 57);
+  color: rgb(255, 255, 255);
+}
+
+.btn-whoaverse-paging {
+  background: -webkit-linear-gradient(top,
+  rgb(75, 75, 75),
+  rgb(69, 69, 69));
+  border-color: rgb(48, 48, 48);
+  color: rgb(255, 255, 255);
+}
+
+.btn-whoaverse-paging:hover {
+  background: -webkit-linear-gradient(top,
+  rgb(56, 67, 75),
+  rgb(53, 60, 68));
+  border-color: rgb(36, 46, 57);
+  color: rgb(255, 255, 255);
+}
+
+.titlebox .subscribers {
+  color: inherit;
+}
+
+.titlebox .users-online {
+  color: inherit;
+}
+
+/**
+ * Sidebar -> Description
+ */
+.titlebox .usertext-body {
+  color: inherit;
+}
+
+/**
+ * Sidebar -> Status
+ */
+.titlebox .bottom {
+  border-top-color: rgb(34, 34, 34);
+  color: rgb(128, 128, 128);
+}
+
+/**
+ * Sidebar -> Header
+ */
+.alert-h2,
+.sidecontentbox .alert-h1 {
+  color: rgb(150, 122, 255);
+  border-bottom-color: rgb(34, 34, 34);
+}
+
+/**
+ * Sidebar -> Moderator List, Chat
+ */
+.sidecontentbox .content {
+  background-color: rgb(48, 48, 48);
+  border-color: rgb(39, 39, 39);
+}
+
+/**
+ * Sidebar -> Box (chat, announcements)
+ */
+.side .spacer.spacersection {
+  background-color: rgb(49, 49, 49);
+  border-color: rgb(34, 34, 34);
+  color: inherit;
+}
+
+/**
+ * Footer
+ */
+.bottommenu {
+  color: rgb(149, 149, 149);
+}
+
+/**
+ * Links
+ */
+
+.even {
+  background-color: rgb(46, 46, 46);
+}
+
+/**
+ * Links -> Submission
+ */
+.arrow-downvote,
+.arrow-downvoted,
+.arrow-upvote,
+.arrow-upvoted {
+  background-image: url('http://voat.co/Graphics/Dark-SpriteSheet.png');
+}
+
+.link score.likes {
+  color: rgb(67, 141, 183);
+}
+
+.link score.dislikes {
+  color: rgb(111, 100, 186);
+}
+
+.link score.unvoted {
+  color: rgb(102, 102, 102);
+}
+
+.thumbnail {
+  border-color: rgb(51, 51, 51);
+}
+
+a.thumbnail:hover,
+a.thumbnail:focus,
+a.thumbnail.active {
+  border-color: rgb(67, 139, 183);
+}
+
+/**
+ * Links -> Submission -> Title
+ */
+.link a.title,
+.link a.title.may-blank {
+  color: rgb(195, 195, 195);
+}
+
+.link a.title:visited,
+.link a.title.may-blank:visited {
+  color: rgb(138, 138, 138);
+}
+
+.link a.title:hover {
+  color: rgb(86, 168, 218);
+}
+
+.submission.stickied a.title, .submission.stickied a.title:visited, .submission.stickied a.title.visited {
+  color: #282;
+}
+
+.domain {
+  color: rgb(102, 102, 102);
+}
+
+.domain a {
+  color: rgb(119, 119, 119);
+}
+
+.domain a:hover {
+  color: rgb(67, 139, 183);
+}
+
+.promoted {
+  background-color: rgb(180, 71, 71);
+  border-color: rgb(157, 49, 49);
+  color: rgb(255, 255, 255);
+}
+
+/**
+ * Links -> Submission -> Tagline
+ */
+.expando-button.selftext.collapsed,
+.expando-button.selftext.collapsed:hover,
+.expando-button.selftext.expanded,
+.expando-button.selftext.expanded:hover {
+  background-image: url('http://voat.co/Graphics/Dark-SpriteSheet.png');
+}
+
+.tagline {
+  color: rgb(155, 155, 155);
+}
+
+.tagline a {
+  color: rgb(86, 168, 218);
+}
+
+.tagline a:visited {
+  color: rgb(75, 138, 225);
+}
+
+.tagline a:hover {
+  color: $tagline-a-hover;
+}
+
+
+.link a.author,
+.link a.author:visited {
+  color: $tagline-a-hover;
+}
+
+.link a.author:hover {
+  color: rgb(220, 87, 87);
+}
+
+.link a.subverse:visited,
+.link a.subverse {
+  color: rgb(171, 171, 171);
+}
+
+.link a.subverse:hover {
+  color: rgb(220, 87, 87);
+}
+
+.tagline .post_upvotes {
+  color: rgb(67, 141, 183);
+}
+
+.tagline .post_downvotes {
+  color: rgb(111, 100, 186);
+}
+
+/**
+ * Links -> Submission -> Buttons
+ */
+.link .flat-list li a {
+  color: rgb(188, 188, 188);
+}
+
+@media (max-width: 550px) {
+  .link .flat-list.buttons li a {
+    background-color: rgb(51, 51, 51);
+    border-color: rgb(44, 44, 44);
+  }
+}
+
+/*
+ * Links -> Next/Previous Buttons
+ */
+.pagination-container .btn-whoaverse-paging {
+  background: -webkit-linear-gradient(top,
+  rgb(75, 75, 75),
+  rgb(69, 69, 69));
+  border-color: rgb(48, 48, 48);
+  color: rgb(255, 255, 255);
+}
+
+/*
+ * Comments
+ */
+
+/*
+ * Comments - Self Text
+ */
+.link .usertext .md {
+  background-color: rgb(49, 49, 49);
+  border-color: rgb(39, 39, 39);
+  color: inherit;
+}
+
+/*
+ * Comments - Comment Form
+ */
+.markdownEditorImgButton {
+  background-color: rgb(96, 96, 96) !important;
+  background-image: url('http://voat.co/Graphics/markdownEditorSprite.png');
+  border-color: rgb(128, 128, 128);
+}
+
+.markdownEditorSubMenu {
+  border-color: rgb(128, 128, 128);
+}
+
+.commenttextarea {
+  background-color: rgb(41, 41, 41);
+  border-color: rgb(34, 34, 34);
+  color: rgb(221, 221, 221);
+}
+
+form input.btn-whoaverse-paging {
+  background: -webkit-linear-gradient(top,
+  rgb(75, 75, 75),
+  rgb(69, 69, 69));
+  border-color: rgb(48, 48, 48);
+  color: rgb(255, 255, 255);
+}
+
+form input.btn-whoaverse-paging:hover {
+  background: -webkit-linear-gradient(top,
+  rgb(56, 67, 75),
+  rgb(53, 60, 68));
+  border-color: rgb(36, 46, 57);
+  color: rgb(255, 255, 255);
+}
+
+.horizontal-line {
+  border-bottom-color: rgb(39, 39, 39);
+}
+
+.menuarea .label,
+.menuarea .label-default {
+  background-color: rgb(85, 85, 85);
+  color: rgb(221, 221, 221);
+}
+
+/**
+ * Comments -> Comment
+ */
+.comment .comment {
+  border: 1px solid rgb(34, 34, 34);
+}
+
+.comment a.expand {
+  color: rgb(170, 170, 170);
+}
+
+.comment .collapsed a {
+  color: rgb(136, 136, 136);
+}
+
+.comment a.expand:hover {
+  color: rgb(67, 139, 183);
+}
+
+.comment a.author,
+.comment a.author:visited {
+  color: rgb(86, 168, 218);
+}
+
+.comment a.submitter {
+  color: rgb(111, 100, 186);
+}
+
+/* TODO: separate styles for comment taglines */
+
+/**
+ * Comments -> Comment -> Buttons
+ */
+.entry .buttons li a {
+  color: $comment-button;
+}
+
+@media (max-width: 550px) {
+  .comment .flat-list.buttons li a {
+    background-color: rgb(51, 51, 51);
+    border-color: rgb(44, 44, 44);
+  }
+}
+
+/**
+ * Comments -> Comment (even layer)
+ * Should be same as #container
+ */
+.comment .comment .comment, .comment .comment .comment .comment .comment, .comment .comment .comment .comment .comment .comment .comment, .comment .comment .comment .comment .comment .comment .comment .comment .comment, .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+  background-color: rgb(51, 51, 51);
+}
+
+.comment .comment .comment blockquote, .comment .comment .comment .comment .comment blockquote, .comment .comment .comment .comment .comment .comment .comment blockquote, .comment .comment .comment .comment .comment .comment .comment .comment .comment blockquote, .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment blockquote {
+  background-color: rgb(49, 45, 58);
+}
+
+/**
+ * Comments -> Comment (odd layer)
+ */
+.comment .comment, .comment .comment .comment .comment, .comment .comment .comment .comment .comment .comment, .comment .comment .comment .comment .comment .comment .comment .comment, .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+  background-color: rgb(41, 41, 41);
+}
+
+.comment .comment blockquote, .comment .comment .comment .comment blockquote, .comment .comment .comment .comment .comment .comment blockquote, .comment .comment .comment .comment .comment .comment .comment .comment blockquote, .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment blockquote {
+  background-color: rgb(49, 45, 58);
+}
+
+/**
+ * Comments -> Comment
+ */
+.md blockquote {
+  background-color: rgb(49, 45, 58);
+  border-color: rgb(37, 33, 44)
+  rgb(37, 33, 44)
+  rgb(37, 33, 44)
+  rgb(33, 30, 38);
+  box-shadow: 0 1px 0 rgba(0,0,0,.1);
+}
+
+/**
+ * Comments -> Preview
+ */
+.panel {
+  background-color: rgb(51, 51, 51);
+}
+
+.panel-default {
+  border-color: $panel-border;
+}
+
+.panel-heading, .panel-info>.panel-heading, .panel-default>.panel-heading {
+  background: -webkit-linear-gradient(top,
+  rgb(46, 46, 46),
+  rgb(43, 43, 43));
+  border-color: rgb(39, 39, 39);
+  color: rgb(211, 211, 211);
+}
+
+/**
+ * Comments -> Load More
+ */
+.btn-whoaverse {
+  background: -webkit-linear-gradient(top,
+  rgb(75, 75, 75),
+  rgb(69, 69, 69));
+  border-color: rgb(48, 48, 48);
+}
+
+.btn-whoaverse,
+a.btn-whoaverse {
+  color: rgb(221, 221, 221);
+}
+
+.btn-whoaverse:hover {
+  background: -webkit-linear-gradient(top,
+  rgb(56, 67, 75),
+  rgb(53, 60, 68));
+  border-color: rgb(36, 46, 57);
+  color: rgb(255, 255, 255);
+}
+
+/**
+ * TODO: Modal Dialogs
+ */
+
+/**
+ * TODO: first-time alert on comments page
+ */
+

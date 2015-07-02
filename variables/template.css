@@ -1,0 +1,734 @@
+body {
+  background-color: $bg;
+  color: $text;
+  font-size: 11px;
+  font-family: Arial, sans-serif;
+  line-height: 1.43;
+}
+
+a, a:visited {
+  color: $a;
+}
+
+a:hover {
+  color: $a-hover;
+}
+
+.md a:visited {
+  color: $a-visited;
+}
+
+.md a[href="#s"]::after {
+  background-color: $spoiler-bg;
+  color: $spoiler-bg;
+  border-color: $spoiler-border;
+}
+
+.md a[href="#s"]:hover::after, .md a[href="#s"]:focus::after, .md a[href="#s"]:active::after {
+  color: $text;
+  background-color: $spoiler-reveal-bg;
+}
+
+.link .usertext .md pre, .link .usertext .md code, pre, code {
+  background-color: $code-bg;
+  border-color: $code-border;
+  color: $text-alt1;
+}
+
+/*
+ * Header:
+ */
+#header {
+  background-color: $header-bg;
+}
+
+/*
+ * Header -> Subverse List
+ */
+#sr-header-area {
+  background-color: $header-bg;
+  border-bottom: 1px solid $header-border;
+}
+
+.sr-list li a {
+  color: $a-darker;
+}
+
+.drop-arrow {
+  border-top-color: $a-darker;
+}
+
+#sr-bar li a {
+  color: $header-bar-link;
+}
+
+#sr-header-area:hover #sr-bar li a {
+  color: $header-text;
+}
+
+#sr-more-link {
+  background-color: $header-bg;
+  color: $header-text;
+}
+
+#sr-more-link:hover {
+  background-color: $header-more-bg;
+  color: $header-more;
+}
+
+/*
+ * Header -> Subverse List -> Subscription Dropdown
+ */
+.whoaSubscriptionMenu li ul {
+  border-color: $header-border-alt1;
+  border-top-color: $header-bg;
+  box-shadow: 3px 3px 3px rgba(0,0,0,.2)
+}
+
+.whoaSubscriptionMenu li ul li a:link, .whoaSubscriptionMenu li ul li a:visited {
+  background-color: $header-bg;
+  border-bottom-color: $header-border-alt2;
+  color: $header-text;
+}
+
+.whoaSubscriptionMenu li ul li a:hover {
+  background: -webkit-linear-gradient(top, $a-subverse-highlight-bg,
+  $a-subverse-highlight-bg-gradient);
+  color: $a-subverse-highlight !important;
+}
+
+/*
+ * Header -> Subverse Header
+ */
+#header-container {
+  background-color: $header-bg;
+  border-bottom-color: $header-border;
+  border-top-color: $header-border;
+}
+
+.pagename a {
+  color: $header-subverse-title;
+}
+
+.pagename a:hover {
+  color: $a-alt1;
+}
+
+/*
+ * Header -> Subverse Header -> Menu
+ */
+.tabmenu li.selected a {
+  background: -webkit-linear-gradient(top,$header-button-selected-bg,
+  $header-button-selected-bg-gradient);
+  border-color: $header-button-selected-border;
+  color: $header-text;
+}
+
+.tabmenu li.selected a:hover {
+  color: $header-button-selected-bg-hover;
+}
+
+.tabmenu li.disabled a {
+  background-color: $header-button-bg;
+  border-color: $header-button-border;
+  color: $header-button;
+}
+
+.tabmenu li.disabled a:hover {
+  background: -webkit-linear-gradient(top,$header-button-selected-bg,
+  $header-button-selected-bg-gradient);
+  border-color: $header-button-selected-border;
+  color: $header-text;
+}
+
+.tabmenu li.disabled a.contribute {
+  background: -webkit-linear-gradient(top,$header-button-contribute-bg,
+  $header-button-contribute-bg-gradient);
+  border-color: $header-button-contribute-border;
+  color: $header-button-contribute;
+}
+
+.tabmenu li.disabled a.contribute:hover {
+  background: -webkit-linear-gradient(top,$header-button-contribute-bg-hover,
+  $header-button-contribute-bg-hover-gradient);
+  border-color: $header-button-contribute-border-hover;
+  color: $header-button-contribute-hover;
+}
+
+/**
+ * Header -> Subverse Header -> Menu (Mobile)
+ */
+@media (max-width: 700px) {
+  .tabmenu li.selected a {
+    background: -webkit-linear-gradient(top,$header-button-selected-mobile-bg,
+    $header-button-selected-mobile-bg-gradient);
+    border-color: $header-button-selected-mobile-border;
+    box-shadow: 0 1px 0 rgba(0,0,0,.35);
+    color: $header-text;
+  }
+
+  .tabmenu li.disabled a {
+    background: -webkit-linear-gradient(top,$header-button-selected-bg,
+    $header-button-selected-bg-gradient);
+    border-color: $header-button-selected-border;
+    box-shadow: 0 1px 0 rgba(0,0,0,.1);
+    color: $header-text;
+  }
+
+  .tabmenu li.disabled a:hover {
+    background: -webkit-linear-gradient(top,$header-button-selected-bg,
+    $header-button-selected-bg-gradient);
+    border-color: $header-button-selected-border;
+    color: $header-text;
+  }
+}
+
+/*
+ * Header -> Subverse Header -> Account Info
+ */
+.logged-in,
+.logged-out {
+  background-color: $header-login-bg;
+  border-color: $header-border;
+}
+
+@media (max-width: 870px) {
+  .logged-in,
+  .logged-out {
+    background-color: $header-login-bg-mobile;
+    border-color: $header-login-border-mobile;
+  }
+}
+
+#header-account a {
+  color: $header-login-a;
+}
+
+#header-account a:hover,
+#header-account .logged-out a {
+  color: $a-alt1;
+}
+
+.user .userkarma {
+  border-bottom-color: $header-underline;
+}
+
+.user .upvoatsGiven a {
+  color: rgba(74, 171, 231, 1) !important;
+  border-bottom-color: gray;
+}
+
+/**
+ * Header -> Mobile Menu Button
+ */
+#show-menu-button::before {
+  border-color: $mobile-menu-border;
+}
+
+/**
+ * Main Content
+ */
+#container {
+  background-color: $container-bg;
+  border-color: $container-border;
+  color: $container-text;
+}
+
+/**
+ * Sidebar
+ */
+.side {
+  background-color: $side-bg;
+  color: $side;
+}
+
+/* Form Control (Search, Chat) */
+.form-control {
+  background-color: $form-control-bg;
+  border-color: $container-border-alt1;
+  color: $text-alt2;
+}
+
+.form-control:focus {
+  border-color: $container-focus-border;
+}
+
+.form-control::-moz-placeholder {
+  color: $form-control-placeholder;
+}
+.form-control:-ms-input-placeholder {
+  color: $form-control-placeholder;
+}
+.form-control::-webkit-input-placeholder {
+  color: $form-control-placeholder;
+}
+
+.field-validation-error {
+  color: $error;
+}
+
+.btn-whoaverse.contribute {
+  background: -webkit-linear-gradient(top,$button-contribute-bg,
+  $button-contribute-bg-gradient);
+  border-color: $button-contribute-border;
+  color: $button-contribute;
+}
+
+.btn-whoaverse.contribute:hover {
+  background: -webkit-linear-gradient(top,$button-contribute-bg-hover,
+  $button-contribute-bg-hover-gradient);
+  border-color: $button-contribute-border-hover;
+  color: $button-contribute-hover;
+}
+
+.titlebox h1 a {
+  color: $side-title;
+}
+
+.titlebox h1 a:hover {
+  color: $side-title-hover;
+}
+
+.titlebox .btn-unsub.btn-whoaverse-paging {
+  background: -webkit-linear-gradient(top,$button-unsub-bg,
+  $button-unsub-bg-gradient);
+  border-color: $button-unsub-border;
+  color: $button-unsub;
+}
+
+.btn-whoaverse-paging:focus,
+.titlebox .btn-whoaverse-paging:focus {
+  color: $button-contribute-hover;
+}
+
+.btn-unsub:hover,
+.btn-unsub:active,
+.btn-unsub:focus {
+  background: -webkit-linear-gradient(top,$button-unsub-bg-hover,
+  $button-unsub-bg-hover-gradient);
+  border-color: $button-unsub-border-hover;
+  color: $button-unsub-hover;
+}
+
+.btn-whoaverse-paging {
+  background: -webkit-linear-gradient(top,$button-paging-bg,
+  $button-paging-bg-gradient);
+  border-color: $button-paging-border;
+  color: $button-paging;
+}
+
+.btn-whoaverse-paging:hover {
+  background: -webkit-linear-gradient(top,$button-paging-bg-hover,
+  $button-paging-bg-hover-gradient);
+  border-color: $button-paging-border-hover;
+  color: $button-paging-hover;
+}
+
+.titlebox .subscribers {
+  color: inherit;
+}
+
+.titlebox .users-online {
+  color: inherit;
+}
+
+/**
+ * Sidebar -> Description
+ */
+.titlebox .usertext-body {
+  color: $side;
+}
+
+/**
+ * Sidebar -> Status
+ */
+.titlebox .bottom {
+  border-top-color: $side-border-inner;
+  color: $side-status;
+}
+
+/**
+ * Sidebar -> Header
+ */
+.alert-h2,
+.sidecontentbox .alert-h1 {
+  color: $side-header;
+  border-bottom-color: $side-header-underline;
+}
+
+/**
+ * Sidebar -> Moderator List, Chat
+ */
+.sidecontentbox .content {
+  background-color: $side-content-bg;
+  border-color: $side-content-border;
+}
+
+/**
+ * Sidebar -> Box (chat, announcements)
+ */
+.side .spacer.spacersection {
+  background-color: $side-box-bg;
+  border-color: $side-box-border;
+  color: $side-box;
+}
+
+@media (max-width: 870px) {
+  .side {
+    background-color: $container-bg;
+  }
+}
+
+/**
+ * Footer
+ */
+.bottommenu {
+  color: $footer;
+}
+
+.bottommenu a {
+  color: inherit;
+}
+
+/**
+ * Links
+ */
+
+.even {
+  background-color: $container-bg-alt2;
+}
+
+/**
+ * Links -> Submission
+ */
+.arrow-downvote,
+.arrow-downvoted,
+.arrow-upvote,
+.arrow-upvoted {
+  background-image: url('http://voat.co/Graphics/Light-SpriteSheet.png');
+}
+
+.link score.likes {
+  color: $link-upvotes;
+}
+
+.link score.dislikes {
+  color: $link-downvotes;
+}
+
+.link score.unvoted {
+  color: $link-unvoted;
+}
+
+.thumbnail {
+  border-color: $container-bg;
+}
+
+a.thumbnail:hover,
+a.thumbnail:focus,
+a.thumbnail.active {
+  border-color: $a-alt1;
+}
+
+/**
+ * Links -> Submission -> Title
+ */
+.link a.title,
+.link a.title.may-blank {
+  color: $link-title;
+}
+
+.link a.title:visited,
+.link a.title.may-blank:visited {
+  color: $a-visited;
+}
+
+.link a.title:hover {
+  color: $a;
+}
+
+.domain {
+  color: $link-domain;
+}
+
+.domain a {
+  color: $link-domain-a;
+}
+
+.domain a:hover {
+  color: $a-alt1;
+}
+
+.submission.stickied a.title, .submission.stickied a.title:visited, .submission.stickied a.title.visited {
+  color: $sticky-title;
+}
+
+.promoted {
+  background-color: $sticky-bg;
+  border-color: $sticky-border;
+  color: $sticky;
+}
+
+/**
+ * Links -> Submission -> Tagline
+ */
+.expando-button.selftext.collapsed,
+.expando-button.selftext.collapsed:hover,
+.expando-button.selftext.expanded,
+.expando-button.selftext.expanded:hover {
+  background-image: url('http://voat.co/Graphics/Light-SpriteSheet.png');
+}
+
+.tagline {
+  color: $tagline;
+}
+
+.tagline a {
+  color: $a;
+}
+
+.tagline a:visited {
+  color: $tagline-a-visited;
+}
+.tagline a:hover {
+  color: $tagline-a-hover;
+}
+
+
+.link a.author,
+.link a.author:visited {
+  color: $tagline-a-hover;
+}
+
+.link a.author:hover {
+  color: $a-author-hover;
+}
+
+.link a.subverse:visited,
+.link a.subverse {
+  color: $link-subverse;
+}
+
+.link a.subverse:hover {
+  color: $link-subverse-hover;
+}
+
+.tagline .post_upvotes {
+  color: $link-upvotes;
+}
+
+.tagline .post_downvotes {
+  color: $link-downvotes;
+}
+
+/**
+ * Links -> Submission -> Buttons
+ */
+.link .flat-list li a {
+  color: $link-button;
+}
+
+@media (max-width: 550px) {
+  .link .flat-list.buttons li a {
+    background-color: $container-bg;
+    border-color: $link-button-border-mobile;
+  }
+}
+
+/*
+ * Links -> Next/Previous Buttons
+ */
+.pagination-container .btn-whoaverse-paging {
+  background: -webkit-linear-gradient(top,$button-paging-bg,
+  $button-paging-bg-gradient);
+  border-color: $button-paging-border;
+  color: $button-paging;
+}
+
+/*
+ * Comments
+ */
+
+/*
+ * Comments - Self Text
+ */
+.link .usertext .md {
+  background-color: $container-bg-alt2;
+  border-color: $container-border-alt4;
+  color: $container-text;
+}
+
+/*
+ * Comments - Comment Form
+ */
+.markdownEditorImgButton,
+.markdownEditorTextButton{
+  background-color: $container-bg-alt1 !important;
+  border-color: $container-border-alt2;
+}
+
+.markdownEditorSubMenu {
+  border-color: $container-border-alt2;
+}
+
+.commenttextarea {
+  background-color: $comment-textarea-bg;
+  border-color: $comment-textarea-border;
+  color: $comment-textarea-text;
+}
+
+form input.btn-whoaverse-paging {
+  background: -webkit-linear-gradient(top,$button-paging-bg,
+  $button-paging-bg-gradient);
+  border-color: $button-paging-border;
+  color: $button-paging;
+}
+
+form input.btn-whoaverse-paging:hover {
+  background: -webkit-linear-gradient(top,$button-paging-bg-hover,
+  $button-paging-bg-hover-gradient);
+  border-color: $button-paging-border-hover;
+  color: $button-paging-hover;
+}
+
+.horizontal-line {
+  border-bottom-color: $container-border-alt3;
+}
+
+.menuarea .label,
+.menuarea .label-default {
+  background-color: $label-bg;
+  color: $label;
+}
+
+/**
+ * Comments -> Comment
+ */
+.comment .comment {
+  border: 1px solid $container-border;
+}
+
+.comment .arrow-downvote,
+.comment .arrow-downvoted,
+.comment .arrow-upvote,
+.comment .arrow-upvoted {
+  background-image: url('http://voat.co/Graphics/Light-SpriteSheet.png');
+}
+
+.comment a.expand {
+  color: $comment-expander;
+}
+
+.comment .collapsed a {
+  color: $comment-collapsed-a;
+}
+
+.comment a.expand:hover {
+  color: $tagline-off;
+}
+
+.comment a.author,
+.comment a.author:visited {
+  color: $a;
+}
+
+.comment a.submitter {
+  color: $submitter;
+}
+
+/* TODO: separate styles for comment taglines */
+
+/**
+ * Comments -> Comment -> Buttons
+ */
+.comment .flat-list.buttons li a {
+  color: $comment-button;
+}
+
+@media (max-width: 550px) {
+  .comment .flat-list.buttons li a {
+    background-color: $container-bg;
+    border-color: $link-button-border-mobile;
+  }
+}
+
+/**
+ * Comments -> Comment (even layer)
+ */
+.comment .comment .comment, .comment .comment .comment .comment .comment, .comment .comment .comment .comment .comment .comment .comment, .comment .comment .comment .comment .comment .comment .comment .comment .comment, .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+  background-color: $container-bg;
+}
+
+.comment .comment .comment blockquote, .comment .comment .comment .comment .comment blockquote, .comment .comment .comment .comment .comment .comment .comment blockquote, .comment .comment .comment .comment .comment .comment .comment .comment .comment blockquote, .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment blockquote {
+  background-color: $container-bg-alt3;
+}
+
+/**
+ * Comments -> Comment (odd layer)
+ */
+.comment .comment, .comment .comment .comment .comment, .comment .comment .comment .comment .comment .comment, .comment .comment .comment .comment .comment .comment .comment .comment, .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+  background-color: $container-bg-alt4;
+}
+
+.comment .comment blockquote, .comment .comment .comment .comment blockquote, .comment .comment .comment .comment .comment .comment blockquote, .comment .comment .comment .comment .comment .comment .comment .comment blockquote, .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment blockquote {
+  background-color: $container-bg-alt5;
+}
+
+/**
+ * Comments -> Comment
+ */
+.md blockquote {
+  background-color: $container-bg-alt3;
+  border-color: $container-border-alt5,
+  $container-border-alt5,
+  $container-border-alt5,
+  $quote-border;
+  box-shadow: 0 1px 0 rgba(0,0,0,.1);
+}
+
+/**
+ * Comments -> Preview
+ */
+.panel {
+  background-color: $container-bg;
+}
+
+.panel-default {
+  border-color: $panel-border;
+}
+
+.panel-heading, .panel-info>.panel-heading, .panel-default>.panel-heading {
+  background: -webkit-linear-gradient(top,$panel-header-bg,
+  $panel-header-bg-gradient);
+  border-color: $panel-header-border;
+  color: $panel;
+}
+
+/**
+ * Comments -> Load More
+ */
+.btn-whoaverse {
+  background: -webkit-linear-gradient(top,$load-more-bg,
+  $load-more-bg-gradient);
+  border-color: $container-border;
+}
+.btn-whoaverse,
+a.btn-whoaverse {
+  color: $load-more;
+}
+
+.btn-whoaverse:hover {
+  background: -webkit-linear-gradient(top,$load-more-bg-hover,
+  $load-more-bg-hover-gradient);
+  border-color: $load-more-border-hover;
+  color: $load-more-hover;
+}
+
+/**
+ * TODO: Modal Dialogs
+ */
+
+/**
+ * TODO: first-time alert on comments page
+ */
+

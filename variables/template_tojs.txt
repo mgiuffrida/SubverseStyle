@@ -1,0 +1,6 @@
+template.css to JS:
+%s/\n/\\n/g | %s/'/\\'/g
+var template = '...';
+
+variables.css to JS:
+

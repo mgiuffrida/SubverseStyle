@@ -1,0 +1,51 @@
+:host {
+  display: inline-block;
+}
+
+color-slider {
+  margin-top: 10px;
+  display: block;
+}
+
+#redSlider {
+  --color: #c00;
+}
+
+#greenSlider {
+  --color: #090;
+}
+
+#blueSlider {
+  --color: #00c;
+}
+
+#main {
+  position: relative;
+}
+
+#colorBackground {
+  margin: 10px 0 10px 20px;
+  padding: 10px;
+  background-color: lightgrey;
+  border-radius: 3px;
+}
+
+#colorSample {
+  width: 108px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+#hex {
+  font-family: 'Roboto Mono', monospace;
+}
+
+paper-input {
+
+  width: 64px;
+  display: inline-block;
+  --paper-input-container-input: {
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+  }
+}

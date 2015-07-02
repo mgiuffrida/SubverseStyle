@@ -1,0 +1,35 @@
+<link rel="import" href="color-slider.html">
+<link rel="import" href="hsv-picker.html">
+<link href='http://fonts.googleapis.com/css?family=Roboto+Mono:400,700' rel='stylesheet' type='text/css'>
+
+<dom-module id="color-picker">
+  <link rel="import" type="css" href="color-picker.css">
+  <template>
+
+    <div class="layout vertical end">
+      <div id="main" class="layout horizontal">
+        <div>
+          <color-slider id="redSlider" value="{{red}}"
+            on-change="componentChanged_"></color-slider>
+          <color-slider id="greenSlider" value="{{green}}"
+            on-change="componentChanged_"></color-slider>
+          <color-slider id="blueSlider" value="{{blue}}"
+            on-change="componentChanged_"></color-slider>
+        </div>
+
+        <div class="layout vertical center">
+          <div id="colorBackground" class="layout horizontal flex">
+            <div id="colorSample" style$="[[backgroundColor_(hex)]]"></div>
+          </div>
+          <div id="hex">
+            #<paper-input label="color" value="{{hex}}" no-label-float on-input="updateComponents_" prevent-invalid-input maxlength="6" allowed-pattern="[#a-fA-F0-9]"></paper-input>
+          </div>
+        </div>
+      </div>
+    <!--
+    <hsv-picker red="{{red}}" green="{{green}}"
+        blue="{{blue}}"></hsv-picker>
+      -->
+  </template>
+  <script src="color-picker.js"></script>
+</dom-module>

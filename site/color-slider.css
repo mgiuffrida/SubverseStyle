@@ -1,0 +1,13 @@
+paper-input {
+  width: 54px;
+  --paper-input-container-input: {
+    text-align: center;
+    color: var(--color);
+  };
+}
+
+paper-slider {
+  --paper-slider-active-color: var(--color);
+  --paper-slider-knob-color: var(--color);
+}
+

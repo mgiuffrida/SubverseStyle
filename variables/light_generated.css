@@ -1,0 +1,714 @@
+body {
+  background-color: rgb(244, 244, 244);
+  color: rgb(64, 64, 64);
+  font-size: 11px;
+  font-family: Arial, sans-serif;
+  line-height: 1.43;
+}
+
+a, a:visited {
+  color: rgb(74, 171, 231);
+}
+
+a:hover {
+  color: rgb(102, 194, 251);
+}
+
+.md a:visited {
+  color: rgb(145, 120, 208);
+}
+
+.md a[href="#s"]::after {
+  background-color: rgb(231, 119, 119);
+  color: rgb(231, 119, 119);
+  border-color: rgb(180, 79, 79);
+}
+
+.md a[href="#s"]:hover::after, .md a[href="#s"]:focus::after, .md a[href="#s"]:active::after {
+  color: rgb(64, 64, 64);
+  background-color: rgb(255, 227, 227);
+}
+
+.link .usertext .md pre, .link .usertext .md code, pre, code {
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(204, 204, 204);
+  color: rgb(51, 51, 51);
+}
+
+/*
+ * Header:
+ */
+#header {
+  background-color: rgb(255, 255, 255);
+}
+
+/*
+ * Header -> Subverse List
+ */
+#sr-header-area {
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+.sr-list li a {
+  color: rgb(74, 171, 231);
+}
+
+.drop-arrow {
+  border-top-color: rgb(74, 171, 231);
+}
+
+#sr-bar li a {
+  color: rgb(129, 129, 129);
+}
+
+#sr-header-area:hover #sr-bar li a {
+  color: rgb(68, 68, 68);
+}
+
+#sr-more-link {
+  background-color: rgb(255, 255, 255);
+  color: rgb(68, 68, 68);
+}
+
+#sr-more-link:hover {
+  background-color: rgb(74, 171, 231);
+  color: rgb(255, 255, 255);
+}
+
+/*
+ * Header -> Subverse List -> Subscription Dropdown
+ */
+.whoaSubscriptionMenu li ul {
+  border-color: rgb(237, 237, 237);
+  border-top-color: rgb(255, 255, 255);
+  box-shadow: 3px 3px 3px rgba(0,0,0,.2)
+}
+
+.whoaSubscriptionMenu li ul li a:link, .whoaSubscriptionMenu li ul li a:visited {
+  background-color: rgb(255, 255, 255);
+  border-bottom-color: rgb(237, 237, 237);
+  color: rgb(68, 68, 68);
+}
+
+.whoaSubscriptionMenu li ul li a:hover {
+  background: -webkit-linear-gradient(top, rgb(84, 181, 241),
+  rgb(74, 171, 231));
+  color: rgb(255, 255, 255) !important;
+}
+
+/*
+ * Header -> Subverse Header
+ */
+#header-container {
+  background-color: rgb(255, 255, 255);
+  border-bottom-color: rgb(220, 220, 220);
+  border-top-color: rgb(220, 220, 220);
+}
+
+.pagename a {
+  color: rgb(90, 90, 90);
+}
+
+.pagename a:hover {
+  color: rgb(74, 171, 231);
+}
+
+/*
+ * Header -> Subverse Header -> Menu
+ */
+.tabmenu li.selected a {
+  background: -webkit-linear-gradient(top,rgb(255, 255, 255),
+  rgb(250, 250, 250));
+  border-color: rgb(208, 208, 208);
+  color: rgb(68, 68, 68);
+}
+
+.tabmenu li.selected a:hover {
+  color: rgb(74, 171, 231);
+}
+
+.tabmenu li.disabled a {
+  background-color: transparent;
+  border-color: transparent;
+  color: rgb(85, 85, 85);
+}
+
+.tabmenu li.disabled a:hover {
+  background: -webkit-linear-gradient(top,rgb(255, 255, 255),
+  rgb(250, 250, 250));
+  border-color: rgb(208, 208, 208);
+  color: rgb(68, 68, 68);
+}
+
+.tabmenu li.disabled a.contribute {
+  background: -webkit-linear-gradient(top,rgb(187, 229, 255),
+  rgb(166, 221, 255));
+  border-color: rgb(112, 183, 227);
+  color: rgb(43, 71, 88);
+}
+
+.tabmenu li.disabled a.contribute:hover {
+  background: -webkit-linear-gradient(top,rgb(167, 222, 255),
+  rgb(145, 213, 255));
+  border-color: rgb(97, 175, 224);
+  color: rgb(43, 71, 88);
+}
+
+/**
+ * Header -> Subverse Header -> Menu (Mobile)
+ */
+@media (max-width: 700px) {
+  .tabmenu li.selected a {
+    background: -webkit-linear-gradient(top,rgb(248, 248, 248),
+    rgb(242, 242, 242));
+    border-color: rgb(186, 186, 186);
+    box-shadow: 0 1px 0 rgba(0,0,0,.35);
+    color: rgb(68, 68, 68);
+  }
+
+  .tabmenu li.disabled a {
+    background: -webkit-linear-gradient(top,rgb(255, 255, 255),
+    rgb(250, 250, 250));
+    border-color: rgb(208, 208, 208);
+    box-shadow: 0 1px 0 rgba(0,0,0,.1);
+    color: rgb(68, 68, 68);
+  }
+
+  .tabmenu li.disabled a:hover {
+    background: -webkit-linear-gradient(top,rgb(255, 255, 255),
+    rgb(250, 250, 250));
+    border-color: rgb(208, 208, 208);
+    color: rgb(68, 68, 68);
+  }
+}
+
+/*
+ * Header -> Subverse Header -> Account Info
+ */
+.logged-in,
+.logged-out {
+  background-color: rgb(246, 246, 246);
+  border-color: rgb(220, 220, 220);
+}
+
+@media (max-width: 870px) {
+  .logged-in,
+  .logged-out {
+    background-color: transparent;
+    border-color: transparent;
+  }
+}
+
+#header-account a {
+  color: rgb(85, 85, 85);
+}
+
+#header-account a:hover,
+#header-account .logged-out a {
+  color: rgb(74, 171, 231);
+}
+
+.user .userkarma {
+  border-bottom-color: rgb(153, 153, 153);
+}
+
+.user .upvoatsGiven a {
+  color: rgba(74, 171, 231, 1) !important;
+  border-bottom-color: gray;
+}
+
+/**
+ * Header -> Mobile Menu Button
+ */
+#show-menu-button::before {
+  border-color: rgb(64, 64, 64);
+}
+
+/**
+ * Main Content
+ */
+#container {
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(209, 209, 209);
+  color: rgb(64, 64, 64);
+}
+
+/**
+ * Sidebar
+ */
+.side {
+  background-color: transparent;
+  color: inherit;
+}
+
+/* Form Control (Search, Chat) */
+.form-control {
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(203, 203, 203);
+  color: rgb(72, 72, 72);
+}
+
+.form-control:focus {
+  border-color: rgb(153, 153, 153);
+}
+
+.form-control::-moz-placeholder,
+.form-control:-ms-input-placeholder,
+.form-control:-webkit-input-placeholder {
+  color: rgb(153, 153, 153);
+}
+
+.field-validation-error {
+.field-validation-error {
+  color: rgb(255, 65, 54);
+}
+
+.btn-whoaverse.contribute {
+  background: -webkit-linear-gradient(top,rgb(187, 229, 255),
+  rgb(166, 221, 255));
+  border-color: rgb(112, 183, 227);
+  color: rgb(43, 71, 88);
+}
+
+.btn-whoaverse.contribute:hover {
+  background: -webkit-linear-gradient(top,rgb(167, 222, 255),
+  rgb(145, 213, 255));
+  border-color: rgb(97, 175, 224);
+  color: rgb(43, 71, 88);
+}
+
+.titlebox h1 a {
+  color: inherit;
+}
+
+.titlebox h1 a:hover {
+  color: rgb(74, 171, 231);
+}
+
+.titlebox .btn-unsub.btn-whoaverse-paging {
+  background: -webkit-linear-gradient(top,rgb(248, 248, 248),
+  rgb(240, 240, 240));
+  border-color: rgb(201, 201, 201);
+  color: rgb(90, 90, 90);
+}
+
+.btn-whoaverse-paging:focus,
+.titlebox .btn-whoaverse-paging:focus {
+  color: rgb(43, 71, 88);
+}
+
+.btn-unsub:hover,
+.btn-unsub:active,
+.btn-unsub:focus {
+  background: -webkit-linear-gradient(top,rgb(196, 183, 255),
+  rgb(189, 174, 255));
+  border-color: rgb(155, 133, 255);
+  color: rgb(91, 70, 190);
+}
+
+.btn-whoaverse-paging {
+  background: -webkit-linear-gradient(top,rgb(187, 229, 255),
+  rgb(166, 221, 255));
+  border-color: rgb(112, 183, 227);
+  color: rgb(43, 71, 88);
+}
+
+.btn-whoaverse-paging:hover {
+  background: -webkit-linear-gradient(top,rgb(167, 222, 255),
+  rgb(145, 213, 255));
+  border-color: rgb(97, 175, 224);
+  color: rgb(43, 71, 88);
+}
+
+.titlebox .subscribers {
+  color: inherit;
+}
+
+.titlebox .users-online {
+  color: inherit;
+}
+
+/**
+ * Sidebar -> Description
+ */
+.titlebox .usertext-body {
+  color: inherit;
+}
+
+/**
+ * Sidebar -> Status
+ */
+.titlebox .bottom {
+  border-top-color: rgb(213, 213, 213);
+  color: rgb(128, 128, 128);
+}
+
+/**
+ * Sidebar -> Header
+ */
+.alert-h2,
+.sidecontentbox .alert-h1 {
+  color: rgb(74, 171, 231);
+  border-bottom-color: rgb(221, 221, 221);
+}
+
+/**
+ * Sidebar -> Moderator List, Chat
+ */
+.sidecontentbox .content {
+  background-color: rgb(252, 252, 252);
+  border-color: rgb(228, 228, 228);
+}
+
+/**
+ * Sidebar -> Box (chat, announcements)
+ */
+.side .spacer.spacersection {
+  background-color: rgb(253, 253, 253);
+  border-color: rgb(211, 211, 211);
+  color: inherit;
+}
+
+/**
+ * Footer
+ */
+.bottommenu {
+  color: rgb(109, 109, 109);
+}
+
+/**
+ * Links
+ */
+
+.even {
+  background-color: rgb(248, 248, 248);
+}
+
+/**
+ * Links -> Submission
+ */
+.arrow-downvote,
+.arrow-downvoted,
+.arrow-upvote,
+.arrow-upvoted {
+  background-image: url('http://voat.co/Graphics/Light-SpriteSheet.png');
+}
+
+.link score.likes {
+  color: rgb(74, 171, 231);
+}
+
+.link score.dislikes {
+  color: rgb(136, 112, 255);
+}
+
+.link score.unvoted {
+  color: rgb(187, 187, 187);
+}
+
+.thumbnail {
+  border-color: rgb(255, 255, 255);
+}
+
+a.thumbnail:hover,
+a.thumbnail:focus,
+a.thumbnail.active {
+  border-color: rgb(74, 171, 231);
+}
+
+/**
+ * Links -> Submission -> Title
+ */
+.link a.title,
+.link a.title.may-blank {
+  color: rgb(74, 74, 74);
+}
+
+.link a.title:visited,
+.link a.title.mayblank:visited {
+  color: rgb(145, 120, 208);
+}
+
+.link a.title:hover {
+  color: rgb(74, 171, 231);
+}
+
+.domain {
+  color: rgb(102, 102, 102);
+}
+
+.domain a {
+  color: rgb(136, 136, 136);
+}
+
+.domain a:hover {
+  color: rgb(74, 171, 231);
+}
+
+.submission.stickied a.title, .submission.stickied a.title:visited, .submission.stickied a.title.visited {
+  color: rgb(34, 136, 34);
+}
+
+.promoted {
+  background-color: rgb(162, 109, 249);
+  border-color: rgb(131, 88, 203);
+  color: rgb(255, 255, 255);
+}
+
+/**
+ * Links -> Submission -> Tagline
+ */
+.expando-button.selftext.collapsed,
+.expando-button.selftext.collapsed:hover,
+.expando-button.selftext.expanded,
+.expando-button.selftext.expanded:hover {
+  background-image: url('http://voat.co/Graphics/Light-SpriteSheet.png');
+}
+
+.tagline {
+  color: rgb(112, 112, 112);
+}
+
+.tagline a {
+  color: rgb(74, 171, 231);
+}
+
+.tagline a:visited {
+  color: rgb(85, 85, 85);
+}
+.tagline a:hover {
+  color: rgb(67, 153, 205);
+}
+
+
+.link a.author,
+.link a.author:visited {
+  color: rgb(67, 153, 205);
+}
+
+.link a.author:hover {
+  color: rgb(74, 171, 231);
+}
+
+.link a.subverse:visited,
+.link a.subverse {
+  color: rgb(109, 109, 109);
+}
+
+.link a.subverse:hover {
+  color: rgb(74, 171, 231);
+}
+
+.tagline .post_upvotes {
+  color: rgb(74, 171, 231);
+}
+
+.tagline .post_downvotes {
+  color: rgb(136, 112, 255);
+}
+
+/**
+ * Links -> Submission -> Buttons
+ */
+.link .flat-list li a {
+  color: rgb(106, 106, 106);
+}
+
+@media (max-width: 550px) {
+  .link .flat-list.buttons li a {
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(222, 222, 222);
+  }
+}
+
+/*
+ * Links -> Next/Previous Buttons
+ */
+.pagination-container .btn-whoaverse-paging {
+  background: -webkit-linear-gradient(top,rgb(187, 229, 255),
+  rgb(166, 221, 255));
+  border-color: rgb(112, 183, 227);
+  color: rgb(43, 71, 88);
+}
+
+/*
+ * Comments
+ */
+
+/*
+ * Comments - Self Text
+ */
+.link .usertext .md {
+  background-color: rgb(248, 248, 248);
+  border-color: rgb(209, 209, 209);
+  color: rgb(64, 64, 64);
+}
+
+/*
+ * Comments - Comment Form
+ */
+.markdownEditorImgButton {
+  background-color: rgb(245, 245, 245);
+  background-image: url('http://voat.co/Graphics/markdownEditorSprite.png');
+  border-color: rgb(128, 128, 128);
+}
+
+.markdownEditorSubMenu {
+  border-color: rgb(128, 128, 128);
+}
+
+.commenttextarea {
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(203, 203, 203);
+  color: comment-textarea-text;
+}
+
+form input.btn-whoaverse-paging {
+  background: -webkit-linear-gradient(top,rgb(187, 229, 255),
+  rgb(166, 221, 255));
+  border-color: rgb(112, 183, 227);
+  color: rgb(43, 71, 88);
+}
+
+form input.btn-whoaverse-paging:hover {
+  background: -webkit-linear-gradient(top,rgb(167, 222, 255),
+  rgb(145, 213, 255));
+  border-color: rgb(97, 175, 224);
+  color: rgb(43, 71, 88);
+}
+
+.horizontal-line {
+  border-bottom-color: rgb(233, 233, 233);
+}
+
+.menuarea .label,
+.menuarea .label-default {
+  background-color: rgb(221, 221, 221);
+  color: rgb(85, 85, 85);
+}
+
+/**
+ * Comments -> Comment
+ */
+.comment .comment {
+  border: 1px solid rgb(209, 209, 209);
+}
+
+.comment a.expand {
+  color: rgb(170, 170, 170);
+}
+
+.comment .collapsed a {
+  color: rgb(136, 136, 136);
+}
+
+.comment a.expand:hover {
+  color: rgb(85, 85, 85);
+}
+
+.comment a.author,
+.comment a.author:visited {
+  color: rgb(74, 171, 231);
+}
+
+.comment a.submitter {
+  color: rgb(136, 112, 255);
+}
+
+/* TODO: separate styles for comment taglines */
+
+/**
+ * Comments -> Comment -> Buttons
+ */
+.comment .flat-list.buttons li a {
+  color: rgb(106, 106, 106);
+}
+
+@media (max-width: 550px) {
+  .comment .flat-list.buttons li a {
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(222, 222, 222);
+  }
+}
+
+/**
+ * Comments -> Comment (even layer)
+ */
+.comment .comment .comment, .comment .comment .comment .comment .comment, .comment .comment .comment .comment .comment .comment .comment, .comment .comment .comment .comment .comment .comment .comment .comment .comment, .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+  background-color: rgb(255, 255, 255);
+}
+
+.comment .comment .comment blockquote, .comment .comment .comment .comment .comment blockquote, .comment .comment .comment .comment .comment .comment .comment blockquote, .comment .comment .comment .comment .comment .comment .comment .comment .comment blockquote, .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment blockquote {
+  background-color: rgb(245, 245, 245);
+}
+
+/**
+ * Comments -> Comment (odd layer)
+ */
+.comment .comment, .comment .comment .comment .comment, .comment .comment .comment .comment .comment .comment, .comment .comment .comment .comment .comment .comment .comment .comment, .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+  background-color: rgb(248, 248, 248);
+}
+
+.comment .comment blockquote, .comment .comment .comment .comment blockquote, .comment .comment .comment .comment .comment .comment blockquote, .comment .comment .comment .comment .comment .comment .comment .comment blockquote, .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment blockquote {
+  background-color: rgb(255, 255, 255);
+}
+
+/**
+ * Comments -> Comment
+ */
+.md blockquote {
+  background-color: rgb(245, 245, 245);
+  border-color: rgb(233, 233, 233),
+  rgb(233, 233, 233),
+  rgb(233, 233, 233),
+  rgb(219, 219, 219);
+  box-shadow: 0 1px 0 rgba(0,0,0,.1);
+}
+
+/**
+ * Comments -> Preview
+ */
+.panel {
+  background-color: rgb(255, 255, 255);
+}
+
+.panel-default {
+  border-color: rgb(221, 221, 221);
+}
+
+.panel-heading, .panel-info>.panel-heading, .panel-default>.panel-heading {
+  background: -webkit-linear-gradient(top,rgb(238, 238, 238),
+  rgb(232, 232, 232));
+  border-color: rgb(214, 214, 214);
+  color: rgb(51, 51, 51);
+}
+
+/**
+ * Comments -> Load More
+ */
+.btn-whoaverse {
+  background: -webkit-linear-gradient(top,rgb(253, 253, 253),
+  rgb(247, 247, 247));
+  border-color: rgb(209, 209, 209);
+}
+.btn-whoaverse,
+a.btn-whoaverse {
+  color: rgb(76, 76, 76);
+}
+
+.btn-whoaverse:hover {
+  background: -webkit-linear-gradient(top,rgb(248, 248, 248),
+  rgb(242, 242, 242));
+  border-color: rgb(204, 204, 204);
+  color: rgb(68, 68, 68);
+}
+
+/**
+ * TODO: Modal Dialogs
+ */
+
+/**
+ * TODO: first-time alert on comments page
+ */
+
