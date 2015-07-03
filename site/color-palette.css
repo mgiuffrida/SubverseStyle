@@ -1,0 +1,75 @@
+:host {
+  display: block;
+  padding: 10px;
+  background-color: #eee;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.colorContainer {
+  margin: 6px;
+  padding: 6px 0;
+  box-sizing: border-box;
+  border-bottom: 2px solid transparent;
+  border-top: 2px solid transparent;
+  border-radius: 5px;
+}
+
+.colorContainer[selected] {
+  /*
+  border-bottom-color: #333;
+  border-top-color: #333;
+  */
+}
+
+.color {
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  border: 2px solid white;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
+}
+
+.color:hover {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 1px -2px rgba(0, 0, 0, 0.4)
+}
+
+.colorContainer[selected] .color {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.4), 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 1px -2px rgba(0, 0, 0, 0.8)
+}
+
+.color.addColor {
+  background-color: #ccc;
+  margin: 0 auto;
+  cursor: default;
+}
+
+.color.addColor:hover {
+  background-color: #ddd;
+}
+
+.color.addColor iron-icon {
+  --iron-icon-height: 30px;
+  --iron-icon-width: 30px;
+}
+
+#pages {
+  width: 450px;
+}
+
+#pickerPage {
+  border: 1px solid #ccc;
+}
+
+color-picker {
+  margin-right: 10px;
+}
+
+paper-button {
+  text-align: left;
+  margin-top: 10px;
+}

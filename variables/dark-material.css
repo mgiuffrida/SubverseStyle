@@ -1,0 +1,856 @@
+body.dark {
+  background-color: rgb(41, 41, 41);
+  color: rgb(223, 223, 223);
+  font-size: 11px;
+  font-family: Arial, sans-serif;
+  line-height: 1.43;
+}
+
+body.dark a,
+body.dark a:visited {
+  color: rgb(86, 168, 218);
+}
+
+body.dark a:hover {
+  color: rgb(220, 87, 87);
+}
+
+body.dark .md a:visited {
+  color: rgb(138, 138, 138);
+}
+
+body.dark .md a[href="#s"]::after {
+  background-color: rgb(119, 57, 57);
+  color: rgb(119, 57, 57);
+  border-color: rgb(86, 40, 40);
+}
+
+body.dark .md a[href="#s"]:hover::after,
+body.dark .md a[href="#s"]:focus::after,
+body.dark .md a[href="#s"]:active::after {
+  color: rgb(223, 223, 223);
+  background-color: rgb(78, 46, 46);
+}
+
+body.dark .link .usertext .md pre,
+body.dark .link .usertext .md code,
+body.dark pre,
+body.dark code {
+  background-color: rgb(49, 45, 58);
+  border-color: rgb(37, 33, 44);
+  color: rgb(204, 204, 204);
+}
+
+/*
+ * Header:
+ */
+body.dark #header {
+  background-color: rgb(51, 51, 51);
+}
+
+/*
+ * Header -> Subverse List
+ */
+body.dark #sr-header-area {
+  background-color: rgb(51, 51, 51);
+  border-bottom: 1px solid rgb(34, 34, 34);
+}
+
+body.dark .sr-list li a {
+  color: rgb(67, 153, 205);
+}
+
+body.dark .drop-arrow {
+  border-top-color: rgb(67, 153, 205);
+}
+
+body.dark #sr-bar li a {
+  color: rgb(170, 170, 170);
+}
+
+body.dark #sr-header-area:hover #sr-bar li a {
+  color: rgb(221, 221, 221);
+}
+
+body.dark #sr-more-link {
+  background-color: rgb(51, 51, 51);
+  color: rgb(221, 221, 221);
+}
+
+body.dark #sr-more-link:hover {
+  background-color: rgb(85, 85, 85);
+  color: rgb(255, 255, 255);
+}
+
+/*
+ * Header -> Subverse List -> Subscription Dropdown
+ */
+body.dark .whoaSubscriptionMenu li ul {
+  border-color: rgb(58, 58, 58);
+  border-top-color: rgb(51, 51, 51);
+  box-shadow: 3px 3px 3px rgba(0,0,0,.2)
+}
+
+body.dark .whoaSubscriptionMenu li ul li a:link,
+body.dark .whoaSubscriptionMenu li ul li a:visited {
+  background-color: rgb(51, 51, 51);
+  border-bottom-color: rgb(34, 34, 34);
+  color: rgb(221, 221, 221);
+}
+
+body.dark .whoaSubscriptionMenu li ul li a:hover {
+  background: -webkit-linear-gradient(top, rgb(67, 139, 183),
+  rgb(67, 139, 183));
+  color: rgb(255, 255, 255) !important;
+}
+
+/*
+ * Header -> Subverse Header
+ */
+body.dark #header-container {
+  background-color: rgb(51, 51, 51);
+  border-bottom-color: rgb(34, 34, 34);
+  border-top-color: rgb(34, 34, 34);
+}
+
+body.dark .pagename a {
+  color: rgb(204, 204, 204);
+}
+
+body.dark .pagename a:hover {
+  color: rgb(67, 139, 183);
+}
+
+/*
+ * Header -> Subverse Header -> Menu
+ */
+body.dark .tabmenu li.selected a {
+  background: -webkit-linear-gradient(top,rgb(51, 51, 51),
+  rgb(51, 51, 51));
+  border-color: rgb(34, 34, 34);
+  color: rgb(221, 221, 221);
+}
+
+body.dark .tabmenu li.selected a:hover {
+  color: $header-button-selected-hover;
+}
+
+body.dark .tabmenu li.disabled a {
+  background-color: transparent;
+  border-color: transparent;
+  color: rgb(170, 170, 170);
+}
+
+body.dark .tabmenu li.disabled a:hover {
+  background: -webkit-linear-gradient(top,rgb(51, 51, 51),
+  rgb(51, 51, 51));
+  border-color: rgb(34, 34, 34);
+  color: rgb(221, 221, 221);
+}
+
+body.dark .tabmenu li.disabled a.contribute {
+  background: -webkit-linear-gradient(top,rgb(180, 71, 71),
+  rgb(180, 71, 71));
+  border-color: rgb(147, 51, 51);
+  color: rgb(255, 220, 220);
+}
+
+body.dark .tabmenu li.disabled a.contribute:hover {
+  background: -webkit-linear-gradient(top,rgb(164, 58, 74),
+  rgb(164, 58, 74));
+  border-color: rgb(128, 38, 38);
+  color: rgb(255, 220, 220);
+}
+
+/**
+ * Header -> Subverse Header -> Menu (Mobile)
+ */
+@media (max-width: 700px) {
+  body.dark .tabmenu li.selected a {
+    background: -webkit-linear-gradient(top,rgb(56, 67, 75),
+    rgb(56, 67, 75));
+    border-color: rgb(36, 46, 57);
+    box-shadow: 0 1px 0 rgba(0,0,0,.35);
+    color: rgb(221, 221, 221);
+  }
+
+  body.dark .tabmenu li.disabled a {
+    background: -webkit-linear-gradient(top,rgb(51, 51, 51),
+    rgb(51, 51, 51));
+    border-color: rgb(34, 34, 34);
+    box-shadow: 0 1px 0 rgba(0,0,0,.1);
+    color: rgb(221, 221, 221);
+  }
+
+  body.dark .tabmenu li.disabled a:hover {
+    background: -webkit-linear-gradient(top,rgb(51, 51, 51),
+    rgb(51, 51, 51));
+    border-color: rgb(34, 34, 34);
+    color: rgb(221, 221, 221);
+  }
+}
+
+/*
+ * Header -> Subverse Header -> Account Info
+ */
+body.dark .logged-in,
+body.dark .logged-out {
+  background-color: rgb(41, 41, 41);
+  border-color: rgb(34, 34, 34);
+}
+
+@media (max-width: 870px) {
+  body.dark .logged-in,
+  body.dark .logged-out {
+    background-color: transparent;
+    border-color: transparent;
+  }
+}
+
+body.dark #header-account a {
+  color: rgb(221, 221, 221);
+}
+
+body.dark #header-account a:hover,
+body.dark #header-account .logged-out a {
+  color: rgb(67, 139, 183);
+}
+
+body.dark .user .userkarma {
+  border-bottom-color: rgb(102, 102, 102);
+}
+
+body.dark .user .upvoatsGiven a {
+  color: rgba(74, 171, 231, 1) !important;
+  border-bottom-color: gray;
+}
+
+/**
+ * Header -> Mobile Menu Button
+ */
+body.dark #show-menu-button::before {
+  border-color: rgb(187, 187, 187);
+}
+
+/**
+ * Main Content
+ */
+body.dark #container {
+  background-color: rgb(51, 51, 51);
+  border-color: rgb(34, 34, 34);
+  color: inherit;
+}
+
+/**
+ * Sidebar
+ */
+body.dark .side {
+  background-color: transparent;
+  color: inherit;
+}
+
+/* Form Control (Search, Chat) */
+body.dark .form-control {
+  background-color: rgb(41, 41, 41);
+  border-color: rgb(34, 34, 34);
+  color: rgb(223, 223, 223);
+}
+
+body.dark .form-control:focus {
+  border-color: rgb(17, 17, 17);
+}
+
+body.dark .form-control::-moz-placeholder {
+  color: rgb(170, 170, 170);
+}
+body.dark .form-control:-ms-input-placeholder {
+  color: rgb(170, 170, 170);
+}
+body.dark .form-control::-webkit-input-placeholder {
+  color: rgb(170, 170, 170);
+}
+
+body.dark .field-validation-error {
+  color: rgb(255, 65, 54);
+}
+
+body.dark .btn-whoaverse.contribute {
+  background: -webkit-linear-gradient(top,rgb(180, 71, 71),
+  rgb(180, 71, 71));
+  border-color: rgb(147, 51, 51);
+  color: rgb(255, 247, 247);
+}
+
+body.dark .btn-whoaverse.contribute:hover {
+  background: -webkit-linear-gradient(top,rgb(164, 58, 58),
+  rgb(164, 58, 58));
+  border-color: rgb(128, 38, 38);
+  color: rgb(255, 247, 247);
+}
+
+body.dark .titlebox h1 a {
+  color: inherit;
+}
+
+body.dark .titlebox h1 a:hover {
+  color: rgb(67, 139, 183);
+}
+
+body.dark .titlebox .btn-unsub.btn-whoaverse-paging {
+  background: -webkit-linear-gradient(top,rgb(180, 71, 71),
+  rgb(180, 71, 71));
+  border-color: rgb(147, 51, 51);
+  color: rgb(255, 247, 247);
+}
+
+body.dark .btn-whoaverse-paging:focus,
+body.dark .titlebox .btn-whoaverse-paging:focus {
+  color: rgb(255, 247, 247);
+}
+
+body.dark .btn-unsub:hover,
+body.dark .btn-unsub:active,
+body.dark .btn-unsub:focus {
+  background: -webkit-linear-gradient(top,rgb(164, 58, 58),
+  rgb(164, 58, 58));
+  border-color: rgb(36, 46, 57);
+  color: rgb(255, 255, 255);
+}
+
+body.dark .btn-whoaverse-paging {
+  background: -webkit-linear-gradient(top,rgb(75, 75, 75),
+  rgb(75, 75, 75));
+  border-color: rgb(48, 48, 48);
+  color: rgb(255, 255, 255);
+}
+
+body.dark .btn-whoaverse-paging:hover {
+  background: -webkit-linear-gradient(top,rgb(56, 67, 75),
+  rgb(56, 67, 75));
+  border-color: rgb(36, 46, 57);
+  color: rgb(255, 255, 255);
+}
+
+body.dark .titlebox .subscribers {
+  color: inherit;
+}
+
+body.dark .titlebox .users-online {
+  color: inherit;
+}
+
+/**
+ * Sidebar -> Description
+ */
+body.dark .titlebox .usertext-body {
+  color: inherit;
+}
+
+/**
+ * Sidebar -> Status
+ */
+body.dark .titlebox .bottom {
+  border-top-color: rgb(34, 34, 34);
+  color: rgb(128, 128, 128);
+}
+
+/**
+ * Sidebar -> Header
+ */
+body.dark .alert-h2,
+body.dark .sidecontentbox .alert-h1 {
+  color: rgb(150, 122, 255);
+  border-bottom-color: rgb(34, 34, 34);
+}
+
+/**
+ * Sidebar -> Moderator List, Chat
+ */
+body.dark .sidecontentbox .content {
+  background-color: rgb(48, 48, 48);
+  border-color: rgb(39, 39, 39);
+}
+
+/**
+ * Sidebar -> Box (chat, announcements)
+ */
+body.dark .side .spacer.spacersection {
+  background-color: rgb(49, 49, 49);
+  border-color: rgb(34, 34, 34);
+  color: inherit;
+}
+
+@media (max-width: 870px) {
+  body.dark .side {
+    background-color: rgb(51, 51, 51);
+  }
+}
+
+/**
+ * Footer
+ */
+body.dark .bottommenu {
+  color: rgb(149, 149, 149);
+}
+
+body.dark .bottommenu a {
+  color: inherit;
+}
+
+/**
+ * Links
+ */
+
+body.dark .even {
+  background-color: rgb(46, 46, 46);
+}
+
+/**
+ * Links -> Submission
+ */
+body.dark .arrow-downvote,
+body.dark .arrow-downvoted,
+body.dark .arrow-upvote,
+body.dark .arrow-upvoted {
+  background-image: url('./Dark-Spritesheet.png');
+}
+
+body.dark .link score.likes {
+  color: rgb(67, 141, 183);
+}
+
+body.dark .link score.dislikes {
+  color: rgb(111, 100, 186);
+}
+
+body.dark .link score.unvoted {
+  color: rgb(102, 102, 102);
+}
+
+body.dark .thumbnail {
+  border-color: rgb(51, 51, 51);
+}
+
+body.dark a.thumbnail:hover,
+body.dark a.thumbnail:focus,
+body.dark a.thumbnail.active {
+  border-color: rgb(67, 139, 183);
+}
+
+/**
+ * Links -> Submission -> Title
+ */
+body.dark .link a.title,
+body.dark .link a.title.may-blank {
+  color: rgb(195, 195, 195);
+}
+
+body.dark .link a.title:visited,
+body.dark .link a.title.may-blank:visited {
+  color: rgb(138, 138, 138);
+}
+
+body.dark .link a.title:hover {
+  color: rgb(86, 168, 218);
+}
+
+body.dark .domain {
+  color: rgb(102, 102, 102);
+}
+
+body.dark .domain a {
+  color: rgb(119, 119, 119);
+}
+
+body.dark .domain a:hover {
+  color: rgb(67, 139, 183);
+}
+
+body.dark .submission.stickied a.title,
+body.dark .submission.stickied a.title:visited,
+body.dark .submission.stickied a.title.visited {
+  color: rgb(34, 136, 34);
+}
+
+body.dark .promoted {
+  background-color: rgb(180, 71, 71);
+  border-color: rgb(157, 49, 49);
+  color: rgb(255, 255, 255);
+}
+
+/**
+ * Links -> Submission -> Tagline
+ */
+body.dark .expando-button.selftext.collapsed,
+body.dark .expando-button.selftext.collapsed:hover,
+body.dark .expando-button.selftext.expanded,
+body.dark .expando-button.selftext.expanded:hover {
+  background-image: url('./Dark-Spritesheet.png');
+}
+
+body.dark .tagline {
+  color: rgb(155, 155, 155);
+}
+
+body.dark .tagline a {
+  color: rgb(86, 168, 218);
+}
+
+body.dark .tagline a:visited {
+  color: rgb(75, 138, 225);
+}
+body.dark .tagline a:hover {
+  color: rgb(67, 153, 205);
+}
+
+
+body.dark .link a.author,
+body.dark .link a.author:visited {
+  color: rgb(67, 153, 205);
+}
+
+body.dark .link a.author:hover {
+  color: rgb(220, 87, 87);
+}
+
+body.dark .link a.subverse:visited,
+body.dark .link a.subverse {
+  color: rgb(171, 171, 171);
+}
+
+body.dark .link a.subverse:hover {
+  color: rgb(220, 87, 87);
+}
+
+body.dark .tagline .post_upvotes {
+  color: rgb(67, 141, 183);
+}
+
+body.dark .tagline .post_downvotes {
+  color: rgb(111, 100, 186);
+}
+
+/**
+ * Links -> Submission -> Buttons
+ */
+body.dark .link .flat-list li a {
+  color: rgb(188, 188, 188);
+}
+
+@media (max-width: 550px) {
+  body.dark .link .flat-list.buttons li a {
+    background-color: rgb(51, 51, 51);
+    border-color: rgb(44, 44, 44);
+  }
+}
+
+/*
+ * Links -> Next/Previous Buttons
+ */
+body.dark .pagination-container .btn-whoaverse-paging {
+  background: -webkit-linear-gradient(top,rgb(75, 75, 75),
+  rgb(75, 75, 75));
+  border-color: rgb(48, 48, 48);
+  color: rgb(255, 255, 255);
+}
+
+/*
+ * Comments
+ */
+
+/*
+ * Comments - Self Text
+ */
+body.dark .link .usertext .md {
+  background-color: rgb(46, 46, 46);
+  border-color: rgb(39, 39, 39);
+  color: inherit;
+}
+
+/*
+ * Comments - Comment Form
+ */
+body.dark .markdownEditorImgButton,
+body.dark .markdownEditorTextButton {
+  background-color: rgb(96, 96, 96) !important;
+  border-color: rgb(128, 128, 128);
+}
+
+body.dark .markdownEditorSubMenu {
+  border-color: rgb(128, 128, 128);
+}
+
+body.dark .commenttextarea {
+  background-color: rgb(41, 41, 41);
+  border-color: rgb(34, 34, 34);
+  color: rgb(221, 221, 221);
+}
+
+body.dark form input.btn-whoaverse-paging {
+  background: -webkit-linear-gradient(top,rgb(75, 75, 75),
+  rgb(75, 75, 75));
+  border-color: rgb(48, 48, 48);
+  color: rgb(255, 255, 255);
+}
+
+body.dark form input.btn-whoaverse-paging:hover {
+  background: -webkit-linear-gradient(top,rgb(56, 67, 75),
+  rgb(56, 67, 75));
+  border-color: rgb(36, 46, 57);
+  color: rgb(255, 255, 255);
+}
+
+body.dark .horizontal-line {
+  border-bottom-color: rgb(39, 39, 39);
+}
+
+body.dark .menuarea .label,
+body.dark .menuarea .label-default {
+  background-color: rgb(85, 85, 85);
+  color: rgb(221, 221, 221);
+}
+
+/**
+ * Comments -> Comment
+ */
+body.dark .comment .comment {
+  border: 1px solid rgb(34, 34, 34);
+}
+
+body.dark .comment .arrow-downvote,
+body.dark .comment .arrow-downvoted,
+body.dark .comment .arrow-upvote,
+body.dark .comment .arrow-upvoted {
+  background-image: url('./Dark-Spritesheet.png');
+}
+
+body.dark .comment a.expand {
+  color: rgb(170, 170, 170);
+}
+
+body.dark .comment .collapsed a {
+  color: rgb(136, 136, 136);
+}
+
+body.dark .comment a.expand:hover {
+  color: rgb(67, 139, 183);
+}
+
+body.dark .comment a.author,
+body.dark .comment a.author:visited {
+  color: rgb(86, 168, 218);
+}
+
+body.dark .comment a.submitter {
+  color: rgb(111, 100, 186);
+}
+
+/* TODO: separate styles for comment taglines */
+
+/**
+ * Comments -> Comment -> Buttons
+ */
+body.dark .comment .flat-list.buttons li a {
+  color: rgb(106, 106, 106);
+}
+
+@media (max-width: 550px) {
+  body.dark .comment .flat-list.buttons li a {
+    background-color: rgb(51, 51, 51);
+    border-color: rgb(44, 44, 44);
+  }
+}
+
+/**
+ * Comments -> Comment (even layer)
+ */
+body.dark .comment .comment .comment,
+body.dark .comment .comment .comment .comment .comment,
+body.dark .comment .comment .comment .comment .comment .comment .comment,
+body.dark .comment .comment .comment .comment .comment .comment .comment .comment .comment,
+body.dark .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+  background-color: rgb(51, 51, 51);
+}
+
+body.dark .comment .comment .comment blockquote,
+body.dark .comment .comment .comment .comment .comment blockquote,
+body.dark .comment .comment .comment .comment .comment .comment .comment blockquote,
+body.dark .comment .comment .comment .comment .comment .comment .comment .comment .comment blockquote,
+body.dark .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment blockquote {
+  background-color: rgb(49, 45, 58);
+}
+
+/**
+ * Comments -> Comment (odd layer)
+ */
+body.dark .comment .comment,
+body.dark .comment .comment .comment .comment,
+body.dark .comment .comment .comment .comment .comment .comment,
+body.dark .comment .comment .comment .comment .comment .comment .comment .comment,
+body.dark .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+  background-color: rgb(41, 41, 41);
+}
+
+body.dark .comment .comment blockquote,
+body.dark .comment .comment .comment .comment blockquote,
+body.dark .comment .comment .comment .comment .comment .comment blockquote,
+body.dark .comment .comment .comment .comment .comment .comment .comment .comment blockquote,
+body.dark .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment blockquote {
+  background-color: rgb(49, 45, 58);
+}
+
+/**
+ * Comments -> Comment
+ */
+body.dark .md blockquote {
+  background-color: rgb(49, 45, 58);
+  border-color: rgb(37, 33, 44),
+  rgb(37, 33, 44),
+  rgb(37, 33, 44),
+  rgb(33, 30, 38);
+  box-shadow: 0 1px 0 rgba(0,0,0,.1);
+}
+
+/**
+ * Comments -> Preview
+ */
+body.dark .panel {
+  background-color: rgb(51, 51, 51);
+}
+
+body.dark .panel-default {
+  border-color: rgb(221, 221, 221);
+}
+
+body.dark .panel-heading,
+body.dark .panel-info>.panel-heading,
+body.dark .panel-default>.panel-heading {
+  background: -webkit-linear-gradient(top,rgb(46, 46, 46),,
+  rgb(46, 46, 46),);
+  border-color: rgb(39, 39, 39);
+  color: rgb(211, 211, 211);
+}
+
+/**
+ * Comments -> Load More
+ */
+body.dark .btn-whoaverse {
+  background: -webkit-linear-gradient(top,rgb(75, 75, 75),
+  rgb(75, 75, 75));
+  border-color: rgb(34, 34, 34);
+}
+
+body.dark .btn-whoaverse,
+body.dark a.btn-whoaverse {
+  color: rgb(221, 221, 221);
+}
+
+body.dark .btn-whoaverse:hover {
+  background: -webkit-linear-gradient(top,rgb(56, 67, 75),
+  rgb(56, 67, 75));
+  border-color: rgb(36, 46, 57);
+  color: rgb(255, 255, 255);
+}
+
+/**
+ * TODO: Modal Dialogs
+ */
+
+/**
+ * TODO: first-time alert on comments page
+ */
+
+
+
+@media (min-width: 1000px) {
+  body.dark .side .spacer,
+  body.dark .side .spacer.spacersection {
+    margin: 10px 0;
+    border: 0;
+    background-color: rgb(51, 51, 51);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+  }
+
+  body.dark .commentarea {
+    border: 0;
+    background-color: inherit;
+  }
+
+  body.dark #container {
+    background-color: rgb(41, 41, 41);
+    border-color: transparent;
+    padding: 0;
+  }
+
+  body.dark .content .sitetable.linklisting,
+  body.dark .content .sitetable.linklisting .even {
+    background-color: rgb(51, 51, 51);
+  }
+
+  body.dark .content .sitetable.linklisting {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+  }
+
+  body.dark .link {
+    border-bottom: 1px solid rgb(41, 41, 41);
+  }
+
+  body.dark .commentarea .entry {
+ margin-bottom:2px;   background-color: rgb(51, 51, 51) !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+    border-radius: 2px !important;
+    padding: 4px;
+  }
+
+  body.dark .comment .comment {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    border-left: 1px solid rgb(34, 34, 34);
+    padding: 0 4px;
+    margin-top: 12px;
+    margin-bottom: 8px;
+  }
+
+  body.dark .side .spacer,
+  body.dark .side .spacer.spacersection {
+    padding: 10px;
+  }
+
+  body.dark li.disabled a,
+  body.dark li.disabled a:hover,
+  body.dark li.selected a,
+  body.dark li.selected a:hover,
+  body.dark a.contribute,
+  body.dark a.contribute:hover,
+  body.dark button.contribute,
+  body.dark button.contribute:hover,
+  body.dark button.btn-whoaverse-paging,
+  body.dark button.btn-whoaverse-paging:hover,
+  body.dark button.btn-default,
+  body.dark button.btn-default:hover,
+  body.dark button.btn-unsub,
+  body.dark button.btn-unsub:hover,
+  body.dark button.btn-sub,
+  body.dark button.btn-sub:hover {
+    /* Keep the border to preserve element height, but make it transparent. */
+    border-color: transparent !important;
+    /* Slightly reduce the rounding. */
+    border-radius: 2px !important;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2) !important;
+  }
+
+  /* Color selected button like header contribute buttons to highlight it. */
+  body.dark li.selected a {
+    background: rgb(180, 71, 71) !important;
+    color: rgb(255, 220, 220) !important;
+  }
+
+  body.dark li.selected a:hover {
+    background: rgb(164, 58, 74) !important;
+    color: rgb(255, 220, 220) !important;
+  }
+}
+
+

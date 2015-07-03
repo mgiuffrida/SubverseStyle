@@ -1,0 +1,38 @@
+#preview {
+  margin-left: 20px;
+  border-radius: 3px;
+  border: 1px solid black;
+  cursor: default;
+}
+
+#previewHeader {
+  padding: 15px 10px;
+  border: 1px solid transparent;
+}
+
+#previewHeader .button {
+  margin-left: 14px;
+  border: 1px solid transparent;
+  border-bottom-width: 2px;
+  border-radius: 3px;
+  padding: 4px;
+}
+
+#previewContainer {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  margin: 20px;
+  padding: 5px;
+}
+
+.previewLink h2 {
+  font-size: 14px;
+}
+
+.previewLink .previewTagline {
+  font-size: 12px;
+}
+
+.previewLink .subverse {
+  font-weight: bold;
+}

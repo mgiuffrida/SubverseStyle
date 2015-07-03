@@ -10,11 +10,11 @@
       <div id="main" class="layout horizontal">
         <div>
           <color-slider id="redSlider" value="{{red}}"
-            on-change="componentChanged_"></color-slider>
+            blah-change="componentChanged_"></color-slider>
           <color-slider id="greenSlider" value="{{green}}"
-            on-change="componentChanged_"></color-slider>
+            change="componentChanged_"></color-slider>
           <color-slider id="blueSlider" value="{{blue}}"
-            on-change="componentChanged_"></color-slider>
+            change="componentChanged_"></color-slider>
         </div>
 
         <div class="layout vertical center">
@@ -22,7 +22,7 @@
             <div id="colorSample" style$="[[backgroundColor_(hex)]]"></div>
           </div>
           <div id="hex">
-            #<paper-input label="color" value="{{hex}}" no-label-float on-input="updateComponents_" prevent-invalid-input maxlength="6" allowed-pattern="[#a-fA-F0-9]"></paper-input>
+            #<paper-input id="hexInput" label="color" value="{{hex}}" no-label-float on-input="updateComponents_" prevent-invalid-input maxlength="7" allowed-pattern="[#a-fA-F0-9]"></paper-input>
           </div>
         </div>
       </div>

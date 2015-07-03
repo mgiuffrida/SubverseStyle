@@ -1,6 +1,8 @@
 var constValues = ['inherit', 'transparent'];
+var material = true;
 
 function applyTemplate(template, colors) {
+  template = applyMaterial(template);
   var symbols = Object.getOwnPropertyNames(colors);
   for (var i = 0; i < symbols.length; i++) {
     template = template.replace(new RegExp('\\$' + symbols[i] + '(?!-)', 'g'),
@@ -9,12 +11,35 @@ function applyTemplate(template, colors) {
   return template;
 }
 
+function applyMaterial(template) {
+  // Non-greedily match content between IF blocks across lines.
+  var re = /@IF_MATERIAL((?:\n^.*?)*)@ENDIF_MATERIAL/gm;
+  if (material) {
+    template = template.replace(re, '$1');
+    // Remove -gradient styles.
+    re = /\$((?:[a-zA-Z0-9]+)?(?:-[a-zA-Z0-9]+)+)-gradient(-[a-zA-Z0-9]+)*(?![-a-zA-Z0-9])/g
+    template = template.replace(re, '$$$1$2');
+  } else {
+    template = template.replace(re, '');
+  }
+  return template;
+}
+
+function stampColors(colors) {
+  var stamped = {};
+  var keys = Object.getOwnPropertyNames(colors);
+  keys.forEach(function(key) {
+    stamped[key] = colors[key];
+  });
+  setColors(stamped);
+  return stamped;
+}
+
 function setColors(colors) {
   var n = 0;
   var maxN = 4;
   var symbols = Object.getOwnPropertyNames(colors);
   while (++n < maxN) {
-    console.log(n);
     for (var i = 0; i < symbols.length; i++) {
       var symbolVal = colors[symbols[i]];
       var dependentVar = parseVariable(symbolVal);
@@ -23,7 +48,6 @@ function setColors(colors) {
 
       // Find value of dependent variable.
       var value = colors[dependentVar[0]];
-      console.log(symbolVal, value);
       if (parseVariable(value)) {
         // Wait for variable to be populated.
         continue;
@@ -106,6 +130,9 @@ function setStyle(light) {
     re = /Light-SpriteSheet\.png/g;
   template = template.replace(re, (light ? 'Light' : 'Dark') +
                               '-Spritesheet.png');
+  // Use local sprites.
+  re = /url\('http:\/\/voat.co\/Graphics\//g
+  template = template.replace(re, 'url(\'./');
 }
 
 function printStyle(templ) {
@@ -121,3 +148,15 @@ function makeTemplate(light) {
   var templ = applyTemplate(template, colors);
   printStyle(templ);
 }
+
+function setTheme(theme) {
+  template = template.replace(/\$theme/g, theme);
+}
+
+window.addEventListener('DOMContentLoaded', function() {
+  /*
+  setColors(lightColors);
+  setTheme('light');
+  makeTemplate(true);
+  */
+});

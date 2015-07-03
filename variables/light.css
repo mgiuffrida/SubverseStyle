@@ -1,4 +1,4 @@
-body {
+body.light {
   background-color: rgb(244, 244, 244);
   color: rgb(64, 64, 64);
   font-size: 11px;
@@ -6,30 +6,36 @@ body {
   line-height: 1.43;
 }
 
-a, a:visited {
+body.light a,
+body.light a:visited {
   color: rgb(74, 171, 231);
 }
 
-a:hover {
+body.light a:hover {
   color: rgb(102, 194, 251);
 }
 
-.md a:visited {
+body.light .md a:visited {
   color: rgb(145, 120, 208);
 }
 
-.md a[href="#s"]::after {
+body.light .md a[href="#s"]::after {
   background-color: rgb(231, 119, 119);
   color: rgb(231, 119, 119);
   border-color: rgb(180, 79, 79);
 }
 
-.md a[href="#s"]:hover::after, .md a[href="#s"]:focus::after, .md a[href="#s"]:active::after {
+body.light .md a[href="#s"]:hover::after,
+body.light .md a[href="#s"]:focus::after,
+body.light .md a[href="#s"]:active::after {
   color: rgb(64, 64, 64);
   background-color: rgb(255, 227, 227);
 }
 
-.link .usertext .md pre, .link .usertext .md code, pre, code {
+body.light .link .usertext .md pre,
+body.light .link .usertext .md code,
+body.light pre,
+body.light code {
   background-color: rgb(255, 255, 255);
   border-color: rgb(204, 204, 204);
   color: rgb(51, 51, 51);
@@ -38,40 +44,40 @@ a:hover {
 /*
  * Header:
  */
-#header {
+body.light #header {
   background-color: rgb(255, 255, 255);
 }
 
 /*
  * Header -> Subverse List
  */
-#sr-header-area {
+body.light #sr-header-area {
   background-color: rgb(255, 255, 255);
   border-bottom: 1px solid rgb(220, 220, 220);
 }
 
-.sr-list li a {
+body.light .sr-list li a {
   color: rgb(74, 171, 231);
 }
 
-.drop-arrow {
+body.light .drop-arrow {
   border-top-color: rgb(74, 171, 231);
 }
 
-#sr-bar li a {
+body.light #sr-bar li a {
   color: rgb(129, 129, 129);
 }
 
-#sr-header-area:hover #sr-bar li a {
+body.light #sr-header-area:hover #sr-bar li a {
   color: rgb(68, 68, 68);
 }
 
-#sr-more-link {
+body.light #sr-more-link {
   background-color: rgb(255, 255, 255);
   color: rgb(68, 68, 68);
 }
 
-#sr-more-link:hover {
+body.light #sr-more-link:hover {
   background-color: rgb(74, 171, 231);
   color: rgb(255, 255, 255);
 }
@@ -79,19 +85,20 @@ a:hover {
 /*
  * Header -> Subverse List -> Subscription Dropdown
  */
-.whoaSubscriptionMenu li ul {
+body.light .whoaSubscriptionMenu li ul {
   border-color: rgb(237, 237, 237);
   border-top-color: rgb(255, 255, 255);
   box-shadow: 3px 3px 3px rgba(0,0,0,.2)
 }
 
-.whoaSubscriptionMenu li ul li a:link, .whoaSubscriptionMenu li ul li a:visited {
+body.light .whoaSubscriptionMenu li ul li a:link,
+body.light .whoaSubscriptionMenu li ul li a:visited {
   background-color: rgb(255, 255, 255);
   border-bottom-color: rgb(237, 237, 237);
   color: rgb(68, 68, 68);
 }
 
-.whoaSubscriptionMenu li ul li a:hover {
+body.light .whoaSubscriptionMenu li ul li a:hover {
   background: -webkit-linear-gradient(top, rgb(84, 181, 241),
   rgb(74, 171, 231));
   color: rgb(255, 255, 255) !important;
@@ -100,55 +107,55 @@ a:hover {
 /*
  * Header -> Subverse Header
  */
-#header-container {
+body.light #header-container {
   background-color: rgb(255, 255, 255);
   border-bottom-color: rgb(220, 220, 220);
   border-top-color: rgb(220, 220, 220);
 }
 
-.pagename a {
+body.light .pagename a {
   color: rgb(90, 90, 90);
 }
 
-.pagename a:hover {
+body.light .pagename a:hover {
   color: rgb(74, 171, 231);
 }
 
 /*
  * Header -> Subverse Header -> Menu
  */
-.tabmenu li.selected a {
+body.light .tabmenu li.selected a {
   background: -webkit-linear-gradient(top,rgb(255, 255, 255),
   rgb(250, 250, 250));
   border-color: rgb(208, 208, 208);
   color: rgb(68, 68, 68);
 }
 
-.tabmenu li.selected a:hover {
+body.light .tabmenu li.selected a:hover {
   color: rgb(74, 171, 231);
 }
 
-.tabmenu li.disabled a {
+body.light .tabmenu li.disabled a {
   background-color: transparent;
   border-color: transparent;
   color: rgb(85, 85, 85);
 }
 
-.tabmenu li.disabled a:hover {
+body.light .tabmenu li.disabled a:hover {
   background: -webkit-linear-gradient(top,rgb(255, 255, 255),
   rgb(250, 250, 250));
   border-color: rgb(208, 208, 208);
   color: rgb(68, 68, 68);
 }
 
-.tabmenu li.disabled a.contribute {
+body.light .tabmenu li.disabled a.contribute {
   background: -webkit-linear-gradient(top,rgb(187, 229, 255),
   rgb(166, 221, 255));
   border-color: rgb(112, 183, 227);
   color: rgb(43, 71, 88);
 }
 
-.tabmenu li.disabled a.contribute:hover {
+body.light .tabmenu li.disabled a.contribute:hover {
   background: -webkit-linear-gradient(top,rgb(167, 222, 255),
   rgb(145, 213, 255));
   border-color: rgb(97, 175, 224);
@@ -159,7 +166,7 @@ a:hover {
  * Header -> Subverse Header -> Menu (Mobile)
  */
 @media (max-width: 700px) {
-  .tabmenu li.selected a {
+  body.light .tabmenu li.selected a {
     background: -webkit-linear-gradient(top,rgb(248, 248, 248),
     rgb(242, 242, 242));
     border-color: rgb(186, 186, 186);
@@ -167,7 +174,7 @@ a:hover {
     color: rgb(68, 68, 68);
   }
 
-  .tabmenu li.disabled a {
+  body.light .tabmenu li.disabled a {
     background: -webkit-linear-gradient(top,rgb(255, 255, 255),
     rgb(250, 250, 250));
     border-color: rgb(208, 208, 208);
@@ -175,7 +182,7 @@ a:hover {
     color: rgb(68, 68, 68);
   }
 
-  .tabmenu li.disabled a:hover {
+  body.light .tabmenu li.disabled a:hover {
     background: -webkit-linear-gradient(top,rgb(255, 255, 255),
     rgb(250, 250, 250));
     border-color: rgb(208, 208, 208);
@@ -186,34 +193,34 @@ a:hover {
 /*
  * Header -> Subverse Header -> Account Info
  */
-.logged-in,
-.logged-out {
+body.light .logged-in,
+body.light .logged-out {
   background-color: rgb(246, 246, 246);
   border-color: rgb(220, 220, 220);
 }
 
 @media (max-width: 870px) {
-  .logged-in,
-  .logged-out {
+  body.light .logged-in,
+  body.light .logged-out {
     background-color: transparent;
     border-color: transparent;
   }
 }
 
-#header-account a {
+body.light #header-account a {
   color: rgb(85, 85, 85);
 }
 
-#header-account a:hover,
-#header-account .logged-out a {
+body.light #header-account a:hover,
+body.light #header-account .logged-out a {
   color: rgb(74, 171, 231);
 }
 
-.user .userkarma {
+body.light .user .userkarma {
   border-bottom-color: rgb(153, 153, 153);
 }
 
-.user .upvoatsGiven a {
+body.light .user .upvoatsGiven a {
   color: rgba(74, 171, 231, 1) !important;
   border-bottom-color: gray;
 }
@@ -221,14 +228,14 @@ a:hover {
 /**
  * Header -> Mobile Menu Button
  */
-#show-menu-button::before {
+body.light #show-menu-button::before {
   border-color: rgb(64, 64, 64);
 }
 
 /**
  * Main Content
  */
-#container {
+body.light #container {
   background-color: rgb(255, 255, 255);
   border-color: rgb(209, 209, 209);
   color: rgb(64, 64, 64);
@@ -237,109 +244,112 @@ a:hover {
 /**
  * Sidebar
  */
-.side {
+body.light .side {
   background-color: transparent;
   color: inherit;
 }
 
 /* Form Control (Search, Chat) */
-.form-control {
+body.light .form-control {
   background-color: rgb(255, 255, 255);
   border-color: rgb(203, 203, 203);
   color: rgb(72, 72, 72);
 }
 
-.form-control:focus {
+body.light .form-control:focus {
   border-color: rgb(153, 153, 153);
 }
 
-.form-control::-moz-placeholder,
-.form-control:-ms-input-placeholder,
-.form-control:-webkit-input-placeholder {
+body.light .form-control::-moz-placeholder {
+  color: rgb(153, 153, 153);
+}
+body.light .form-control:-ms-input-placeholder {
+  color: rgb(153, 153, 153);
+}
+body.light .form-control::-webkit-input-placeholder {
   color: rgb(153, 153, 153);
 }
 
-.field-validation-error {
-.field-validation-error {
+body.light .field-validation-error {
   color: rgb(255, 65, 54);
 }
 
-.btn-whoaverse.contribute {
+body.light .btn-whoaverse.contribute {
   background: -webkit-linear-gradient(top,rgb(187, 229, 255),
   rgb(166, 221, 255));
   border-color: rgb(112, 183, 227);
   color: rgb(43, 71, 88);
 }
 
-.btn-whoaverse.contribute:hover {
+body.light .btn-whoaverse.contribute:hover {
   background: -webkit-linear-gradient(top,rgb(167, 222, 255),
   rgb(145, 213, 255));
   border-color: rgb(97, 175, 224);
   color: rgb(43, 71, 88);
 }
 
-.titlebox h1 a {
+body.light .titlebox h1 a {
   color: inherit;
 }
 
-.titlebox h1 a:hover {
+body.light .titlebox h1 a:hover {
   color: rgb(74, 171, 231);
 }
 
-.titlebox .btn-unsub.btn-whoaverse-paging {
+body.light .titlebox .btn-unsub.btn-whoaverse-paging {
   background: -webkit-linear-gradient(top,rgb(248, 248, 248),
   rgb(240, 240, 240));
   border-color: rgb(201, 201, 201);
   color: rgb(90, 90, 90);
 }
 
-.btn-whoaverse-paging:focus,
-.titlebox .btn-whoaverse-paging:focus {
+body.light .btn-whoaverse-paging:focus,
+body.light .titlebox .btn-whoaverse-paging:focus {
   color: rgb(43, 71, 88);
 }
 
-.btn-unsub:hover,
-.btn-unsub:active,
-.btn-unsub:focus {
+body.light .btn-unsub:hover,
+body.light .btn-unsub:active,
+body.light .btn-unsub:focus {
   background: -webkit-linear-gradient(top,rgb(196, 183, 255),
   rgb(189, 174, 255));
   border-color: rgb(155, 133, 255);
   color: rgb(91, 70, 190);
 }
 
-.btn-whoaverse-paging {
+body.light .btn-whoaverse-paging {
   background: -webkit-linear-gradient(top,rgb(187, 229, 255),
   rgb(166, 221, 255));
   border-color: rgb(112, 183, 227);
   color: rgb(43, 71, 88);
 }
 
-.btn-whoaverse-paging:hover {
+body.light .btn-whoaverse-paging:hover {
   background: -webkit-linear-gradient(top,rgb(167, 222, 255),
   rgb(145, 213, 255));
   border-color: rgb(97, 175, 224);
   color: rgb(43, 71, 88);
 }
 
-.titlebox .subscribers {
+body.light .titlebox .subscribers {
   color: inherit;
 }
 
-.titlebox .users-online {
+body.light .titlebox .users-online {
   color: inherit;
 }
 
 /**
  * Sidebar -> Description
  */
-.titlebox .usertext-body {
+body.light .titlebox .usertext-body {
   color: inherit;
 }
 
 /**
  * Sidebar -> Status
  */
-.titlebox .bottom {
+body.light .titlebox .bottom {
   border-top-color: rgb(213, 213, 213);
   color: rgb(128, 128, 128);
 }
@@ -347,8 +357,8 @@ a:hover {
 /**
  * Sidebar -> Header
  */
-.alert-h2,
-.sidecontentbox .alert-h1 {
+body.light .alert-h2,
+body.light .sidecontentbox .alert-h1 {
   color: rgb(74, 171, 231);
   border-bottom-color: rgb(221, 221, 221);
 }
@@ -356,7 +366,7 @@ a:hover {
 /**
  * Sidebar -> Moderator List, Chat
  */
-.sidecontentbox .content {
+body.light .sidecontentbox .content {
   background-color: rgb(252, 252, 252);
   border-color: rgb(228, 228, 228);
 }
@@ -364,93 +374,105 @@ a:hover {
 /**
  * Sidebar -> Box (chat, announcements)
  */
-.side .spacer.spacersection {
+body.light .side .spacer.spacersection {
   background-color: rgb(253, 253, 253);
   border-color: rgb(211, 211, 211);
   color: inherit;
 }
 
+@media (max-width: 870px) {
+  body.light .side {
+    background-color: rgb(255, 255, 255);
+  }
+}
+
 /**
  * Footer
  */
-.bottommenu {
+body.light .bottommenu {
   color: rgb(109, 109, 109);
+}
+
+body.light .bottommenu a {
+  color: inherit;
 }
 
 /**
  * Links
  */
 
-.even {
+body.light .even {
   background-color: rgb(248, 248, 248);
 }
 
 /**
  * Links -> Submission
  */
-.arrow-downvote,
-.arrow-downvoted,
-.arrow-upvote,
-.arrow-upvoted {
-  background-image: url('http://voat.co/Graphics/Light-SpriteSheet.png');
+body.light .arrow-downvote,
+body.light .arrow-downvoted,
+body.light .arrow-upvote,
+body.light .arrow-upvoted {
+  background-image: url('./Light-SpriteSheet.png');
 }
 
-.link score.likes {
+body.light .link score.likes {
   color: rgb(74, 171, 231);
 }
 
-.link score.dislikes {
+body.light .link score.dislikes {
   color: rgb(136, 112, 255);
 }
 
-.link score.unvoted {
+body.light .link score.unvoted {
   color: rgb(187, 187, 187);
 }
 
-.thumbnail {
+body.light .thumbnail {
   border-color: rgb(255, 255, 255);
 }
 
-a.thumbnail:hover,
-a.thumbnail:focus,
-a.thumbnail.active {
+body.light a.thumbnail:hover,
+body.light a.thumbnail:focus,
+body.light a.thumbnail.active {
   border-color: rgb(74, 171, 231);
 }
 
 /**
  * Links -> Submission -> Title
  */
-.link a.title,
-.link a.title.may-blank {
+body.light .link a.title,
+body.light .link a.title.may-blank {
   color: rgb(74, 74, 74);
 }
 
-.link a.title:visited,
-.link a.title.mayblank:visited {
+body.light .link a.title:visited,
+body.light .link a.title.may-blank:visited {
   color: rgb(145, 120, 208);
 }
 
-.link a.title:hover {
+body.light .link a.title:hover {
   color: rgb(74, 171, 231);
 }
 
-.domain {
+body.light .domain {
   color: rgb(102, 102, 102);
 }
 
-.domain a {
+body.light .domain a {
   color: rgb(136, 136, 136);
 }
 
-.domain a:hover {
+body.light .domain a:hover {
   color: rgb(74, 171, 231);
 }
 
-.submission.stickied a.title, .submission.stickied a.title:visited, .submission.stickied a.title.visited {
+body.light .submission.stickied a.title,
+body.light .submission.stickied a.title:visited,
+body.light .submission.stickied a.title.visited {
   color: rgb(34, 136, 34);
 }
 
-.promoted {
+body.light .promoted {
   background-color: rgb(162, 109, 249);
   border-color: rgb(131, 88, 203);
   color: rgb(255, 255, 255);
@@ -459,64 +481,64 @@ a.thumbnail.active {
 /**
  * Links -> Submission -> Tagline
  */
-.expando-button.selftext.collapsed,
-.expando-button.selftext.collapsed:hover,
-.expando-button.selftext.expanded,
-.expando-button.selftext.expanded:hover {
-  background-image: url('http://voat.co/Graphics/Light-SpriteSheet.png');
+body.light .expando-button.selftext.collapsed,
+body.light .expando-button.selftext.collapsed:hover,
+body.light .expando-button.selftext.expanded,
+body.light .expando-button.selftext.expanded:hover {
+  background-image: url('./Light-SpriteSheet.png');
 }
 
-.tagline {
+body.light .tagline {
   color: rgb(112, 112, 112);
 }
 
-.tagline a {
+body.light .tagline a {
   color: rgb(74, 171, 231);
 }
 
-.tagline a:visited {
+body.light .tagline a:visited {
   color: rgb(85, 85, 85);
 }
-.tagline a:hover {
+body.light .tagline a:hover {
   color: rgb(67, 153, 205);
 }
 
 
-.link a.author,
-.link a.author:visited {
+body.light .link a.author,
+body.light .link a.author:visited {
   color: rgb(67, 153, 205);
 }
 
-.link a.author:hover {
+body.light .link a.author:hover {
   color: rgb(74, 171, 231);
 }
 
-.link a.subverse:visited,
-.link a.subverse {
+body.light .link a.subverse:visited,
+body.light .link a.subverse {
   color: rgb(109, 109, 109);
 }
 
-.link a.subverse:hover {
+body.light .link a.subverse:hover {
   color: rgb(74, 171, 231);
 }
 
-.tagline .post_upvotes {
+body.light .tagline .post_upvotes {
   color: rgb(74, 171, 231);
 }
 
-.tagline .post_downvotes {
+body.light .tagline .post_downvotes {
   color: rgb(136, 112, 255);
 }
 
 /**
  * Links -> Submission -> Buttons
  */
-.link .flat-list li a {
+body.light .link .flat-list li a {
   color: rgb(106, 106, 106);
 }
 
 @media (max-width: 550px) {
-  .link .flat-list.buttons li a {
+  body.light .link .flat-list.buttons li a {
     background-color: rgb(255, 255, 255);
     border-color: rgb(222, 222, 222);
   }
@@ -525,7 +547,7 @@ a.thumbnail.active {
 /*
  * Links -> Next/Previous Buttons
  */
-.pagination-container .btn-whoaverse-paging {
+body.light .pagination-container .btn-whoaverse-paging {
   background: -webkit-linear-gradient(top,rgb(187, 229, 255),
   rgb(166, 221, 255));
   border-color: rgb(112, 183, 227);
@@ -539,7 +561,7 @@ a.thumbnail.active {
 /*
  * Comments - Self Text
  */
-.link .usertext .md {
+body.light .link .usertext .md {
   background-color: rgb(248, 248, 248);
   border-color: rgb(209, 209, 209);
   color: rgb(64, 64, 64);
@@ -548,42 +570,42 @@ a.thumbnail.active {
 /*
  * Comments - Comment Form
  */
-.markdownEditorImgButton {
-  background-color: rgb(245, 245, 245);
-  background-image: url('http://voat.co/Graphics/markdownEditorSprite.png');
+body.light .markdownEditorImgButton,
+body.light .markdownEditorTextButton {
+  background-color: rgb(245, 245, 245) !important;
   border-color: rgb(128, 128, 128);
 }
 
-.markdownEditorSubMenu {
+body.light .markdownEditorSubMenu {
   border-color: rgb(128, 128, 128);
 }
 
-.commenttextarea {
+body.light .commenttextarea {
   background-color: rgb(255, 255, 255);
   border-color: rgb(203, 203, 203);
-  color: comment-textarea-text;
+  color: rgb(51, 51, 51);
 }
 
-form input.btn-whoaverse-paging {
+body.light form input.btn-whoaverse-paging {
   background: -webkit-linear-gradient(top,rgb(187, 229, 255),
   rgb(166, 221, 255));
   border-color: rgb(112, 183, 227);
   color: rgb(43, 71, 88);
 }
 
-form input.btn-whoaverse-paging:hover {
+body.light form input.btn-whoaverse-paging:hover {
   background: -webkit-linear-gradient(top,rgb(167, 222, 255),
   rgb(145, 213, 255));
   border-color: rgb(97, 175, 224);
   color: rgb(43, 71, 88);
 }
 
-.horizontal-line {
+body.light .horizontal-line {
   border-bottom-color: rgb(233, 233, 233);
 }
 
-.menuarea .label,
-.menuarea .label-default {
+body.light .menuarea .label,
+body.light .menuarea .label-default {
   background-color: rgb(221, 221, 221);
   color: rgb(85, 85, 85);
 }
@@ -591,28 +613,35 @@ form input.btn-whoaverse-paging:hover {
 /**
  * Comments -> Comment
  */
-.comment .comment {
+body.light .comment .comment {
   border: 1px solid rgb(209, 209, 209);
 }
 
-.comment a.expand {
+body.light .comment .arrow-downvote,
+body.light .comment .arrow-downvoted,
+body.light .comment .arrow-upvote,
+body.light .comment .arrow-upvoted {
+  background-image: url('./Light-SpriteSheet.png');
+}
+
+body.light .comment a.expand {
   color: rgb(170, 170, 170);
 }
 
-.comment .collapsed a {
+body.light .comment .collapsed a {
   color: rgb(136, 136, 136);
 }
 
-.comment a.expand:hover {
+body.light .comment a.expand:hover {
   color: rgb(85, 85, 85);
 }
 
-.comment a.author,
-.comment a.author:visited {
+body.light .comment a.author,
+body.light .comment a.author:visited {
   color: rgb(74, 171, 231);
 }
 
-.comment a.submitter {
+body.light .comment a.submitter {
   color: rgb(136, 112, 255);
 }
 
@@ -621,12 +650,12 @@ form input.btn-whoaverse-paging:hover {
 /**
  * Comments -> Comment -> Buttons
  */
-.comment .flat-list.buttons li a {
+body.light .comment .flat-list.buttons li a {
   color: rgb(106, 106, 106);
 }
 
 @media (max-width: 550px) {
-  .comment .flat-list.buttons li a {
+  body.light .comment .flat-list.buttons li a {
     background-color: rgb(255, 255, 255);
     border-color: rgb(222, 222, 222);
   }
@@ -635,29 +664,45 @@ form input.btn-whoaverse-paging:hover {
 /**
  * Comments -> Comment (even layer)
  */
-.comment .comment .comment, .comment .comment .comment .comment .comment, .comment .comment .comment .comment .comment .comment .comment, .comment .comment .comment .comment .comment .comment .comment .comment .comment, .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+body.light .comment .comment .comment,
+body.light .comment .comment .comment .comment .comment,
+body.light .comment .comment .comment .comment .comment .comment .comment,
+body.light .comment .comment .comment .comment .comment .comment .comment .comment .comment,
+body.light .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
   background-color: rgb(255, 255, 255);
 }
 
-.comment .comment .comment blockquote, .comment .comment .comment .comment .comment blockquote, .comment .comment .comment .comment .comment .comment .comment blockquote, .comment .comment .comment .comment .comment .comment .comment .comment .comment blockquote, .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment blockquote {
+body.light .comment .comment .comment blockquote,
+body.light .comment .comment .comment .comment .comment blockquote,
+body.light .comment .comment .comment .comment .comment .comment .comment blockquote,
+body.light .comment .comment .comment .comment .comment .comment .comment .comment .comment blockquote,
+body.light .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment blockquote {
   background-color: rgb(245, 245, 245);
 }
 
 /**
  * Comments -> Comment (odd layer)
  */
-.comment .comment, .comment .comment .comment .comment, .comment .comment .comment .comment .comment .comment, .comment .comment .comment .comment .comment .comment .comment .comment, .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+body.light .comment .comment,
+body.light .comment .comment .comment .comment,
+body.light .comment .comment .comment .comment .comment .comment,
+body.light .comment .comment .comment .comment .comment .comment .comment .comment,
+body.light .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
   background-color: rgb(248, 248, 248);
 }
 
-.comment .comment blockquote, .comment .comment .comment .comment blockquote, .comment .comment .comment .comment .comment .comment blockquote, .comment .comment .comment .comment .comment .comment .comment .comment blockquote, .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment blockquote {
+body.light .comment .comment blockquote,
+body.light .comment .comment .comment .comment blockquote,
+body.light .comment .comment .comment .comment .comment .comment blockquote,
+body.light .comment .comment .comment .comment .comment .comment .comment .comment blockquote,
+body.light .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment blockquote {
   background-color: rgb(255, 255, 255);
 }
 
 /**
  * Comments -> Comment
  */
-.md blockquote {
+body.light .md blockquote {
   background-color: rgb(245, 245, 245);
   border-color: rgb(233, 233, 233),
   rgb(233, 233, 233),
@@ -669,15 +714,17 @@ form input.btn-whoaverse-paging:hover {
 /**
  * Comments -> Preview
  */
-.panel {
+body.light .panel {
   background-color: rgb(255, 255, 255);
 }
 
-.panel-default {
+body.light .panel-default {
   border-color: rgb(221, 221, 221);
 }
 
-.panel-heading, .panel-info>.panel-heading, .panel-default>.panel-heading {
+body.light .panel-heading,
+body.light .panel-info>.panel-heading,
+body.light .panel-default>.panel-heading {
   background: -webkit-linear-gradient(top,rgb(238, 238, 238),
   rgb(232, 232, 232));
   border-color: rgb(214, 214, 214);
@@ -687,17 +734,18 @@ form input.btn-whoaverse-paging:hover {
 /**
  * Comments -> Load More
  */
-.btn-whoaverse {
+body.light .btn-whoaverse {
   background: -webkit-linear-gradient(top,rgb(253, 253, 253),
   rgb(247, 247, 247));
   border-color: rgb(209, 209, 209);
 }
-.btn-whoaverse,
-a.btn-whoaverse {
+
+body.light .btn-whoaverse,
+body.light a.btn-whoaverse {
   color: rgb(76, 76, 76);
 }
 
-.btn-whoaverse:hover {
+body.light .btn-whoaverse:hover {
   background: -webkit-linear-gradient(top,rgb(248, 248, 248),
   rgb(242, 242, 242));
   border-color: rgb(204, 204, 204);
@@ -711,4 +759,7 @@ a.btn-whoaverse {
 /**
  * TODO: first-time alert on comments page
  */
+
+
+
 

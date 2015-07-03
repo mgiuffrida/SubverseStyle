@@ -24,35 +24,54 @@ Polymer({
   },
 
   observers: [
+    'componentChanged_(red, green, blue)',
   ],
+
+  updating_: false,
 
   ready: function () {
     this.updateHex_();
   },
 
   componentChanged_: function(e) {
+    if (typeof this.red != 'number' || isNaN(this.red))
+      this.red = 255;
+    if (typeof this.green != 'number' || isNaN(this.green))
+      this.green = 255;
+    if (typeof this.blue != 'number' || isNaN(this.blue))
+      this.blue = 255;
     this.updateHex_();
   },
 
   // Updates RGB values from the hex value.
   updateComponents_: function() {
+    if (this.updating_)
+      return;
+    this.updating_ = true;
     var rgb = this.hexToRgb_(this.hex);
     if (rgb) {
       this.red = rgb[0];
       this.green = rgb[1];
       this.blue = rgb[2];
     }
+    this.updating_ = false;
   },
 
   // Updates the hex value.
   updateHex_: function() {
+    if (this.updating_)
+      return;
+    this.updating_ = true;
     this.hex = this.rgbToHex_(this.red, this.green, this.blue);
+    this.updating_ = false;
   },
 
   // Removes leading #.
   hexChanged_: function() {
     if (this.hex.indexOf('#') == 0)
       this.hex = this.hex.substr(1);
+    if (this.hex.length > 6)
+      this.hex = this.hex.substr(0, 6);
   },
 
   // Computed background style for the color sample..
@@ -103,4 +122,25 @@ Polymer({
       return null;
     return [red, green, blue];
   },
+
+  isSimilarHex_: function(a, b) {
+    if (a.length == b.length)
+      return a.toLowerCase() == b.toLowerCase();
+
+    if (a.length == 3 && b.length != 6)
+      return false;
+    if (a.length == 6 && b.length != 3)
+      return false;
+    if (a.length != 3 && b.length != 3)
+      return false;
+    
+    var shorter = a.length < b.length ? a : b;
+    var longer = shorter == a ? b : a;
+    for (var i = 0; i < 3; i++) {
+      if (shorter[i] != longer[i*2] || shorter[i]  != longer[i*2 + 1])
+        return false;
+    }
+    return true;
+  },
+
 });

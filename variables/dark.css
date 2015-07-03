@@ -1,4 +1,4 @@
-body {
+body.dark {
   background-color: rgb(41, 41, 41);
   color: rgb(223, 223, 223);
   font-size: 11px;
@@ -6,30 +6,36 @@ body {
   line-height: 1.43;
 }
 
-a, a:visited {
+body.dark a,
+body.dark a:visited {
   color: rgb(86, 168, 218);
 }
 
-a:hover {
+body.dark a:hover {
   color: rgb(220, 87, 87);
 }
 
-.md a:visited {
+body.dark .md a:visited {
   color: rgb(138, 138, 138);
 }
 
-.md a[href="#s"]::after {
+body.dark .md a[href="#s"]::after {
   background-color: rgb(119, 57, 57);
   color: rgb(119, 57, 57);
   border-color: rgb(86, 40, 40);
 }
 
-.md a[href="#s"]:hover::after, .md a[href="#s"]:focus::after, .md a[href="#s"]:active::after {
+body.dark .md a[href="#s"]:hover::after,
+body.dark .md a[href="#s"]:focus::after,
+body.dark .md a[href="#s"]:active::after {
   color: rgb(223, 223, 223);
   background-color: rgb(78, 46, 46);
 }
 
-.link .usertext .md pre, .link .usertext .md code, pre, code {
+body.dark .link .usertext .md pre,
+body.dark .link .usertext .md code,
+body.dark pre,
+body.dark code {
   background-color: rgb(49, 45, 58);
   border-color: rgb(37, 33, 44);
   color: rgb(204, 204, 204);
@@ -38,40 +44,40 @@ a:hover {
 /*
  * Header:
  */
-#header {
+body.dark #header {
   background-color: rgb(51, 51, 51);
 }
 
 /*
  * Header -> Subverse List
  */
-#sr-header-area {
+body.dark #sr-header-area {
   background-color: rgb(51, 51, 51);
   border-bottom: 1px solid rgb(34, 34, 34);
 }
 
-.sr-list li a {
+body.dark .sr-list li a {
   color: rgb(67, 153, 205);
 }
 
-.drop-arrow {
+body.dark .drop-arrow {
   border-top-color: rgb(67, 153, 205);
 }
 
-#sr-bar li a {
+body.dark #sr-bar li a {
   color: rgb(170, 170, 170);
 }
 
-#sr-header-area:hover #sr-bar li a {
+body.dark #sr-header-area:hover #sr-bar li a {
   color: rgb(221, 221, 221);
 }
 
-#sr-more-link {
+body.dark #sr-more-link {
   background-color: rgb(51, 51, 51);
   color: rgb(221, 221, 221);
 }
 
-#sr-more-link:hover {
+body.dark #sr-more-link:hover {
   background-color: rgb(85, 85, 85);
   color: rgb(255, 255, 255);
 }
@@ -79,19 +85,20 @@ a:hover {
 /*
  * Header -> Subverse List -> Subscription Dropdown
  */
-.whoaSubscriptionMenu li ul {
+body.dark .whoaSubscriptionMenu li ul {
   border-color: rgb(58, 58, 58);
   border-top-color: rgb(51, 51, 51);
   box-shadow: 3px 3px 3px rgba(0,0,0,.2)
 }
 
-.whoaSubscriptionMenu li ul li a:link, .whoaSubscriptionMenu li ul li a:visited {
+body.dark .whoaSubscriptionMenu li ul li a:link,
+body.dark .whoaSubscriptionMenu li ul li a:visited {
   background-color: rgb(51, 51, 51);
   border-bottom-color: rgb(34, 34, 34);
   color: rgb(221, 221, 221);
 }
 
-.whoaSubscriptionMenu li ul li a:hover {
+body.dark .whoaSubscriptionMenu li ul li a:hover {
   background: -webkit-linear-gradient(top, rgb(67, 139, 183),
   rgb(50, 122, 166));
   color: rgb(255, 255, 255) !important;
@@ -100,55 +107,55 @@ a:hover {
 /*
  * Header -> Subverse Header
  */
-#header-container {
+body.dark #header-container {
   background-color: rgb(51, 51, 51);
   border-bottom-color: rgb(34, 34, 34);
   border-top-color: rgb(34, 34, 34);
 }
 
-.pagename a {
+body.dark .pagename a {
   color: rgb(204, 204, 204);
 }
 
-.pagename a:hover {
+body.dark .pagename a:hover {
   color: rgb(67, 139, 183);
 }
 
 /*
  * Header -> Subverse Header -> Menu
  */
-.tabmenu li.selected a {
+body.dark .tabmenu li.selected a {
   background: -webkit-linear-gradient(top,rgb(51, 51, 51),
   rgb(45, 45, 45));
   border-color: rgb(34, 34, 34);
   color: rgb(221, 221, 221);
 }
 
-.tabmenu li.selected a:hover {
-  color: rgb(67, 155, 183);
+body.dark .tabmenu li.selected a:hover {
+  color: $header-button-selected-hover;
 }
 
-.tabmenu li.disabled a {
+body.dark .tabmenu li.disabled a {
   background-color: transparent;
   border-color: transparent;
   color: rgb(170, 170, 170);
 }
 
-.tabmenu li.disabled a:hover {
+body.dark .tabmenu li.disabled a:hover {
   background: -webkit-linear-gradient(top,rgb(51, 51, 51),
   rgb(45, 45, 45));
   border-color: rgb(34, 34, 34);
   color: rgb(221, 221, 221);
 }
 
-.tabmenu li.disabled a.contribute {
+body.dark .tabmenu li.disabled a.contribute {
   background: -webkit-linear-gradient(top,rgb(180, 71, 71),
   rgb(171, 60, 60));
   border-color: rgb(147, 51, 51);
   color: rgb(255, 220, 220);
 }
 
-.tabmenu li.disabled a.contribute:hover {
+body.dark .tabmenu li.disabled a.contribute:hover {
   background: -webkit-linear-gradient(top,rgb(164, 58, 74),
   rgb(153, 48, 48));
   border-color: rgb(128, 38, 38);
@@ -159,7 +166,7 @@ a:hover {
  * Header -> Subverse Header -> Menu (Mobile)
  */
 @media (max-width: 700px) {
-  .tabmenu li.selected a {
+  body.dark .tabmenu li.selected a {
     background: -webkit-linear-gradient(top,rgb(56, 67, 75),
     rgb(53, 60, 68));
     border-color: rgb(36, 46, 57);
@@ -167,7 +174,7 @@ a:hover {
     color: rgb(221, 221, 221);
   }
 
-  .tabmenu li.disabled a {
+  body.dark .tabmenu li.disabled a {
     background: -webkit-linear-gradient(top,rgb(51, 51, 51),
     rgb(45, 45, 45));
     border-color: rgb(34, 34, 34);
@@ -175,7 +182,7 @@ a:hover {
     color: rgb(221, 221, 221);
   }
 
-  .tabmenu li.disabled a:hover {
+  body.dark .tabmenu li.disabled a:hover {
     background: -webkit-linear-gradient(top,rgb(51, 51, 51),
     rgb(45, 45, 45));
     border-color: rgb(34, 34, 34);
@@ -186,34 +193,34 @@ a:hover {
 /*
  * Header -> Subverse Header -> Account Info
  */
-.logged-in,
-.logged-out {
+body.dark .logged-in,
+body.dark .logged-out {
   background-color: rgb(41, 41, 41);
   border-color: rgb(34, 34, 34);
 }
 
 @media (max-width: 870px) {
-  .logged-in,
-  .logged-out {
+  body.dark .logged-in,
+  body.dark .logged-out {
     background-color: transparent;
     border-color: transparent;
   }
 }
 
-#header-account a {
+body.dark #header-account a {
   color: rgb(221, 221, 221);
 }
 
-#header-account a:hover,
-#header-account .logged-out a {
+body.dark #header-account a:hover,
+body.dark #header-account .logged-out a {
   color: rgb(67, 139, 183);
 }
 
-.user .userkarma {
+body.dark .user .userkarma {
   border-bottom-color: rgb(102, 102, 102);
 }
 
-.user .upvoatsGiven a {
+body.dark .user .upvoatsGiven a {
   color: rgba(74, 171, 231, 1) !important;
   border-bottom-color: gray;
 }
@@ -221,14 +228,14 @@ a:hover {
 /**
  * Header -> Mobile Menu Button
  */
-#show-menu-button::before {
+body.dark #show-menu-button::before {
   border-color: rgb(187, 187, 187);
 }
 
 /**
  * Main Content
  */
-#container {
+body.dark #container {
   background-color: rgb(51, 51, 51);
   border-color: rgb(34, 34, 34);
   color: inherit;
@@ -237,112 +244,112 @@ a:hover {
 /**
  * Sidebar
  */
-.side {
+body.dark .side {
   background-color: transparent;
   color: inherit;
 }
 
 /* Form Control (Search, Chat) */
-.form-control {
+body.dark .form-control {
   background-color: rgb(41, 41, 41);
   border-color: rgb(34, 34, 34);
   color: rgb(223, 223, 223);
 }
 
-.form-control:focus {
+body.dark .form-control:focus {
   border-color: rgb(17, 17, 17);
 }
 
-.form-control::-moz-placeholder {
+body.dark .form-control::-moz-placeholder {
   color: rgb(170, 170, 170);
 }
-.form-control:-ms-input-placeholder {
+body.dark .form-control:-ms-input-placeholder {
   color: rgb(170, 170, 170);
 }
-.form-control::-webkit-input-placeholder {
+body.dark .form-control::-webkit-input-placeholder {
   color: rgb(170, 170, 170);
 }
 
-.field-validation-error {
+body.dark .field-validation-error {
   color: rgb(255, 65, 54);
 }
 
-.btn-whoaverse.contribute {
+body.dark .btn-whoaverse.contribute {
   background: -webkit-linear-gradient(top,rgb(180, 71, 71),
   rgb(171, 60, 60));
   border-color: rgb(147, 51, 51);
   color: rgb(255, 247, 247);
 }
 
-.btn-whoaverse.contribute:hover {
+body.dark .btn-whoaverse.contribute:hover {
   background: -webkit-linear-gradient(top,rgb(164, 58, 58),
   rgb(153, 48, 48));
   border-color: rgb(128, 38, 38);
   color: rgb(255, 247, 247);
 }
 
-.titlebox h1 a {
+body.dark .titlebox h1 a {
   color: inherit;
 }
 
-.titlebox h1 a:hover {
+body.dark .titlebox h1 a:hover {
   color: rgb(67, 139, 183);
 }
 
-.titlebox .btn-unsub.btn-whoaverse-paging {
+body.dark .titlebox .btn-unsub.btn-whoaverse-paging {
   background: -webkit-linear-gradient(top,rgb(180, 71, 71),
   rgb(171, 60, 60));
   border-color: rgb(147, 51, 51);
   color: rgb(255, 247, 247);
 }
 
-.btn-whoaverse-paging:focus,
-.titlebox .btn-whoaverse-paging:focus {
+body.dark .btn-whoaverse-paging:focus,
+body.dark .titlebox .btn-whoaverse-paging:focus {
   color: rgb(255, 247, 247);
 }
 
-.btn-unsub:hover,
-.btn-unsub:active,
-.btn-unsub:focus {
+body.dark .btn-unsub:hover,
+body.dark .btn-unsub:active,
+body.dark .btn-unsub:focus {
   background: -webkit-linear-gradient(top,rgb(164, 58, 58),
   rgb(153, 48, 48));
   border-color: rgb(36, 46, 57);
   color: rgb(255, 255, 255);
 }
 
-.btn-whoaverse-paging {
+body.dark .btn-whoaverse-paging {
   background: -webkit-linear-gradient(top,rgb(75, 75, 75),
   rgb(69, 69, 69));
   border-color: rgb(48, 48, 48);
   color: rgb(255, 255, 255);
 }
 
-.btn-whoaverse-paging:hover {
+body.dark .btn-whoaverse-paging:hover {
   background: -webkit-linear-gradient(top,rgb(56, 67, 75),
   rgb(53, 60, 68));
   border-color: rgb(36, 46, 57);
   color: rgb(255, 255, 255);
 }
 
-.titlebox .subscribers {
+body.dark .titlebox .subscribers {
   color: inherit;
 }
 
-.titlebox .users-online {
+body.dark .titlebox .users-online {
   color: inherit;
 }
 
 /**
  * Sidebar -> Description
  */
-.titlebox .usertext-body {
+body.dark .titlebox .usertext-body {
   color: inherit;
 }
 
 /**
  * Sidebar -> Status
  */
-.titlebox .bottom {
+body.dark .titlebox .bottom {
   border-top-color: rgb(34, 34, 34);
   color: rgb(128, 128, 128);
 }
@@ -350,8 +357,8 @@ a:hover {
 /**
  * Sidebar -> Header
  */
-.alert-h2,
-.sidecontentbox .alert-h1 {
+body.dark .alert-h2,
+body.dark .sidecontentbox .alert-h1 {
   color: rgb(150, 122, 255);
   border-bottom-color: rgb(34, 34, 34);
 }
@@ -359,7 +366,7 @@ a:hover {
 /**
  * Sidebar -> Moderator List, Chat
  */
-.sidecontentbox .content {
+body.dark .sidecontentbox .content {
   background-color: rgb(48, 48, 48);
   border-color: rgb(39, 39, 39);
 }
@@ -367,14 +374,14 @@ a:hover {
 /**
  * Sidebar -> Box (chat, announcements)
  */
-.side .spacer.spacersection {
+body.dark .side .spacer.spacersection {
   background-color: rgb(49, 49, 49);
   border-color: rgb(34, 34, 34);
   color: inherit;
 }
 
 @media (max-width: 870px) {
-  .side {
+  body.dark .side {
     background-color: rgb(51, 51, 51);
   }
 }
@@ -382,11 +389,11 @@ a:hover {
 /**
  * Footer
  */
-.bottommenu {
+body.dark .bottommenu {
   color: rgb(149, 149, 149);
 }
 
-.bottommenu a {
+body.dark .bottommenu a {
   color: inherit;
 }
 
@@ -394,76 +401,78 @@ a:hover {
  * Links
  */
 
-.even {
+body.dark .even {
   background-color: rgb(46, 46, 46);
 }
 
 /**
  * Links -> Submission
  */
-.arrow-downvote,
-.arrow-downvoted,
-.arrow-upvote,
-.arrow-upvoted {
-  background-image: url('http://voat.co/Graphics/Dark-Spritesheet.png');
+body.dark .arrow-downvote,
+body.dark .arrow-downvoted,
+body.dark .arrow-upvote,
+body.dark .arrow-upvoted {
+  background-image: url('./Dark-Spritesheet.png');
 }
 
-.link score.likes {
+body.dark .link score.likes {
   color: rgb(67, 141, 183);
 }
 
-.link score.dislikes {
+body.dark .link score.dislikes {
   color: rgb(111, 100, 186);
 }
 
-.link score.unvoted {
+body.dark .link score.unvoted {
   color: rgb(102, 102, 102);
 }
 
-.thumbnail {
+body.dark .thumbnail {
   border-color: rgb(51, 51, 51);
 }
 
-a.thumbnail:hover,
-a.thumbnail:focus,
-a.thumbnail.active {
+body.dark a.thumbnail:hover,
+body.dark a.thumbnail:focus,
+body.dark a.thumbnail.active {
   border-color: rgb(67, 139, 183);
 }
 
 /**
  * Links -> Submission -> Title
  */
-.link a.title,
-.link a.title.may-blank {
+body.dark .link a.title,
+body.dark .link a.title.may-blank {
   color: rgb(195, 195, 195);
 }
 
-.link a.title:visited,
-.link a.title.may-blank:visited {
+body.dark .link a.title:visited,
+body.dark .link a.title.may-blank:visited {
   color: rgb(138, 138, 138);
 }
 
-.link a.title:hover {
+body.dark .link a.title:hover {
   color: rgb(86, 168, 218);
 }
 
-.domain {
+body.dark .domain {
   color: rgb(102, 102, 102);
 }
 
-.domain a {
+body.dark .domain a {
   color: rgb(119, 119, 119);
 }
 
-.domain a:hover {
+body.dark .domain a:hover {
   color: rgb(67, 139, 183);
 }
 
-.submission.stickied a.title, .submission.stickied a.title:visited, .submission.stickied a.title.visited {
+body.dark .submission.stickied a.title,
+body.dark .submission.stickied a.title:visited,
+body.dark .submission.stickied a.title.visited {
   color: rgb(34, 136, 34);
 }
 
-.promoted {
+body.dark .promoted {
   background-color: rgb(180, 71, 71);
   border-color: rgb(157, 49, 49);
   color: rgb(255, 255, 255);
@@ -472,64 +481,64 @@ a.thumbnail.active {
 /**
  * Links -> Submission -> Tagline
  */
-.expando-button.selftext.collapsed,
-.expando-button.selftext.collapsed:hover,
-.expando-button.selftext.expanded,
-.expando-button.selftext.expanded:hover {
-  background-image: url('http://voat.co/Graphics/Dark-Spritesheet.png');
+body.dark .expando-button.selftext.collapsed,
+body.dark .expando-button.selftext.collapsed:hover,
+body.dark .expando-button.selftext.expanded,
+body.dark .expando-button.selftext.expanded:hover {
+  background-image: url('./Dark-Spritesheet.png');
 }
 
-.tagline {
+body.dark .tagline {
   color: rgb(155, 155, 155);
 }
 
-.tagline a {
+body.dark .tagline a {
   color: rgb(86, 168, 218);
 }
 
-.tagline a:visited {
+body.dark .tagline a:visited {
   color: rgb(75, 138, 225);
 }
-.tagline a:hover {
+body.dark .tagline a:hover {
   color: rgb(67, 153, 205);
 }
 
 
-.link a.author,
-.link a.author:visited {
+body.dark .link a.author,
+body.dark .link a.author:visited {
   color: rgb(67, 153, 205);
 }
 
-.link a.author:hover {
+body.dark .link a.author:hover {
   color: rgb(220, 87, 87);
 }
 
-.link a.subverse:visited,
-.link a.subverse {
+body.dark .link a.subverse:visited,
+body.dark .link a.subverse {
   color: rgb(171, 171, 171);
 }
 
-.link a.subverse:hover {
+body.dark .link a.subverse:hover {
   color: rgb(220, 87, 87);
 }
 
-.tagline .post_upvotes {
+body.dark .tagline .post_upvotes {
   color: rgb(67, 141, 183);
 }
 
-.tagline .post_downvotes {
+body.dark .tagline .post_downvotes {
   color: rgb(111, 100, 186);
 }
 
 /**
  * Links -> Submission -> Buttons
  */
-.link .flat-list li a {
+body.dark .link .flat-list li a {
   color: rgb(188, 188, 188);
 }
 
 @media (max-width: 550px) {
-  .link .flat-list.buttons li a {
+  body.dark .link .flat-list.buttons li a {
     background-color: rgb(51, 51, 51);
     border-color: rgb(44, 44, 44);
   }
@@ -538,7 +547,7 @@ a.thumbnail.active {
 /*
  * Links -> Next/Previous Buttons
  */
-.pagination-container .btn-whoaverse-paging {
+body.dark .pagination-container .btn-whoaverse-paging {
   background: -webkit-linear-gradient(top,rgb(75, 75, 75),
   rgb(69, 69, 69));
   border-color: rgb(48, 48, 48);
@@ -552,7 +561,7 @@ a.thumbnail.active {
 /*
  * Comments - Self Text
  */
-.link .usertext .md {
+body.dark .link .usertext .md {
   background-color: rgb(46, 46, 46);
   border-color: rgb(39, 39, 39);
   color: inherit;
@@ -561,42 +570,42 @@ a.thumbnail.active {
 /*
  * Comments - Comment Form
  */
-.markdownEditorImgButton,
-.markdownEditorTextButton{
+body.dark .markdownEditorImgButton,
+body.dark .markdownEditorTextButton {
   background-color: rgb(96, 96, 96) !important;
   border-color: rgb(128, 128, 128);
 }
 
-.markdownEditorSubMenu {
+body.dark .markdownEditorSubMenu {
   border-color: rgb(128, 128, 128);
 }
 
-.commenttextarea {
+body.dark .commenttextarea {
   background-color: rgb(41, 41, 41);
   border-color: rgb(34, 34, 34);
   color: rgb(221, 221, 221);
 }
 
-form input.btn-whoaverse-paging {
+body.dark form input.btn-whoaverse-paging {
   background: -webkit-linear-gradient(top,rgb(75, 75, 75),
   rgb(69, 69, 69));
   border-color: rgb(48, 48, 48);
   color: rgb(255, 255, 255);
 }
 
-form input.btn-whoaverse-paging:hover {
+body.dark form input.btn-whoaverse-paging:hover {
   background: -webkit-linear-gradient(top,rgb(56, 67, 75),
   rgb(53, 60, 68));
   border-color: rgb(36, 46, 57);
   color: rgb(255, 255, 255);
 }
 
-.horizontal-line {
+body.dark .horizontal-line {
   border-bottom-color: rgb(39, 39, 39);
 }
 
-.menuarea .label,
-.menuarea .label-default {
+body.dark .menuarea .label,
+body.dark .menuarea .label-default {
   background-color: rgb(85, 85, 85);
   color: rgb(221, 221, 221);
 }
@@ -604,35 +613,35 @@ form input.btn-whoaverse-paging:hover {
 /**
  * Comments -> Comment
  */
-.comment .comment {
+body.dark .comment .comment {
   border: 1px solid rgb(34, 34, 34);
 }
 
-.comment .arrow-downvote,
-.comment .arrow-downvoted,
-.comment .arrow-upvote,
-.comment .arrow-upvoted {
-  background-image: url('http://voat.co/Graphics/Dark-Spritesheet.png');
+body.dark .comment .arrow-downvote,
+body.dark .comment .arrow-downvoted,
+body.dark .comment .arrow-upvote,
+body.dark .comment .arrow-upvoted {
+  background-image: url('./Dark-Spritesheet.png');
 }
 
-.comment a.expand {
+body.dark .comment a.expand {
   color: rgb(170, 170, 170);
 }
 
-.comment .collapsed a {
+body.dark .comment .collapsed a {
   color: rgb(136, 136, 136);
 }
 
-.comment a.expand:hover {
+body.dark .comment a.expand:hover {
   color: rgb(67, 139, 183);
 }
 
-.comment a.author,
-.comment a.author:visited {
+body.dark .comment a.author,
+body.dark .comment a.author:visited {
   color: rgb(86, 168, 218);
 }
 
-.comment a.submitter {
+body.dark .comment a.submitter {
   color: rgb(111, 100, 186);
 }
 
@@ -641,12 +650,12 @@ form input.btn-whoaverse-paging:hover {
 /**
  * Comments -> Comment -> Buttons
  */
-.comment .flat-list.buttons li a {
+body.dark .comment .flat-list.buttons li a {
   color: rgb(106, 106, 106);
 }
 
 @media (max-width: 550px) {
-  .comment .flat-list.buttons li a {
+  body.dark .comment .flat-list.buttons li a {
     background-color: rgb(51, 51, 51);
     border-color: rgb(44, 44, 44);
   }
@@ -655,29 +664,45 @@ form input.btn-whoaverse-paging:hover {
 /**
  * Comments -> Comment (even layer)
  */
-.comment .comment .comment, .comment .comment .comment .comment .comment, .comment .comment .comment .comment .comment .comment .comment, .comment .comment .comment .comment .comment .comment .comment .comment .comment, .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+body.dark .comment .comment .comment,
+body.dark .comment .comment .comment .comment .comment,
+body.dark .comment .comment .comment .comment .comment .comment .comment,
+body.dark .comment .comment .comment .comment .comment .comment .comment .comment .comment,
+body.dark .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
   background-color: rgb(51, 51, 51);
 }
 
-.comment .comment .comment blockquote, .comment .comment .comment .comment .comment blockquote, .comment .comment .comment .comment .comment .comment .comment blockquote, .comment .comment .comment .comment .comment .comment .comment .comment .comment blockquote, .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment blockquote {
+body.dark .comment .comment .comment blockquote,
+body.dark .comment .comment .comment .comment .comment blockquote,
+body.dark .comment .comment .comment .comment .comment .comment .comment blockquote,
+body.dark .comment .comment .comment .comment .comment .comment .comment .comment .comment blockquote,
+body.dark .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment blockquote {
   background-color: rgb(49, 45, 58);
 }
 
 /**
  * Comments -> Comment (odd layer)
  */
-.comment .comment, .comment .comment .comment .comment, .comment .comment .comment .comment .comment .comment, .comment .comment .comment .comment .comment .comment .comment .comment, .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+body.dark .comment .comment,
+body.dark .comment .comment .comment .comment,
+body.dark .comment .comment .comment .comment .comment .comment,
+body.dark .comment .comment .comment .comment .comment .comment .comment .comment,
+body.dark .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
   background-color: rgb(41, 41, 41);
 }
 
-.comment .comment blockquote, .comment .comment .comment .comment blockquote, .comment .comment .comment .comment .comment .comment blockquote, .comment .comment .comment .comment .comment .comment .comment .comment blockquote, .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment blockquote {
+body.dark .comment .comment blockquote,
+body.dark .comment .comment .comment .comment blockquote,
+body.dark .comment .comment .comment .comment .comment .comment blockquote,
+body.dark .comment .comment .comment .comment .comment .comment .comment .comment blockquote,
+body.dark .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment blockquote {
   background-color: rgb(49, 45, 58);
 }
 
 /**
  * Comments -> Comment
  */
-.md blockquote {
+body.dark .md blockquote {
   background-color: rgb(49, 45, 58);
   border-color: rgb(37, 33, 44),
   rgb(37, 33, 44),
@@ -689,15 +714,17 @@ form input.btn-whoaverse-paging:hover {
 /**
  * Comments -> Preview
  */
-.panel {
+body.dark .panel {
   background-color: rgb(51, 51, 51);
 }
 
-.panel-default {
+body.dark .panel-default {
   border-color: rgb(221, 221, 221);
 }
 
-.panel-heading, .panel-info>.panel-heading, .panel-default>.panel-heading {
+body.dark .panel-heading,
+body.dark .panel-info>.panel-heading,
+body.dark .panel-default>.panel-heading {
   background: -webkit-linear-gradient(top,rgb(46, 46, 46),,
   rgb(43, 43, 43)));
   border-color: rgb(39, 39, 39);
@@ -707,17 +734,18 @@ form input.btn-whoaverse-paging:hover {
 /**
  * Comments -> Load More
  */
-.btn-whoaverse {
+body.dark .btn-whoaverse {
   background: -webkit-linear-gradient(top,rgb(75, 75, 75),
   rgb(69, 69, 69));
   border-color: rgb(34, 34, 34);
 }
-.btn-whoaverse,
-a.btn-whoaverse {
+
+body.dark .btn-whoaverse,
+body.dark a.btn-whoaverse {
   color: rgb(221, 221, 221);
 }
 
-.btn-whoaverse:hover {
+body.dark .btn-whoaverse:hover {
   background: -webkit-linear-gradient(top,rgb(56, 67, 75),
   rgb(53, 60, 68));
   border-color: rgb(36, 46, 57);
@@ -731,5 +759,7 @@ a.btn-whoaverse {
 /**
  * TODO: first-time alert on comments page
  */
+
+
 
 

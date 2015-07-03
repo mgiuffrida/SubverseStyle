@@ -1,0 +1,14 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+
+<dom-module id="theme-variable">
+  <link rel="import" type="css" href="theme-variable.css">
+  <template>
+    <div class="layout horizontal center">
+      <div class="description flex">{{description}}</div>
+      <div class="color" style$="[[getColorStyle_(stampedColor)]]"></div>
+    </div>
+  </template>
+  <script src="theme-variable.js"></script>
+</dom-module>
+
+

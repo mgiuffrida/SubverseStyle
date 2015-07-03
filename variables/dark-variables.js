@@ -30,7 +30,7 @@ var darkColors = {
   'header-subverse-title': 'rgb(204, 204, 204)',
   'header-button-selected-bg': '$header-bg',
   'header-button-selected-bg-gradient': '$header-button-selected-bg - 6',
-  'header-button-selected-bg-hover': 'rgb(67, 155, 183)',
+  'weader-button-selected-hover': 'rgb(67, 155, 183)',
   'header-button-selected-border': '$header-border',
   'header-button': '$header-bar-link',
   'header-button-bg': 'transparent',

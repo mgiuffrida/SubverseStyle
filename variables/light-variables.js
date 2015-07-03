@@ -1,24 +1,31 @@
 var lightColors = {
   'bg': 'rgb(244, 244, 244)',
   'container-bg': 'rgb(255, 255, 255)',
+  /*
   'container-bg-alt1': 'rgb(245, 245, 245)',
   'container-bg-alt2': 'rgb(248, 248, 248)',
   'container-bg-alt3': '$container-bg-alt1',
   'container-bg-alt4': '$container-bg-alt2',
   'container-bg-alt5': '$container-bg',
+  */
   'container-border': 'rgb(209, 209, 209)',
+  /*
   'container-border-alt1': 'rgb(203, 203, 203)',
   'container-border-alt2': 'rgb(128, 128, 128)',
   'container-border-alt3': 'rgb(233, 233, 233)',
   'container-border-alt4': '$container-border',
   'container-border-alt5': '$container-border-alt3',
   'container-focus-border': 'rgb(153, 153, 153)',
+  */
   'container-text': '$text',
   'text': 'rgb(64, 64, 64)',
+  /*
   'text-alt1': 'rgb(51, 51, 51)',
   'text-alt2': 'rgb(72, 72, 72)',
+  */
   'header-bg': 'rgb(255, 255, 255)',
   'header-border': 'rgb(220, 220, 220)',
+  /*
   'header-border-alt1': 'rgb(237, 237, 237)',
   'header-border-alt2': '$header-border-alt1',
   'header-login-bg': 'rgb(246, 246, 246)',
@@ -27,10 +34,12 @@ var lightColors = {
   'header-login-a': '$header-button',
   'header-text': 'rgb(68, 68, 68)',
   'header-bar-link': 'rgb(129, 129, 129)',
+  */
   'header-subverse-title': 'rgb(90, 90, 90)',
+  /*
   'header-button-selected-bg': 'rgb(255, 255, 255)',
   'header-button-selected-bg-gradient': 'rgb(250, 250, 250)',
-  'header-button-selected-bg-hover': 'rgb(74, 171, 231)',
+  'header-button-selected-hover': 'rgb(74, 171, 231)',
   'header-button-selected-border': 'rgb(208, 208, 208)',
   'header-button': 'rgb(85, 85, 85)',
   'header-button-bg': 'transparent',
@@ -62,14 +71,18 @@ var lightColors = {
   'side-box-bg': 'rgb(253, 253, 253)',
   'side-box-border': 'rgb(211, 211, 211)',
   'side-box': 'inherit',
+  */
   'a': 'rgb(74, 171, 231)',
+  /*
   'a-hover': 'rgb(102, 194, 251)',
   'a-visited': 'rgb(145, 120, 208)',
   'a-subverse-highlight': '$header-bg',
   'a-subverse-highlight-bg': '$a + 10',
   'a-subverse-highlight-bg-gradient': '$a-subverse-highlight-bg - 10',
   'a-darker': 'rgb(74, 171, 231)',
+  */
   'a-alt1': '$a',
+  /*
   'a-author-hover': '$a',
   'link-upvotes': 'rgb(74, 171, 231)',
   'link-downvotes': 'rgb(136, 112, 255)',
@@ -145,4 +158,5 @@ var lightColors = {
   'mobile-menu-border': '$text',
   'form-control-bg': '$container-bg',
   'form-control-placeholder': 'rgb(153, 153, 153)',
+  */
 };
