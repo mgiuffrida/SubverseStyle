@@ -1,0 +1,29 @@
+:host {
+  display: block;
+}
+
+.description {
+  text-align: right;
+  margin-right: 5px;
+  padding: 8px 5px 8px 10px;
+}
+
+.color {
+  width: 44px;
+  height: 44px;
+  box-sizing: border-box;
+  border: 2px solid white;
+}
+
+[data-selected] .color {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 2px 0 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+[data-selected] .description {
+  font-weight: bold;
+  background-color: lightgrey;
+  border-left: 3px solid #4aabe7;
+}
+
+

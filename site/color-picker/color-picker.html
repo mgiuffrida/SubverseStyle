@@ -1,0 +1,24 @@
+<link rel="import" href="../bower_components/paper-input/paper-input.html">
+<link rel="import" href="../rgb-slider/rgb-slider.html">
+<link rel="import" href="../hsv-picker/hsv-picker.html">
+
+<dom-module id="color-picker">
+  <link rel="import" type="css" href="color-picker.css">
+  <template>
+    <div class="layout vertical center">
+      <h2>Set color to:</h2>
+      <hsv-picker id="hsvPicker" hex="{{hex}}" size="180"></hsv-picker>
+      <div id="hex">
+        #<paper-input id="hexInput" label="color" value="{{immediateHex_}}" no-label-float
+          prevent-invalid-input maxlength="6" allowed-pattern="[#a-fA-F0-9]">
+        </paper-input>
+      </div>
+      <rgb-slider id="rgb" red="{{red_}}" green="{{green_}}" blue="{{blue_}}"
+        on-change="componentChanged_"></rgb-slider>
+      <div id="colorBackground" class="layout horizontal flex">
+        <div id="colorSample" style$="[[backgroundColor_(hex)]]"></div>
+      </div>
+    </div>
+  </template>
+  <script src="color-picker.js"></script>
+</dom-module>

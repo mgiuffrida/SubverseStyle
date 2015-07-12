@@ -100,7 +100,7 @@ body.dark .whoaSubscriptionMenu li ul li a:visited {
 
 body.dark .whoaSubscriptionMenu li ul li a:hover {
   background: -webkit-linear-gradient(top, rgb(67, 139, 183),
-  rgb(67, 139, 183));
+  rgb(50, 122, 166));
   color: rgb(255, 255, 255) !important;
 }
 
@@ -126,7 +126,7 @@ body.dark .pagename a:hover {
  */
 body.dark .tabmenu li.selected a {
   background: -webkit-linear-gradient(top,rgb(51, 51, 51),
-  rgb(51, 51, 51));
+  rgb(45, 45, 45));
   border-color: rgb(34, 34, 34);
   color: rgb(221, 221, 221);
 }
@@ -143,21 +143,21 @@ body.dark .tabmenu li.disabled a {
 
 body.dark .tabmenu li.disabled a:hover {
   background: -webkit-linear-gradient(top,rgb(51, 51, 51),
-  rgb(51, 51, 51));
+  rgb(45, 45, 45));
   border-color: rgb(34, 34, 34);
   color: rgb(221, 221, 221);
 }
 
 body.dark .tabmenu li.disabled a.contribute {
   background: -webkit-linear-gradient(top,rgb(180, 71, 71),
-  rgb(180, 71, 71));
+  rgb(171, 60, 60));
   border-color: rgb(147, 51, 51);
   color: rgb(255, 220, 220);
 }
 
 body.dark .tabmenu li.disabled a.contribute:hover {
   background: -webkit-linear-gradient(top,rgb(164, 58, 74),
-  rgb(164, 58, 74));
+  rgb(153, 48, 48));
   border-color: rgb(128, 38, 38);
   color: rgb(255, 220, 220);
 }
@@ -168,7 +168,7 @@ body.dark .tabmenu li.disabled a.contribute:hover {
 @media (max-width: 700px) {
   body.dark .tabmenu li.selected a {
     background: -webkit-linear-gradient(top,rgb(56, 67, 75),
-    rgb(56, 67, 75));
+    rgb(53, 60, 68));
     border-color: rgb(36, 46, 57);
     box-shadow: 0 1px 0 rgba(0,0,0,.35);
     color: rgb(221, 221, 221);
@@ -176,7 +176,7 @@ body.dark .tabmenu li.disabled a.contribute:hover {
 
   body.dark .tabmenu li.disabled a {
     background: -webkit-linear-gradient(top,rgb(51, 51, 51),
-    rgb(51, 51, 51));
+    rgb(45, 45, 45));
     border-color: rgb(34, 34, 34);
     box-shadow: 0 1px 0 rgba(0,0,0,.1);
     color: rgb(221, 221, 221);
@@ -184,7 +184,7 @@ body.dark .tabmenu li.disabled a.contribute:hover {
 
   body.dark .tabmenu li.disabled a:hover {
     background: -webkit-linear-gradient(top,rgb(51, 51, 51),
-    rgb(51, 51, 51));
+    rgb(45, 45, 45));
     border-color: rgb(34, 34, 34);
     color: rgb(221, 221, 221);
   }
@@ -276,14 +276,14 @@ body.dark .field-validation-error {
 
 body.dark .btn-whoaverse.contribute {
   background: -webkit-linear-gradient(top,rgb(180, 71, 71),
-  rgb(180, 71, 71));
+  rgb(171, 60, 60));
   border-color: rgb(147, 51, 51);
   color: rgb(255, 247, 247);
 }
 
 body.dark .btn-whoaverse.contribute:hover {
   background: -webkit-linear-gradient(top,rgb(164, 58, 58),
-  rgb(164, 58, 58));
+  rgb(153, 48, 48));
   border-color: rgb(128, 38, 38);
   color: rgb(255, 247, 247);
 }
@@ -298,7 +298,7 @@ body.dark .titlebox h1 a:hover {
 
 body.dark .titlebox .btn-unsub.btn-whoaverse-paging {
   background: -webkit-linear-gradient(top,rgb(180, 71, 71),
-  rgb(180, 71, 71));
+  rgb(171, 60, 60));
   border-color: rgb(147, 51, 51);
   color: rgb(255, 247, 247);
 }
@@ -312,21 +312,21 @@ body.dark .btn-unsub:hover,
 body.dark .btn-unsub:active,
 body.dark .btn-unsub:focus {
   background: -webkit-linear-gradient(top,rgb(164, 58, 58),
-  rgb(164, 58, 58));
+  rgb(153, 48, 48));
   border-color: rgb(36, 46, 57);
   color: rgb(255, 255, 255);
 }
 
 body.dark .btn-whoaverse-paging {
   background: -webkit-linear-gradient(top,rgb(75, 75, 75),
-  rgb(75, 75, 75));
+  rgb(69, 69, 69));
   border-color: rgb(48, 48, 48);
   color: rgb(255, 255, 255);
 }
 
 body.dark .btn-whoaverse-paging:hover {
   background: -webkit-linear-gradient(top,rgb(56, 67, 75),
-  rgb(56, 67, 75));
+  rgb(53, 60, 68));
   border-color: rgb(36, 46, 57);
   color: rgb(255, 255, 255);
 }
@@ -549,7 +549,7 @@ body.dark .link .flat-list li a {
  */
 body.dark .pagination-container .btn-whoaverse-paging {
   background: -webkit-linear-gradient(top,rgb(75, 75, 75),
-  rgb(75, 75, 75));
+  rgb(69, 69, 69));
   border-color: rgb(48, 48, 48);
   color: rgb(255, 255, 255);
 }
@@ -588,14 +588,14 @@ body.dark .commenttextarea {
 
 body.dark form input.btn-whoaverse-paging {
   background: -webkit-linear-gradient(top,rgb(75, 75, 75),
-  rgb(75, 75, 75));
+  rgb(69, 69, 69));
   border-color: rgb(48, 48, 48);
   color: rgb(255, 255, 255);
 }
 
 body.dark form input.btn-whoaverse-paging:hover {
   background: -webkit-linear-gradient(top,rgb(56, 67, 75),
-  rgb(56, 67, 75));
+  rgb(53, 60, 68));
   border-color: rgb(36, 46, 57);
   color: rgb(255, 255, 255);
 }
@@ -726,7 +726,7 @@ body.dark .panel-heading,
 body.dark .panel-info>.panel-heading,
 body.dark .panel-default>.panel-heading {
   background: -webkit-linear-gradient(top,rgb(46, 46, 46),,
-  rgb(46, 46, 46),);
+  rgb(43, 43, 43)));
   border-color: rgb(39, 39, 39);
   color: rgb(211, 211, 211);
 }
@@ -736,7 +736,7 @@ body.dark .panel-default>.panel-heading {
  */
 body.dark .btn-whoaverse {
   background: -webkit-linear-gradient(top,rgb(75, 75, 75),
-  rgb(75, 75, 75));
+  rgb(69, 69, 69));
   border-color: rgb(34, 34, 34);
 }
 
@@ -747,7 +747,7 @@ body.dark a.btn-whoaverse {
 
 body.dark .btn-whoaverse:hover {
   background: -webkit-linear-gradient(top,rgb(56, 67, 75),
-  rgb(56, 67, 75));
+  rgb(53, 60, 68));
   border-color: rgb(36, 46, 57);
   color: rgb(255, 255, 255);
 }
@@ -761,96 +761,5 @@ body.dark .btn-whoaverse:hover {
  */
 
 
-
-@media (min-width: 1000px) {
-  body.dark .side .spacer,
-  body.dark .side .spacer.spacersection {
-    margin: 10px 0;
-    border: 0;
-    background-color: rgb(51, 51, 51);
-    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
-    box-sizing: border-box;
-  }
-
-  body.dark .commentarea {
-    border: 0;
-    background-color: inherit;
-  }
-
-  body.dark #container {
-    background-color: rgb(41, 41, 41);
-    border-color: transparent;
-    padding: 0;
-  }
-
-  body.dark .content .sitetable.linklisting,
-  body.dark .content .sitetable.linklisting .even {
-    background-color: rgb(51, 51, 51);
-  }
-
-  body.dark .content .sitetable.linklisting {
-    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
-  }
-
-  body.dark .link {
-    border-bottom: 1px solid rgb(41, 41, 41);
-  }
-
-  body.dark .commentarea .entry {
- margin-bottom:2px;   background-color: rgb(51, 51, 51) !important;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
-    border-radius: 2px !important;
-    padding: 4px;
-  }
-
-  body.dark .comment .comment {
-    background: transparent;
-    border: none;
-    border-radius: 0;
-    border-left: 1px solid rgb(34, 34, 34);
-    padding: 0 4px;
-    margin-top: 12px;
-    margin-bottom: 8px;
-  }
-
-  body.dark .side .spacer,
-  body.dark .side .spacer.spacersection {
-    padding: 10px;
-  }
-
-  body.dark li.disabled a,
-  body.dark li.disabled a:hover,
-  body.dark li.selected a,
-  body.dark li.selected a:hover,
-  body.dark a.contribute,
-  body.dark a.contribute:hover,
-  body.dark button.contribute,
-  body.dark button.contribute:hover,
-  body.dark button.btn-whoaverse-paging,
-  body.dark button.btn-whoaverse-paging:hover,
-  body.dark button.btn-default,
-  body.dark button.btn-default:hover,
-  body.dark button.btn-unsub,
-  body.dark button.btn-unsub:hover,
-  body.dark button.btn-sub,
-  body.dark button.btn-sub:hover {
-    /* Keep the border to preserve element height, but make it transparent. */
-    border-color: transparent !important;
-    /* Slightly reduce the rounding. */
-    border-radius: 2px !important;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2) !important;
-  }
-
-  /* Color selected button like header contribute buttons to highlight it. */
-  body.dark li.selected a {
-    background: rgb(180, 71, 71) !important;
-    color: rgb(255, 220, 220) !important;
-  }
-
-  body.dark li.selected a:hover {
-    background: rgb(164, 58, 74) !important;
-    color: rgb(255, 220, 220) !important;
-  }
-}
 
 

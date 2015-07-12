@@ -1,0 +1,12 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<dom-module id="theme-variable">
+  <link rel="import" type="css" href="theme-variable.css">
+  <template>
+    <div class="layout horizontal center" data-selected$="[[isSelected_(currentKey)]]">
+      <div class="description flex">{{variable.description}}</div>
+      <div class="color" style$="[[getColorStyle_(variable.*)]]"></div>
+    </div>
+  </template>
+  <script src="theme-variable.js"></script>
+</dom-module>

@@ -1,0 +1,70 @@
+#saturationValuePicker {
+  position: relative;
+  --x-dragger-cursor: crosshair;
+}
+
+#overlay1, #overlay2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+#overlay1 {
+  background: linear-gradient(to right, rgba(255, 255, 255, 1),
+                              rgba(255, 255, 255, 0))
+}
+
+#overlay2 {
+  background: linear-gradient(to top, rgba(0, 0, 0, 1),
+                              rgba(0, 0, 0, 0))
+}
+
+#hue {
+  margin-left: 20px;
+  position: relative;
+  --x-dragger-cursor: n-resize;
+}
+
+#hueDiv {
+  width: 30px;
+  background: linear-gradient(to top, #ff0000, #ff00ff, #0000ff,#00ffff,#00ff00,#ffff00,#ff0000)
+}
+
+#huePickerArrows {
+  left: -6px;
+  width: 42px;
+  height: 14px;
+}
+
+#huePickerArrows > * {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+}
+
+#huePickerLeftArrow {
+  border-left: 9px solid #333;
+}
+
+#huePickerRightArrow {
+  right: 0;
+  border-right: 9px solid #333;
+}
+
+#saturationValuePickerRing {
+  width: 12px;
+  height: 12px;
+  border: 1px solid black;
+  border-radius: 12px;
+}
+
+#saturationValuePickerRingInner {
+  width: 10px;
+  height: 10px;
+  border: 1px solid white;
+  border-radius: 10px;
+}

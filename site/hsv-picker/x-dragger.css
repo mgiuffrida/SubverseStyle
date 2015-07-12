@@ -1,0 +1,29 @@
+:host {
+  margin: 0 auto 1em;
+}
+
+:host > ::content .x-range {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  cursor: var(--x-dragger-cursor, e-resize);
+}
+
+:host > ::content .x-range .x-dragger {
+  display: block;
+  position: relative;
+  z-index: 2;
+  cursor: inherit;
+}
+
+:host > ::content {
+  /* vertical */
+  display: inline-block;
+}
+
+:host > ::content .x-range .x-dragger {
+  /* vertical */
+  width: inherit;
+  height: inherit;
+}

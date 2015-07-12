@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <head>
-  <script src="../variables/light-variables.js"></script>
-  <script src="../variables/dark-variables.js"></script>
-  <script src="../variables/apply-template.js"></script>
+  <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+  <script>window.Polymer = {dom: 'shadow'};</script>
+  <meta charset="utf-8">
   <link rel="import" href="bower_components/polymer/polymer.html">
-  <link rel="import" href="styler-theme.html">
+  <link rel="import" href="variables/variables.html">
+  <link rel="import" href="subverse-style/subverse-style.html">
   <link rel="stylesheet" href="style.css">
+  <script src="ga.js"></script>
 </head>
 
-<body>
+<body class="layout vertical">
   <!-- Fully customizable, from a basic 4-color theme to a custom 100-variable
   stylesheet -->
-  <styler-theme></styler-theme>
+  <subverse-style></subverse-style>
 </body>

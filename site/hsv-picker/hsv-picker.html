@@ -1,0 +1,35 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="x-dragger.html">
+
+<dom-module id="hsv-picker">
+  <link rel="import" type="css" href="hsv-picker.css">
+  <template>
+    <div class="layout horizontal">
+      <x-dragger id="saturationValuePicker" vertical horizontal
+        x="[[getSaturationPercent_(saturation_)]]"
+        y="[[getValuePercent_(value_)]]"
+        on-change="saturationValuePickerChanged_">
+        <div id="overlay1">
+          <div id="overlay2">
+            <div class="x-range">
+              <div id="saturationValuePickerRing" class="x-dragger">
+                <div id="saturationValuePickerRingInner">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </x-dragger>
+      <x-dragger id="hue" y="[[getHuePercent_(hue_)]]" vertical
+        on-change="hueDraggerChanged_">
+        <div id="hueDiv" class="x-range">
+          <div id="huePickerArrows" class="x-dragger">
+            <div id="huePickerLeftArrow"></div>
+            <div id="huePickerRightArrow"></div>
+          </div>
+        </div>
+      </x-dragger>
+    </div>
+  </template>
+  <script src="hsv-picker.js"></script>
+</dom-module>

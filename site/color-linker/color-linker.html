@@ -1,0 +1,63 @@
+<link rel="import" href="../bower_components/paper-menu/paper-menu.html">
+<link rel="import" href="../bower_components/iron-collapse/iron-collapse.html">
+<link rel="import" href="../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="../bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../bower_components/paper-item/paper-item.html">
+<link rel="import" href="../bower_components/paper-slider/paper-slider.html">
+<link rel="import" href="../theme-variable/theme-variable.html">
+
+<dom-module id="color-linker">
+  <link rel="import" type="css" href="color-linker.css">
+  <template>
+    <div class="layout vertical center">
+      <h2>Use same color as: <paper-icon-button icon="help" on-tap="showHelpTapped_"></paper-icon-button></h2>
+      <iron-collapse id="help" class="help">
+        <p>This variable will automatically track the color you link it to, so
+          changes to that variable will change this one as well.</p>
+        <p>You cannot link to a variable which tracks another variable.</p>
+      </iron-collapse>
+      <!-- TODO: group variables by section -->
+      <paper-menu id="menu" class="flex" on-iron-select="itemSelected_">
+        <paper-item>
+          <theme-variable variable="[[variables.bg]]">
+          </theme-variable>
+        </paper-item>
+        <paper-item>
+          <theme-variable variable="[[variables.container-bg]]" description="Container Background">
+          </theme-variable>
+        </paper-item>
+        <paper-item>
+          <theme-variable variable="[[variables.text]]" description="Text">
+          </theme-variable>
+        </paper-item>
+        <paper-item>
+          <theme-variable variable="[[variables.a]]" description="Link">
+          </theme-variable>
+        </paper-item>
+        <paper-item>
+          <theme-variable variable="[[variables.a-alt1]]" description="Link alt1">
+          </theme-variable>
+        </paper-item>
+      </paper-menu>
+      <div class="layout vertical center">
+        <div class="offset">
+          Offset: <span>[[offset]]</span>
+          <paper-icon-button icon="help" on-tap="showOffsetHelpTapped_"></paper-icon-button>
+        </div>
+        <iron-collapse id="offsetHelp" class="help">
+          <p>Adjusting the RGB offset allows you to tweak the brightness of the color
+            without breaking the link to the base color.</p>
+        </iron-collapse>
+        <div class="offset-color" style$="[[getOffsetColorStyle_(offset, linkToKey)]]"></div>
+        <paper-slider id="offsetSlider" min="-50" max="50" value="{{offset}}"></paper-slider>
+      </div>
+      <paper-button on-tap="unlinkTapped_" hidden$="[[hasNoLink_(linkToKey)]]">Unlink</paper-button>
+    </div>
+    <div hidden$="[[isLinkAllowed_(linkToKey, key)]]">
+      <p>Other variables are linked to this one. If you link this to another
+        variable, those ones will also use the new variable.</p>
+    </div>
+  </template>
+  <script src="color-linker.js"></script>
+</dom-module>

@@ -1,0 +1,17 @@
+<link rel="import" href="../color-slider/color-slider.html">
+
+<dom-module id="rgb-slider">
+  <link rel="import" type="css" href="rgb-slider.css">
+  <template>
+    <div id="main" class="layout vertical">
+      <color-slider id="redSlider" value="{{red}}"
+        on-change="sliderChanged_"></color-slider>
+      <color-slider id="greenSlider" value="{{green}}"
+        on-change="sliderChanged_"></color-slider>
+      <color-slider id="blueSlider" value="{{blue}}"
+        on-change="sliderChanged_"></color-slider>
+    </div>
+  </template>
+  <script src="rgb-slider.js"></script>
+</dom-module>
+

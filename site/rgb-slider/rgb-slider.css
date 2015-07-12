@@ -1,0 +1,16 @@
+color-slider {
+  margin-top: 10px;
+  display: block;
+}
+
+#redSlider {
+  --color: #c00;
+}
+
+#greenSlider {
+  --color: #090;
+}
+
+#blueSlider {
+  --color: #00c;
+}

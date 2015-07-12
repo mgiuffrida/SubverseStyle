@@ -37,7 +37,7 @@ body.light .link .usertext .md code,
 body.light pre,
 body.light code {
   background-color: rgb(255, 255, 255);
-  border-color: rgb(204, 204, 204);
+  border-color: rgb(205, 205, 205);
   color: rgb(51, 51, 51);
 }
 
@@ -624,7 +624,8 @@ body.light .comment .arrow-upvoted {
   background-image: url('./Light-SpriteSheet.png');
 }
 
-body.light .comment a.expand {
+body.light .comment a.expand,
+body.light .comment .collapsed {
   color: rgb(170, 170, 170);
 }
 
@@ -747,8 +748,8 @@ body.light a.btn-whoaverse {
 
 body.light .btn-whoaverse:hover {
   background: -webkit-linear-gradient(top,rgb(248, 248, 248),
-  rgb(242, 242, 242));
-  border-color: rgb(204, 204, 204);
+  rgb(240, 240, 240));
+  border-color: rgb(203, 203, 203);
   color: rgb(68, 68, 68);
 }
 

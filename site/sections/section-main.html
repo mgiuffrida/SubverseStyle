@@ -1,0 +1,56 @@
+<link rel="import" href="../theme-variable/theme-variable.html">
+<link rel="import" href="../bower_components/paper-material/paper-material.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+
+<dom-module id="section-main">
+  <link rel="import" type="css" href="section.css">
+  <link rel="import" type="css" href="section-main.css">
+  <template>
+    <h1>Main Theme</h1>
+    <div class="layout horizontal">
+      <div id="settings" class="layout horizontal center">
+        <div class="layout vertical flex">
+          <theme-variable variable="[[variables.bg]]"
+            on-tap="variableTapped_" current-key="[[currentKey]]"></theme-variable>
+          <theme-variable variable="[[variables.container-bg]]"
+            on-tap="variableTapped_" current-key="[[currentKey]]"></theme-variable>
+          <theme-variable variable="[[variables.text]]"
+            on-tap="variableTapped_" current-key="[[currentKey]]"></theme-variable>
+          <theme-variable variable="[[variables.a]]"
+            on-tap="variableTapped_" current-key="[[currentKey]]"></theme-variable>
+        </div>
+      </div>
+      <div class="layout vertical flex">
+        <paper-button on-tap="updatePreviewTapped_" hidden>Update preview</paper-button>
+        <div id="preview">
+          <div id="previewHeader">
+            <span class="subverse">your subverse</span>
+            <span class="button selected">Hot</span>
+            <span class="button disabled">Top</span>
+            <span class="button contribute">Share a link</span>
+          </div>
+          <div id="previewContainer">
+            <div id="previewLinks">
+              <div class="previewLink even">
+                <h2>DAE really been far even as decided to use even go want to
+                  do look more like?</h2>
+                <div class="previewTagline">
+                  submitted 1 day ago by <span class="author">Somebody</span> to
+                  <span class="subverse">your-subverse</span>
+                </div>
+              </div>
+              <div class="previewLink">
+                <h2 class="visited">Yet another repost</h2>
+                <div class="previewTagline">
+                  submitted 2 days ago by <span class="author">your_mother</span> to
+                  <span class="subverse">your-subverse</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
+  <script src="section-main.js"></script>
+</dom-module>

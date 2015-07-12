@@ -1,0 +1,58 @@
+theme-variable {
+  flex: 1;
+}
+
+paper-menu {
+  overflow-y: auto;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+
+  --paper-menu-colored-focused-item-after: {
+    right: 63px; /* 16 + 2 * 2 + 40, plus 3px margin */
+  }
+  --paper-menu-selected-item: {
+    border-left: 4px solid #4aabe7;
+  }
+}
+
+paper-button {
+  display: block;
+  background-color: #4aabe7;
+  color: white;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.help {
+  position: relative;
+  top: -10px;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+
+.help p {
+  margin-bottom: 0;
+}
+
+.help p:first-child {
+  margin-top: 0;
+}
+
+#offsetHelp {
+  margin-top: 10px;
+}
+
+paper-input {
+  width: 80px;
+}
+
+.offset-color {
+  width: 40px;
+  height: 40px;
+}
+
+.offset {
+  font-weight: bold;
+}

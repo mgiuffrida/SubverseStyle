@@ -1,0 +1,93 @@
+:host {
+  background-color: white;
+  --default-primary-color: #4aabe7;
+  --dark-primary-color: #000;
+  --light-primary-color: rgb(167, 222, 255);
+  --text-primary-color: #fff;
+/*i  --accent-color: #4aabe7;*/
+  --primary-background-color: #fff;
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --disabled-text-color: #bdbdbd;
+  --divider-color: #e0e0e0;
+}
+
+paper-toolbar {
+}
+
+paper-toolbar paper-button {
+  background-color: var(--text-primary-color);
+  color: var(--default-primary-color);
+  font-weight: bold;
+}
+
+.section {
+  border: 1px solid #ccc;
+  border-bottom-width: 0;
+  background-color: white;
+  padding: 10px;
+}
+
+.section-container {
+  margin-top: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.drawer {
+  padding: 10px;
+  overflow-y: auto;
+}
+
+paper-drawer-panel {
+}
+
+.drawer .buttons {
+  margin-bottom: 20px;
+}
+
+.drawer .buttons paper-button {
+  background-color: #ccc;
+  display: block;
+}
+
+.main {
+  border-right: 1px solid #ccc;
+}
+
+.drawer {
+}
+
+paper-tabs {
+  --paper-tabs-selection-bar-color: var(--default-primary-color);
+}
+
+paper-tabs paper-tab {
+  --paper-tab-ink: var(--default-primary-color);
+}
+
+paper-tab.iron-selected {
+  font-weight: bold;
+}
+
+iron-pages {
+  overflow-y: auto;
+}
+
+.dialogContent {
+  padding: 10px;
+}
+
+.dialogContent textarea {
+  width: 600px;
+  height: 400px;
+  margin-bottom: 10px;
+}
+
+paper-icon-button[icon=menu] {
+  margin-right: 0 !important;
+  margin-left: 24px !important;
+}
+
+.options {
+  font-size: 120%;
+}

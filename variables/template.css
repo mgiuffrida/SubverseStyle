@@ -6,12 +6,12 @@ body.$theme {
   line-height: 1.43;
 }
 
-body.$theme a,
-body.$theme a:visited {
+body.$theme a:not(.btn-tour):not(.contribute),
+body.$theme a:not(.btn-tour):not(.contribute):visited {
   color: $a;
 }
 
-body.$theme a:hover {
+body.$theme a:not(.btn-tour):not(.contribute):hover {
   color: $a-hover;
 }
 
@@ -124,14 +124,14 @@ body.$theme .pagename a:hover {
 /*
  * Header -> Subverse Header -> Menu
  */
-body.$theme .tabmenu li.selected a {
+body.$theme .tabmenu li.selected a:not(.contribute) {
   background: -webkit-linear-gradient(top,$header-button-selected-bg,
   $header-button-selected-bg-gradient);
   border-color: $header-button-selected-border;
   color: $header-text;
 }
 
-body.$theme .tabmenu li.selected a:hover {
+body.$theme .tabmenu li.selected a:not(.contribute):hover {
   color: $header-button-selected-hover;
 }
 
@@ -624,7 +624,8 @@ body.$theme .comment .arrow-upvoted {
   background-image: url('http://voat.co/Graphics/Light-SpriteSheet.png');
 }
 
-body.$theme .comment a.expand {
+body.$theme .comment a.expand,
+body.$theme .comment .collapsed {
   color: $comment-expander;
 }
 
@@ -752,15 +753,6 @@ body.$theme .btn-whoaverse:hover {
   color: $load-more-hover;
 }
 
-/**
- * TODO: Modal Dialogs
- */
-
-/**
- * TODO: first-time alert on comments page
- */
-
-
 @IF_MATERIAL
 @media (min-width: 1000px) {
   body.$theme .side {
@@ -776,6 +768,10 @@ body.$theme .btn-whoaverse:hover {
     box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
     box-sizing: border-box;
     padding: 10px;
+  }
+
+  body.$theme .side .spacer:first-child {
+    margin-top: 0;
   }
 
   body.$theme .commentarea {
@@ -806,24 +802,28 @@ body.$theme .btn-whoaverse:hover {
     background-color: $container-bg !important;
     box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
     border-radius: 2px !important;
-    padding: 4px;
+    padding: 4px 8px;
     margin-bottom: 2px;
   }
 
   body.$theme .comment .comment {
-    background: transparent;
+    background: transparent !important;
     border: none;
     border-radius: 0;
     border-left: 1px solid $container-border;
-    padding: 0 4px;
+    padding: 0 0 0 4px;
     margin-top: 12px;
     margin-bottom: 8px;
   }
 
-  body.$theme li.disabled a,
-  body.$theme li.disabled a:hover,
-  body.$theme li.selected a,
-  body.$theme li.selected a:hover,
+  body.$theme .comment.thread .comment.child {
+    margin-left: 30px;
+  }
+
+  body.$theme .tabmenu li.disabled a,
+  body.$theme .tabmenu li.disabled a:hover,
+  body.$theme .tabmenu li.selected a,
+  body.$theme .tabmenu li.selected a:hover,
   body.$theme a.contribute,
   body.$theme a.contribute:hover,
   body.$theme button.contribute,
@@ -838,22 +838,33 @@ body.$theme .btn-whoaverse:hover {
   body.$theme button.btn-sub:hover,
   body.$theme .btn-whoaverse-paging,
   body.$theme .btn-whoaverse-paging:hover {
-    /* Keep the border to preserve element height, but make it transparent. */
     border-color: transparent !important;
-    /* Slightly reduce the rounding. */
-    border-radius: 2px !important;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    border-radius: 3px !important;
+    text-transform: uppercase;
+  }
+
+  body.$theme .side a.btn-whoaverse.contribute,
+  body.$theme .side a.btn-whoaverse.contribute:hover {
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2) !important;
   }
 
   /* Color selected button like header contribute buttons to highlight it. */
-  body.$theme li.selected a {
+  body.$theme .tabmenu li.selected a {
     background: $header-button-contribute-bg !important;
     color: $header-button-contribute !important;
   }
 
-  body.$theme li.selected a:hover {
+  body.$theme .tabmenu li.selected a:hover {
     background: $header-button-contribute-bg-hover !important;
     color: $header-button-contribute-hover !important;
   }
 }
 @ENDIF_MATERIAL
+
+/**
+ * TODO: Modal Dialogs
+ * TODO: Announcements
+ */
+

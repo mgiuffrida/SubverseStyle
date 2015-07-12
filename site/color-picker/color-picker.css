@@ -1,0 +1,33 @@
+#main {
+  position: relative;
+}
+
+#colorBackground {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: lightgrey;
+  border-radius: 3px;
+}
+
+#colorSample {
+  width: 148px;
+  height: 91px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+#hex {
+  font-family: 'Roboto Mono', monospace;
+}
+
+paper-input {
+  width: 64px;
+  display: inline-block;
+
+  --paper-input-container-input: {
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+  }
+}
+

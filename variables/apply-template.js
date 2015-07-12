@@ -1,12 +1,12 @@
 var constValues = ['inherit', 'transparent'];
-var material = true;
+var material = false;
 
 function applyTemplate(template, colors) {
   template = applyMaterial(template);
   var symbols = Object.getOwnPropertyNames(colors);
   for (var i = 0; i < symbols.length; i++) {
     template = template.replace(new RegExp('\\$' + symbols[i] + '(?!-)', 'g'),
-                                colors[symbols[i]]);
+                                colors[symbols[i]].color);
   }
   return template;
 }
@@ -29,7 +29,7 @@ function stampColors(colors) {
   var stamped = {};
   var keys = Object.getOwnPropertyNames(colors);
   keys.forEach(function(key) {
-    stamped[key] = colors[key];
+    stamped[key] = colors[key].color;
   });
   setColors(stamped);
   return stamped;
@@ -41,13 +41,15 @@ function setColors(colors) {
   var symbols = Object.getOwnPropertyNames(colors);
   while (++n < maxN) {
     for (var i = 0; i < symbols.length; i++) {
-      var symbolVal = colors[symbols[i]];
+      var symbolVal = colors[symbols[i]].color;
       var dependentVar = parseVariable(symbolVal);
       if (dependentVar == null)
         continue;
 
       // Find value of dependent variable.
-      var value = colors[dependentVar[0]];
+      if (!colors[dependentVar[0]])
+        console.log(dependentVar[0]);
+      var value = colors[dependentVar[0]].color;
       if (parseVariable(value)) {
         // Wait for variable to be populated.
         continue;
@@ -57,7 +59,7 @@ function setColors(colors) {
         value = addToColor(value, dependentVar[1], dependentVar[2]);
 
       // Set variable to value of dependent variable.
-      colors[symbols[i]] = value;
+      colors[symbols[i]].color = value;
     }
   }
 }
@@ -65,10 +67,10 @@ function setColors(colors) {
 function testColors(colors) {
   var symbols = Object.getOwnPropertyNames(colors);
   for (var i = 0; i < symbols.length; i++) {
-    if (!parseRgb(colors[symbols[i]]) &&
-        constValues.indexOf(colors[symbols[i]]) == -1) {
+    if (!parseRgb(colors[symbols[i]].color) &&
+        constValues.indexOf(colors[symbols[i]].color) == -1) {
       throw new Error('Cannot parse $' + symbols[i] + ': ' +
-                      colors[symbols[i]]);
+                      colors[symbols[i]].color);
     }
   }
 }
@@ -154,9 +156,7 @@ function setTheme(theme) {
 }
 
 window.addEventListener('DOMContentLoaded', function() {
-  /*
   setColors(lightColors);
   setTheme('light');
   makeTemplate(true);
-  */
 });

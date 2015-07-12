@@ -1,0 +1,83 @@
+<link rel="import" href="../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="../bower_components/iron-icons/iron-icons.html">
+<link rel="import" href="../bower_components/iron-icons/image-icons.html">
+<link rel="import" href="../bower_components/iron-pages/iron-pages.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../bower_components/paper-checkbox/paper-checkbox.html">
+<link rel="import" href="../bower_components/paper-dialog/paper-dialog.html">
+<link rel="import" href="../bower_components/paper-drawer-panel/paper-drawer-panel.html">
+<link rel="import" href="../bower_components/paper-header-panel/paper-header-panel.html">
+<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="../bower_components/paper-input/paper-input.html">
+<link rel="import" href="../bower_components/paper-tabs/paper-tabs.html">
+<link rel="import" href="../bower_components/paper-toolbar/paper-toolbar.html">
+
+<link rel="import" href="../rgb-slider/rgb-slider.html">
+<link rel="import" href="../color-picker/color-picker.html">
+<link rel="import" href="../color-linker/color-linker.html">
+<link rel="import" href="../sections/section-main.html">
+
+<dom-module id="subverse-style">
+  <link rel="import" type="css" href="subverse-style.css">
+  <template>
+    <paper-drawer-panel id="drawerPanel" right-drawer drawer-width="320px" responsive-width="1000px"
+      disable-swipe on-paper-responsive-change="drawerChange_">
+      <paper-header-panel main class="main">
+        <paper-toolbar>
+          <h1 class="title">Subverse Styler</h1>
+          <paper-button on-tap="generateTapped_">Generate CSS</paper-button>
+          <paper-button on-tap="permalinkTapped_">Download Save File</paper-button>
+        </paper-toolbar>
+        <div class="section-container layout vertical">
+          <section-main class="section" variables="{{variables}}" current-key="{{currentKey}}"
+            on-edit-variable="variableChosen_">
+          </section-main>
+        </div>
+      </paper-header-panel>
+      <div drawer id="drawer" class="drawer">
+        <paper-header-panel id="drawerContent" mode="seamed">
+          <paper-tabs class="paper-header" selected="{{selectedPage_}}" on-select="pageSelected_">
+            <paper-tab>
+              <iron-icon icon="image:color-lens"></iron-icon>&nbsp;Change color
+            </paper-tab>
+            <paper-tab>
+              <iron-icon icon="link"></iron-icon>&nbsp;Link to color
+            </paper-tab>
+          </paper-tabs>
+          <div class="layout vertical fit">
+            <iron-pages class="flex" selected="{{selectedPage_}}">
+              <color-picker id="colorPicker" hex="{{pickerHex_}}"></color-picker>
+              <color-linker id="colorLinker" variables="{{variables}}"
+                key="{{currentKey}}" link-to-key="{{linkerKey_}}" offset="{{offset_}}">
+              </color-linker>
+            </iron-pages>
+            <div class="buttons">
+              <paper-button on-tap="cancelPicker_">
+                <iron-icon icon="cancel"></iron-icon>&nbsp;Cancel
+              </paper-button>
+            </div>
+          </div>
+        </paper-header-panel>
+      </div>
+    </paper-drawer-panel>
+    <paper-dialog id="generateDialog">
+      <h2>Copy and paste this CSS into your subverse settings:</h2>
+      <paper-dialog-scrollable class="dialogContent layout vertical">
+        <textarea id="cssTextarea"></textarea>
+        <div class="options layout horizontal center">
+          <paper-checkbox class="flex" checked="{{useMaterial_}}" on-change="materialChecked_">
+            Use flatter styles (experimental)
+          </paper-checkbox>
+            <paper-icon-button icon="content-paste" on-tap="copyPermalinkTapped_"></paper-icon-button>
+            <a href="" id="permalink" target="_blank">Permalink to Theme</a>
+        </div>
+      </paper-dialog-scrollable>
+      <div class="buttons">
+        <paper-button dialog-dismiss>
+          Close&nbsp;<iron-icon icon="exit-to-app"></iron-icon></paper-button>
+      </div>
+    </paper-dialog>
+  </template>
+  <script src="subverse-style.js"></script>
+</dom-module>
+
