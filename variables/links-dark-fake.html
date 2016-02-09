@@ -1,0 +1,2432 @@
+<!DOCTYPE html>
+<!-- saved from url=(0025)https://voat.co/v/askvoat -->
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head prefix="og: http://ogp.me/ns#"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta lang="en">
+
+        <meta name="description" content="a community platform where you can have your say. No censorship.">
+            <meta name="keywords" content="voat, voat.co, vote, submit, comment">
+
+    <title>AskVoat</title>
+    <meta property="og:title" content="AskVoat">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://voat.co/v/askvoat">
+    <meta property="og:image" content="https://voat.co/Graphics/voat-logo.png">
+    <meta property="og:site_name" content="Voat">
+    <meta property="og:description" content="a community platform where you can have your say. No censorship.">
+
+<link href="./links_files/light.css" rel="stylesheet">
+
+    <link rel="StyleSheet" href="./links_files/autocompletebundle.min.css" type="text/css">
+
+    <script async="" src="./links_files/analytics.js"></script><script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-49743834-1', 'voat.co');
+        ga('require', 'displayfeatures');
+        ga('send', 'pageview');
+    </script>
+
+    
+
+</head>
+<body ondrop="dropFunction(event);" ondragover="return false" class="dark">
+    <div style="display:none" id="share-a-link-overlay">
+        <div>
+            <h1>share a link</h1>
+        </div>
+    </div>
+
+    <div id="header" tabindex="0" role="banner">
+
+
+
+
+<div id="sr-header-area">
+    <div class="width-clip">
+        <div class="sr-list">
+            <ul class="whoaSubscriptionMenu flat-list sr-bar hover">
+                
+
+
+
+
+<li>
+    <a href="https://voat.co/v/askvoat#">My subverses</a>
+    <span class="drop-arrow"></span>
+    <ul>
+        <li><a href="https://voat.co/subverses/subscribed"><b>Edit your subscriptions</b></a></li>
+
+                <li><a href="https://voat.co/v/announcements">announcements</a></li>
+                <li><a href="https://voat.co/v/bestof">bestof</a></li>
+                <li><a href="https://voat.co/v/CriticalThinking">CriticalThinking</a></li>
+                <li><a href="https://voat.co/v/CustomizingVoat">CustomizingVoat</a></li>
+                <li><a href="https://voat.co/v/ELI5">ELI5</a></li>
+                <li><a href="https://voat.co/v/funny">funny</a></li>
+                <li><a href="https://voat.co/v/games">games</a></li>
+                <li><a href="https://voat.co/v/gaming">gaming</a></li>
+                <li><a href="https://voat.co/v/IAMA">IAMA</a></li>
+                <li><a href="https://voat.co/v/ideasforvoat">ideasforvoat</a></li>
+                <li><a href="https://voat.co/v/ITcrowd">ITcrowd</a></li>
+                <li><a href="https://voat.co/v/LifeProTips">LifeProTips</a></li>
+                <li><a href="https://voat.co/v/lpt">lpt</a></li>
+                <li><a href="https://voat.co/v/mildlyinteresting">mildlyinteresting</a></li>
+                <li><a href="https://voat.co/v/news">news</a></li>
+                <li><a href="https://voat.co/v/pics">pics</a></li>
+                <li><a href="https://voat.co/v/ProgrammerHumor">ProgrammerHumor</a></li>
+                <li><a href="https://voat.co/v/programming">programming</a></li>
+                <li><a href="https://voat.co/v/roboticon">roboticon</a></li>
+                <li><a href="https://voat.co/v/science">science</a></li>
+                <li><a href="https://voat.co/v/SF">SF</a></li>
+                <li><a href="https://voat.co/v/space">space</a></li>
+                <li><a href="https://voat.co/v/SubverseStyle">SubverseStyle</a></li>
+                <li><a href="https://voat.co/v/SubverseStyler">SubverseStyler</a></li>
+                <li><a href="https://voat.co/v/technology">technology</a></li>
+                <li><a href="https://voat.co/v/teslore">teslore</a></li>
+                <li><a href="https://voat.co/v/TheoryOfVoat">TheoryOfVoat</a></li>
+                <li><a href="https://voat.co/v/TIL">TIL</a></li>
+                <li><a href="https://voat.co/v/undefined">undefined</a></li>
+                <li><a href="https://voat.co/v/voatdev">voatdev</a></li>
+                <li><a href="https://voat.co/v/whatever">whatever</a></li>
+                <li><a href="https://voat.co/v/Worldnews">Worldnews</a></li>
+                <li><a href="https://voat.co/v/WTF">WTF</a></li>
+    </ul>
+</li>
+
+
+            </ul>
+            <ul class="flat-list sr-bar hover">
+                <li class="setsmenu">
+                    <span class="separator">-</span>
+                    <a href="https://voat.co/mysets">my sets</a>
+                </li>
+            </ul>
+            <ul class="flat-list sr-bar hover">
+                <li class="">
+                    <span class="separator">-</span>
+                    <a href="https://voat.co/">front</a>
+                </li>
+                <li>
+                    <span class="separator">-</span>
+                    <a href="https://voat.co/v/all">all</a>
+                </li>
+                <li>
+                    <span class="separator">-</span>
+                    <a href="https://voat.co/random" class="random">random</a>
+                </li>
+            </ul>
+            <ul class="flat-list sr-bar hover" id="sr-bar">
+
+                    <li class="">
+                        <span class="separator">-</span>
+                        <a href="https://voat.co/v/newsubverses/">newsubverses</a>
+                    </li>
+                    <li class="">
+                        <span class="separator">-</span>
+                        <a href="https://voat.co/v/introductions/">introductions</a>
+                    </li>
+                    <li class="">
+                        <span class="separator">-</span>
+                        <a href="https://voat.co/v/news/">news</a>
+                    </li>
+                    <li class="">
+                        <span class="separator">-</span>
+                        <a href="https://voat.co/v/videos/">videos</a>
+                    </li>
+                    <li class="">
+                        <span class="separator">-</span>
+                        <a href="https://voat.co/v/technology/">technology</a>
+                    </li>
+                    <li class="">
+                        <span class="separator">-</span>
+                        <a href="https://voat.co/v/science/">science</a>
+                    </li>
+                    <li class="">
+                        <span class="separator">-</span>
+                        <a href="https://voat.co/v/music/">music</a>
+                    </li>
+                    <li class="">
+                        <span class="separator">-</span>
+                        <a href="https://voat.co/v/gaming/">gaming</a>
+                    </li>
+                    <li class="">
+                        <span class="separator">-</span>
+                        <a href="https://voat.co/v/aww/">aww</a>
+                    </li>
+                    <li class="">
+                        <span class="separator">-</span>
+                        <a href="https://voat.co/v/books/">books</a>
+                    </li>
+                    <li class="">
+                        <span class="separator">-</span>
+                        <a href="https://voat.co/v/gifs/">gifs</a>
+                    </li>
+                    <li class="">
+                        <span class="separator">-</span>
+                        <a href="https://voat.co/v/sports/">sports</a>
+                    </li>
+                    <li class="">
+                        <span class="separator">-</span>
+                        <a href="https://voat.co/v/tv/">tv</a>
+                    </li>
+                    <li class="">
+                        <span class="separator">-</span>
+                        <a href="https://voat.co/v/programming/">programming</a>
+                    </li>
+                    <li class="">
+                        <span class="separator">-</span>
+                        <a href="https://voat.co/v/cats/">cats</a>
+                    </li>
+                    <li class="">
+                        <span class="separator">-</span>
+                        <a href="https://voat.co/v/movies/">movies</a>
+                    </li>
+                    <li class="">
+                        <span class="separator">-</span>
+                        <a href="https://voat.co/v/politics/">politics</a>
+                    </li>
+                    <li class="selected">
+                        <span class="separator">-</span>
+                        <a href="https://voat.co/v/AskVoat/">AskVoat</a>
+                    </li>
+                    <li class="">
+                        <span class="separator">-</span>
+                        <a href="https://voat.co/v/pics/">pics</a>
+                    </li>
+                    <li class="">
+                        <span class="separator">-</span>
+                        <a href="https://voat.co/v/religion/">religion</a>
+                    </li>
+                    <li class="">
+                        <span class="separator">-</span>
+                        <a href="https://voat.co/v/atheism/">atheism</a>
+                    </li>
+                    <li class="">
+                        <span class="separator">-</span>
+                        <a href="https://voat.co/v/ideasforvoat/">ideasforvoat</a>
+                    </li>
+                    <li class="">
+                        <span class="separator">-</span>
+                        <a href="https://voat.co/v/funny/">funny</a>
+                    </li>
+                    <li class="">
+                        <span class="separator">-</span>
+                        <a href="https://voat.co/v/announcements/">announcements</a>
+                    </li>
+                    <li class="">
+                        <span class="separator">-</span>
+                        <a href="https://voat.co/v/subverserequest/">subverserequest</a>
+                    </li>
+                    <li class="">
+                        <span class="separator">-</span>
+                        <a href="https://voat.co/v/whatever/">whatever</a>
+                    </li>
+            </ul>
+        </div><a href="https://voat.co/subverses" id="sr-more-link">more »</a>
+        <br>
+    </div>
+</div>
+
+
+        <div id="header-container">
+            <div id="header-banner">
+
+                <a title="Voat: have your say" href="https://voat.co/" id="header-img-a">
+                    <img id="header-img" src="./links_files/voat-logo.png" alt="Voat" height="31" width="112">
+                </a>
+
+                <div id="show-menu-button"></div>
+
+
+
+
+        <span class="hover pagename"><a href="https://voat.co/v/AskVoat">AskVoat</a></span>
+        <ul class="tabmenu">
+            <li class="selected"><a href="https://voat.co/v/AskVoat" title="Show most popular submissions.">Hot</a></li>
+            <li class="disabled"><a href="https://voat.co/v/AskVoat/new" title="Show latest submissions.">New</a></li>
+            <li class="disabled"><a href="https://voat.co/v/AskVoat/top" title="Show all time top ranked submissions.">Top</a></li>
+            <li class="disabled"><a class="contribute submit-link" href="https://voat.co/v/AskVoat/submit?linkpost=true">Share a link</a></li>
+            <li class="disabled"><a class="contribute submit-text" href="https://voat.co/v/AskVoat/submit">Discuss</a></li>
+        </ul>
+
+
+                
+
+
+<form action="https://voat.co/account/logoff" class="nav navbar-nav navbar-right" id="logoutForm" method="post"><input name="__RequestVerificationToken" type="hidden" value="b2E7wTMZ0IshthyqmL83gGLS5EPjfiv29xUkDjZE6lcB23mOAPe2n9Wmftuymx570--R_q6XeUPRjoLqcI8YqhuASI0DcGlkZVfnTHiRnntLvXBavFYOyVirpBNDRvHjnlH5Cw2">        <div id="header-account">
+            <div class="logged-in">
+                <span class="user">
+                    <a href="https://voat.co/user/roboticon" title="Profile">roboticon</a>
+                    <span class="userkarma" title="submission contribution points"><a href="https://voat.co/user/roboticon/submissions" class="userkarma" id="scp">135</a></span>
+                    |
+                    <span class="userkarma" title="comment contribution points"><a href="https://voat.co/user/roboticon/comments" class="userkarma" id="ccp">193</a></span>
+                    |
+                    <span class="upvoatsGiven" title="total upvoats given"><a href="https://voat.co/user/roboticon" class="upvoatsGiven" id="upvoatsGiven">175</a></span>
+                </span>
+                <span class="separator">|</span>
+                <span class="user"><a href="https://voat.co/account/manage" id="manage" title="Manage">Manage</a></span>
+                <span class="separator">|</span>
+                <a id="nightmodetoggle" onclick="toggleNightMode()" title="Toggle Night Mode"></a>
+                <span class="separator">|</span>
+                    <span class="notification-container">
+                        <a title="no new messages" href="https://voat.co/messaging/inbox" class="nohavemail" id="mail">messages</a>
+                        <span class="notification-counter" id="mailcounter" style="display:none"></span>
+                    </span>
+                <span class="separator">|</span>
+                <a href="javascript:document.getElementById('logoutForm').submit()">Log off</a>
+            </div>
+        </div>
+</form>
+
+
+            </div>
+        </div>
+    </div>
+
+    
+
+        <div class="modal fade" id="notenoughccp" tabindex="-1" role="dialog" aria-labelledby="notenoughccplabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title" id="notenoughccplabel">Hi! It looks like you are new around here</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Welcome to Voat!</p>
+                        <p>In order to downvote comments or submissions you need to have at least 100 comment contribution points.</p>
+                        <p>Every time someone upvotes one of your comments, you gain 1 comment contribution point.</p>
+                        <p>You currently have 193 comment contribution points.</p>
+                        <p>Tip: a good way to earn more contribution points is to take part in discussions or say hi in /v/introductions.</p>
+                        <p>This requirement was established as a measure to encourage new members to get involved and participate in discussions.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn-whoaverse-medium" data-dismiss="modal">Ok, got it!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="notenoughccpupvote" tabindex="-1" role="dialog" aria-labelledby="notenoughccpupvotelabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title" id="notenoughccpupvotelabel">Hi! It looks like you are new around here.</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Welcome to Voat!</p>
+                        <p>In order to be able to upvote comments or submissions without limitations, you need to have at least 20 comment contribution points.</p>
+                        <p>You are currently limited to 10 upvotes per 24 hours.</p>
+                        <p>Every time someone upvotes one of your comments, you gain 1 comment contribution point.</p>
+                        <p>You currently have 193 comment contribution points.</p>
+                        <p>Tip: a good way to earn more contribution points is to take part in discussions or say hi in /v/introductions.</p>
+                        <p>This requirement was established as a measure to encourage new members to get involved and participate in discussions.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn-whoaverse-medium" data-dismiss="modal">Ok, got it!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal-background"></div>
+
+    
+
+
+
+
+<style type="text/css">
+    body > .content .link .rank {
+        width: 3.2ex;
+    }
+</style>
+
+<div id="container">
+
+
+
+
+
+<div class="side">
+
+    
+
+
+
+<div class="spacer">
+<form action="https://voat.co/search" class="form-horizontal" method="get" role="form" novalidate="novalidate">        <h2></h2>
+<input class="form-control" data-val="true" data-val-length="The search term must be at least 3 characters long." data-val-length-max="100" data-val-length-min="3" data-val-required="Please enter a term to search for." id="q" name="q" placeholder="Search Voat" type="text" value=""><span class="field-validation-valid" data-valmsg-for="q" data-valmsg-replace="true"></span><input id="sub" name="sub" type="hidden" value="AskVoat">        <input type="checkbox" name="l" value="true" id="l">
+<label for="Limit_the_search_to_current_subverse">Limit the search to current subverse</label></form></div>
+
+
+    <div class="spacer">
+        <a href="https://voat.co/v/AskVoat/submit?linkpost=true" class="btn-whoaverse btn-block contribute submit-link">
+            Share a link
+        </a>
+    </div>
+
+    <div class="spacer">
+        <a href="https://voat.co/v/AskVoat/submit" class="btn-whoaverse btn-block contribute submit-text">
+            Discuss
+        </a>
+    </div>
+
+    <div class="spacer">
+        <div class="titlebox">
+            <h1 class="hover whoaversename">
+                <a href="https://voat.co/v/AskVoat" class="hover">AskVoat</a>
+                <a href="https://voat.co/rss/AskVoat" class="rss-icon"><img src="./links_files/feed-icon-14x14.png" alt="RSS feed for this subverse"></a>
+            </h1>
+
+                    <button type="button" class="btn-whoaverse-paging btn-xs btn-default btn-sub" onclick="return subscribe(this, &#39;AskVoat&#39;)">subscribe</button>
+                    <button type="button" class="btn-whoaverse-paging btn-xs btn-default" onclick="return toggleBlockSubverse(this, &#39;AskVoat&#39;)">block</button>
+
+            <span class="subscribers">
+                <span id="subscriberCount" class="number">16541</span>
+                <span class="word">subscribers</span>
+            </span>
+            <p class="users-online fuzzed" title="number of users viewing this subverse in the past 15 minutes">
+                <span class="number">~1195</span>
+                <span class="word">users here now</span>
+            </p>
+            <form action="https://voat.co/v/askvoat#" class="usertext" onsubmit="return post_form(this, &#39;editusertext&#39;)" id="form-xxxx">
+                <input name="submission-id" value="xxxx" type="hidden">
+                <div class="usertext-body may-blank-within">
+                    <div class="md">
+                        <p>
+                            </p><p><a href="./links_files/links.html">/v/askvoat</a> to receive answers!</p>
+<hr>
+<p><strong>AskVoat Canon</strong></p>
+<ol>
+<li>Please check that your questions are questions and that the question is in the title.</li>
+<li>Do not spam or make clickbait posts.</li>
+<li>Do not engage in vote manipulation.</li>
+</ol>
+<p>Violating the laws of AskVoat will result in deletion and/or ban.</p>
+<hr>
+<p><strong>Guidelines</strong></p>
+<ul>
+<li>
+<p><strong>Don't downvote because you disagree and don't upvote because you agree. This leads to echo chambers and hostility that deeply harm open and intelligent discussion. Vote based on quality and applaud or at least welcome dissent, especially if the dissent was polite and incorporated valid argumentation.</strong>  
+</p>
+</li>
+<li>
+<p>For a NSFW post use [NSFW] in the title</p>
+</li>
+<li>For a linked poll put [POLL] in the title</li>
+</ul>
+<hr>
+<p><strong>FAQ</strong></p>
+<p>Q: Can we only ask specific types of questions?</p>
+<p>A: No, any question is acceptable.</p>
+<p>&nbsp;</p>
+<p>Q: What is vote manipulation?</p>
+<p>A: Vote manipulation is when people put up a post with the intent of upvoting each others comments, essentially defeating the reason why there is a cap to how many upvotes people get untill they reach 20CCP and the ability to downvote untill they get to 100CCP.</p>
+<p>&nbsp;</p>
+<p>Q: Will moderators ever delete comments that are offensive to other people?</p>
+<p>A: No, it's your job to discourage detracting comments and posts by using your ability to downvote.</p>
+<p>&nbsp;</p>
+<p>Q: Why is one of the rules asking you to write a question with a '?' How old do you think we are 5?</p>
+<p>A: Unfortunately some people among us here don't remember this as to why it's a rule.</p>
+<p>&nbsp;</p>
+<p>Q: Who should I contact if there is something that breaks the rules?</p>
+<p>A: Send a message to any of the moderators. <a href="https://voat.co/user/stoic">@Stoic</a>, <a href="https://voat.co/user/she">@she</a> and <a href="https://voat.co/user/kneegrow">@Kneegrow</a> are the most active so message them and please link the thread as we cannot help you otherwise. You can also address broader issues by posting about them on <a href="https://voat.co/v/modsofaskvoat">/v/modsofaskvoat</a> or on <a href="./links_files/links.html">/v/askvoat</a> itself. If you see someone, including yourself, be downvoted for dissenting, then you can restore that comment with the points it deserved at <a href="https://voat.co/v/disagreebutton">/v/disagreebutton</a>.</p>
+<hr>
+<p><strong>Other Question Subs</strong></p>
+<ul>
+<li><a href="https://voat.co/v/askdrunkvoat">/v/askdrunkvoat</a></li>
+<li><a href="https://voat.co/v/askvoatanon">/v/askvoatanon</a></li>
+<li><a href="https://voat.co/v/throwaway">/v/throwaway</a></li>
+<li><a href="https://voat.co/v/askpolitics">/v/askpolitics</a></li>
+<li>Request for your sub to be placed here</li>
+</ul>
+
+                        <p></p>
+                    </div>
+                </div>
+            </form>
+            <div class="bottom">
+                <p>
+                    created by <a href="https://voat.co/user/Kva" class="author may-blank">Kva</a>
+                    <span class="userattrs"></span>
+                    <span class="age">a community for <time title="1/2/2015 9:17:50 PM" datetime="1/2/2015 9:17:50 PM">5 months</time></span>
+                    </p>
+                    <div class="minimum-ccp-downvote">
+                        <p>
+                            Minimum CCP required to downvote in this sub: 0
+                            </p><p>Your CCP for this sub: 59</p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="spacer">
+                <div class="sidecontentbox ">
+                    <a class="helplink message-moderators-temporary-class" title="This feature is currently under development. We apologize for any inconvenience." href="https://voat.co/v/askvoat#">message the moderators</a>
+                    <div class="title">
+                        <h1 class="alert-h1">MODERATORS</h1>
+                    </div>
+                    <ul class="content">
+
+
+
+
+    <li>
+        <a href="https://voat.co/user/Blacque" class="author may-blank">Blacque</a><span class="userattrs"></span>
+    </li>
+    <li>
+        <a href="https://voat.co/user/farqanator" class="author may-blank">farqanator</a><span class="userattrs"></span>
+    </li>
+    <li>
+        <a href="https://voat.co/user/Flux" class="author may-blank">Flux</a><span class="userattrs"></span>
+    </li>
+    <li>
+        <a href="https://voat.co/user/Kneegrow" class="author may-blank">Kneegrow</a><span class="userattrs"></span>
+    </li>
+    <li>
+        <a href="https://voat.co/user/Kva" class="author may-blank">Kva</a><span class="userattrs"></span>
+    </li>
+    <li>
+        <a href="https://voat.co/user/She" class="author may-blank">She</a><span class="userattrs"></span>
+    </li>
+    <li>
+        <a href="https://voat.co/user/shiny" class="author may-blank">shiny</a><span class="userattrs"></span>
+    </li>
+    <li>
+        <a href="https://voat.co/user/Stoic" class="author may-blank">Stoic</a><span class="userattrs"></span>
+    </li>
+
+                    </ul>
+                </div>
+            </div>
+            
+
+<div class="spacer spacersection">
+    <div class="sidecontentbox ">
+        <div class="title">
+            <h1 class="alert-h1">SUBVERSE CHAT</h1>
+        </div>
+        <div class="accordion" id="accordion2">
+            <div class="accordion-group">
+                <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="https://voat.co/v/askvoat#collapseOne">
+                        Toggle Subverse Chat
+                    </a>
+                </div>
+                <div id="collapseOne" class="accordion-body collapse in">
+                    <div class="accordion-inner">
+                        <div class="sidecontentbox content">
+                            <div id="subverseChatRoom" class="subverseChatRoomContent">
+                                <p>
+                                    <b>Voat</b>: you have joined /v/AskVoat chatroom.
+                                </p>
+                            </div>
+                        </div>
+                        <script>
+                            window.onload = function () { joinSubverseChatRoom('AskVoat'); }
+                        </script>
+
+                            <input id="chatInputBox" onkeydown="if (event.keyCode == 13) sendChatMessage(&#39;roboticon&#39;, &#39;AskVoat&#39;);" class="form-control" data-val="true" data-val-length="Please write at least 3 characters." data-val-length-max="100" data-val-length-min="3" data-val-required="Please enter a message." name="chatInputBox" placeholder="Say something. Anything." value="" type="text">
+                            <button type="button" class="btn-whoaverse-paging btn-xs btn-default" onclick="sendChatMessage(&#39;roboticon&#39;, &#39;AskVoat&#39;);">send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="spacer spacersection">
+                <div class="sidecontentbox ">
+                    <div class="title">
+                        <h1 class="alert-h1">ANNOUNCEMENTS</h1>
+                    </div>
+                    <div class="sidecontentbox content">
+                        <p>We're looking for people to help us beta test our new API. <a href="https://voat.co/v/voatdev/comments/88531">Click here</a> to find out how you can participate.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <link rel="stylesheet" type="text/css" href="dark.css">
+
+    <div class="content" role="main">
+        <div class="sitetable linklisting">
+            
+
+
+
+<div class="submission id-166707 even link stickied" data-fullname="166707" data-ups="26" data-downs="1">
+    <p class="parent"></p>
+
+    
+
+        <div class="midcol unvoted">
+
+                <div class="arrow-upvote login-required" onclick="voteUpSubmission(166707);" role="button" aria-label="upvote" tabindex="0"></div>
+
+            <div class="score dislikes">1</div>
+            <div class="score unvoted">25</div>
+            <div class="score likes">26</div>
+
+                <div class="arrow-downvote login-required" onclick="voteDownSubmission(166707);" role="button" aria-label="downvote" tabindex="0"></div>
+
+        </div>
+        <div class="scorebar" title="Blue = likes, violet = dislikes">
+            <div class="scorebar-likes" style="height: 96%"></div>
+            <div class="scorebar-dislikes" style="height: 4%"></div>
+        </div>
+
+    
+    
+
+        <div class="entry unvoted">
+            <p class="title">
+                <span class="promoted">sticky</span>
+                <a class="title may-blank" href="https://voat.co/v/AskVoat/comments/166707" tabindex="1">The Future of /v/AskVoat 2 - How should the subverse look like?</a>
+                <span class="domain">(<a href="https://voat.co/v/AskVoat">self.AskVoat</a>)</span>
+            </p>
+            <div class="expando-button collapsed selftext" onclick="loadSelfText(this, 166707)"></div>
+            
+                <p class="tagline">
+                    submitted <time title="6/24/2015 8:23:23 PM" datetime="6/24/2015 8:23:23 PM">8 days</time> ago by <a href="https://voat.co/user/Shiny" class="author may-blank userinfo tooltipstered" data-username="Shiny">Shiny</a>
+                    <span class="userattrs"></span> to <a href="https://voat.co/v/AskVoat" class="subverse hover may-blank">AskVoat</a>
+                    <span class="commentvotesratio">(<span class="post_upvotes">+26</span>|<span class="post_downvotes">-1</span>)</span>
+                </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                        <a href="https://voat.co/v/AskVoat/comments/166707" class="comments may-blank">30 comments</a>
+                </li>
+                        <li>
+                            
+
+        <span class="option main active">
+            <a href="javascript:void(0)" class="togglebutton savelink" onclick="return toggleSaveSubmission(166707)">save</a>
+        </span>
+
+                        </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/v/askvoat#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            Please wait...
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>    
+
+
+
+    <div class="child"></div>
+    <div class="clearleft"></div>
+</div>
+
+
+
+
+
+                <div class="submission id-194319 odd link self" data-fullname="194319" data-ups="1" data-downs="">
+                    <p class="parent"></p>
+
+                    
+
+        <div class="midcol unvoted">
+
+                <div class="arrow-upvote login-required" onclick="voteUpSubmission(194319);" role="button" aria-label="upvote" tabindex="0"></div>
+
+            <div class="score dislikes">0</div>
+            <div class="score unvoted">4</div>
+            <div class="score likes">4</div>
+
+                <div class="arrow-downvote login-required" onclick="voteDownSubmission(194319);" role="button" aria-label="downvote" tabindex="0"></div>
+
+        </div>
+        <div class="scorebar" title="Blue = likes, violet = dislikes">
+            <div class="scorebar-likes" style="height: 100%"></div>
+            <div class="scorebar-dislikes" style="height: 0%"></div>
+        </div>
+
+
+                    
+
+
+
+        <div class="entry unvoted">
+            <p class="title">
+                <a class="title may-blank " href="https://voat.co/v/AskVoat/comments/194319" tabindex="1" title="I have a pair of red and cyan 3D glasses. How best can I use them in conjunction with my computer?">I have a pair of red and cyan 3D glasses. How best can I use them in conjunction with my computer?</a>
+                <span class="domain">(<a href="https://voat.co/v/AskVoat">self.AskVoat</a>)</span>
+            </p>
+
+                    <div title="Toggle Self Text" class="expando-button collapsed selftext" onclick="loadSelfText(this, 194319)"></div>
+                    <p class="tagline">
+                        submitted <time title="7/3/2015 3:17:44 AM" datetime="7/3/2015 3:17:44 AM">1 hour</time> ago by <a href="https://voat.co/user/cyanisaac" class="author may-blank userinfo tooltipstered" data-username="cyanisaac">cyanisaac</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/AskVoat" class="subverse hover may-blank">AskVoat</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+4</span>|<span class="post_downvotes">-0</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                        <a href="https://voat.co/v/AskVoat/comments/194319" class="comments may-blank">4 comments</a>
+
+                </li>
+                        <li>
+                            
+
+        <span class="option main active">
+            <a href="javascript:void(0)" class="togglebutton savelink" onclick="return toggleSaveSubmission(194319)">save</a>
+        </span>
+
+                        </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/v/askvoat#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            Please wait...
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="submission id-194228 even link self" data-fullname="194228" data-ups="1" data-downs="">
+                    <p class="parent"></p>
+
+                    
+
+        <div class="midcol unvoted">
+
+                <div class="arrow-upvote login-required" onclick="voteUpSubmission(194228);" role="button" aria-label="upvote" tabindex="0"></div>
+
+            <div class="score dislikes">1</div>
+            <div class="score unvoted">5</div>
+            <div class="score likes">6</div>
+
+                <div class="arrow-downvote login-required" onclick="voteDownSubmission(194228);" role="button" aria-label="downvote" tabindex="0"></div>
+
+        </div>
+        <div class="scorebar" title="Blue = likes, violet = dislikes">
+            <div class="scorebar-likes" style="height: 86%"></div>
+            <div class="scorebar-dislikes" style="height: 14%"></div>
+        </div>
+
+
+                    
+
+
+
+        <div class="entry unvoted">
+            <p class="title">
+                <a class="title may-blank " href="https://voat.co/v/AskVoat/comments/194228" tabindex="1" title="What is Voat? In 3 sentences or less.">What is Voat? In 3 sentences or less.</a>
+                <span class="domain">(<a href="https://voat.co/v/AskVoat">self.AskVoat</a>)</span>
+            </p>
+
+                    <p class="tagline">
+                        submitted <time title="7/3/2015 3:00:10 AM" datetime="7/3/2015 3:00:10 AM">1 hour</time> ago by <a href="https://voat.co/user/farmingdale" class="author may-blank userinfo tooltipstered" data-username="farmingdale">farmingdale</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/AskVoat" class="subverse hover may-blank">AskVoat</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+6</span>|<span class="post_downvotes">-1</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                        <a href="https://voat.co/v/AskVoat/comments/194228" class="comments may-blank">23 comments</a>
+
+                </li>
+                        <li>
+                            
+
+        <span class="option main active">
+            <a href="javascript:void(0)" class="togglebutton savelink" onclick="return toggleSaveSubmission(194228)">save</a>
+        </span>
+
+                        </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/v/askvoat#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            Please wait...
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="submission id-194251 odd link self" data-fullname="194251" data-ups="1" data-downs="">
+                    <p class="parent"></p>
+
+                    
+
+        <div class="midcol unvoted">
+
+                <div class="arrow-upvote login-required" onclick="voteUpSubmission(194251);" role="button" aria-label="upvote" tabindex="0"></div>
+
+            <div class="score dislikes">1</div>
+            <div class="score unvoted">4</div>
+            <div class="score likes">5</div>
+
+                <div class="arrow-downvote login-required" onclick="voteDownSubmission(194251);" role="button" aria-label="downvote" tabindex="0"></div>
+
+        </div>
+        <div class="scorebar" title="Blue = likes, violet = dislikes">
+            <div class="scorebar-likes" style="height: 83%"></div>
+            <div class="scorebar-dislikes" style="height: 17%"></div>
+        </div>
+
+
+                    
+
+
+
+        <div class="entry unvoted">
+            <p class="title">
+                <a class="title may-blank " href="https://voat.co/v/AskVoat/comments/194251" tabindex="1" title="&quot;Service not Available&quot; Is VOAT being HIT by &quot;Denial of Service Attacks by Reddit? 
+Past 24 hours &amp; I have not see this before ">"Service not Available" Is VOAT being HIT by "Denial of Service Attacks by Reddit? 
+Past 24 hours &amp; I have not see this before </a>
+                <span class="domain">(<a href="https://voat.co/v/AskVoat">self.AskVoat</a>)</span>
+            </p>
+
+                    <div title="Toggle Self Text" class="expando-button collapsed selftext" onclick="loadSelfText(this, 194251)"></div>
+                    <p class="tagline">
+                        submitted <time title="7/3/2015 3:04:55 AM" datetime="7/3/2015 3:04:55 AM">1 hour</time> ago by <a href="https://voat.co/user/freeGreece" class="author may-blank userinfo tooltipstered" data-username="freeGreece">freeGreece</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/AskVoat" class="subverse hover may-blank">AskVoat</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+5</span>|<span class="post_downvotes">-1</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                        <a href="https://voat.co/v/AskVoat/comments/194251" class="comments may-blank">7 comments</a>
+
+                </li>
+                        <li>
+                            
+
+        <span class="option main active">
+            <a href="javascript:void(0)" class="togglebutton savelink" onclick="return toggleSaveSubmission(194251)">save</a>
+        </span>
+
+                        </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/v/askvoat#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            Please wait...
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="submission id-194194 even link self" data-fullname="194194" data-ups="1" data-downs="">
+                    <p class="parent"></p>
+
+                    
+
+        <div class="midcol unvoted">
+
+                <div class="arrow-upvote login-required" onclick="voteUpSubmission(194194);" role="button" aria-label="upvote" tabindex="0"></div>
+
+            <div class="score dislikes">1</div>
+            <div class="score unvoted">47</div>
+            <div class="score likes">48</div>
+
+                <div class="arrow-downvote login-required" onclick="voteDownSubmission(194194);" role="button" aria-label="downvote" tabindex="0"></div>
+
+        </div>
+        <div class="scorebar" title="Blue = likes, violet = dislikes">
+            <div class="scorebar-likes" style="height: 98%"></div>
+            <div class="scorebar-dislikes" style="height: 2%"></div>
+        </div>
+
+
+                    
+
+
+
+        <div class="entry unvoted">
+            <p class="title">
+                <a class="title may-blank " href="https://voat.co/v/AskVoat/comments/194194" tabindex="1" title="Could this be the beginning of the end for Reddit? /r/IAmA, /r/AskReddit, /r/science, /r/gaming, /r/history, /r/art, /r/videos and /r/movies have been temporarily shut down in protest. ">Could this be the beginning of the end for Reddit? /r/IAmA, /r/AskReddit, /r/science, /r/gaming, /r/history, /r/art, /r/videos and /r/movies have been temporarily shut down in protest. </a>
+                <span class="domain">(<a href="https://voat.co/v/AskVoat">self.AskVoat</a>)</span>
+            </p>
+
+                    <p class="tagline">
+                        submitted <time title="7/3/2015 2:49:47 AM" datetime="7/3/2015 2:49:47 AM">1 hour</time> ago by <a href="https://voat.co/user/Kingmaker" class="author may-blank userinfo tooltipstered" data-username="Kingmaker">Kingmaker</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/AskVoat" class="subverse hover may-blank">AskVoat</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+48</span>|<span class="post_downvotes">-1</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                        <a href="https://voat.co/v/AskVoat/comments/194194" class="comments may-blank">37 comments</a>
+
+                </li>
+                        <li>
+                            
+
+        <span class="option main active">
+            <a href="javascript:void(0)" class="togglebutton savelink" onclick="return toggleSaveSubmission(194194)">save</a>
+        </span>
+
+                        </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/v/askvoat#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            Please wait...
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="submission id-194162 odd link self" data-fullname="194162" data-ups="1" data-downs="">
+                    <p class="parent"></p>
+
+                    
+
+        <div class="midcol unvoted">
+
+                <div class="arrow-upvote login-required" onclick="voteUpSubmission(194162);" role="button" aria-label="upvote" tabindex="0"></div>
+
+            <div class="score dislikes">0</div>
+            <div class="score unvoted">5</div>
+            <div class="score likes">5</div>
+
+                <div class="arrow-downvote login-required" onclick="voteDownSubmission(194162);" role="button" aria-label="downvote" tabindex="0"></div>
+
+        </div>
+        <div class="scorebar" title="Blue = likes, violet = dislikes">
+            <div class="scorebar-likes" style="height: 100%"></div>
+            <div class="scorebar-dislikes" style="height: 0%"></div>
+        </div>
+
+
+                    
+
+
+
+        <div class="entry unvoted">
+            <p class="title">
+                <a class="title may-blank " href="https://voat.co/v/AskVoat/comments/194162" tabindex="1" title="What is the weirdest name you&#39;ve hear of?">What is the weirdest name you've hear of?</a>
+                <span class="domain">(<a href="https://voat.co/v/AskVoat">self.AskVoat</a>)</span>
+            </p>
+
+                    <div title="Toggle Self Text" class="expando-button collapsed selftext" onclick="loadSelfText(this, 194162)"></div>
+                    <p class="tagline">
+                        submitted <time title="7/3/2015 2:43:12 AM" datetime="7/3/2015 2:43:12 AM">1 hour</time> ago by <a href="https://voat.co/user/bassky" class="author may-blank userinfo tooltipstered" data-username="bassky">bassky</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/AskVoat" class="subverse hover may-blank">AskVoat</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+5</span>|<span class="post_downvotes">-0</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                        <a href="https://voat.co/v/AskVoat/comments/194162" class="comments may-blank">6 comments</a>
+
+                </li>
+                        <li>
+                            
+
+        <span class="option main active">
+            <a href="javascript:void(0)" class="togglebutton savelink" onclick="return toggleSaveSubmission(194162)">save</a>
+        </span>
+
+                        </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/v/askvoat#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            Please wait...
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="submission id-194152 even link self" data-fullname="194152" data-ups="1" data-downs="">
+                    <p class="parent"></p>
+
+                    
+
+        <div class="midcol unvoted">
+
+                <div class="arrow-upvote login-required" onclick="voteUpSubmission(194152);" role="button" aria-label="upvote" tabindex="0"></div>
+
+            <div class="score dislikes">0</div>
+            <div class="score unvoted">5</div>
+            <div class="score likes">5</div>
+
+                <div class="arrow-downvote login-required" onclick="voteDownSubmission(194152);" role="button" aria-label="downvote" tabindex="0"></div>
+
+        </div>
+        <div class="scorebar" title="Blue = likes, violet = dislikes">
+            <div class="scorebar-likes" style="height: 100%"></div>
+            <div class="scorebar-dislikes" style="height: 0%"></div>
+        </div>
+
+
+                    
+
+
+
+        <div class="entry unvoted">
+            <p class="title">
+                <a class="title may-blank " href="https://voat.co/v/AskVoat/comments/194152" tabindex="1" title="Is a reddit implosion imminent?">Is a reddit implosion imminent?</a>
+                <span class="domain">(<a href="https://voat.co/v/AskVoat">self.AskVoat</a>)</span>
+            </p>
+
+                    <div title="Toggle Self Text" class="expando-button collapsed selftext" onclick="loadSelfText(this, 194152)"></div>
+                    <p class="tagline">
+                        submitted <time title="7/3/2015 2:40:31 AM" datetime="7/3/2015 2:40:31 AM">1 hour</time> ago by <a href="https://voat.co/user/JJEvil" class="author may-blank userinfo tooltipstered" data-username="JJEvil">JJEvil</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/AskVoat" class="subverse hover may-blank">AskVoat</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+5</span>|<span class="post_downvotes">-0</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                        <a href="https://voat.co/v/AskVoat/comments/194152" class="comments may-blank">4 comments</a>
+
+                </li>
+                        <li>
+                            
+
+        <span class="option main active">
+            <a href="javascript:void(0)" class="togglebutton savelink" onclick="return toggleSaveSubmission(194152)">save</a>
+        </span>
+
+                        </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/v/askvoat#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            Please wait...
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="submission id-194124 odd link self" data-fullname="194124" data-ups="1" data-downs="">
+                    <p class="parent"></p>
+
+                    
+
+        <div class="midcol unvoted">
+
+                <div class="arrow-upvote login-required" onclick="voteUpSubmission(194124);" role="button" aria-label="upvote" tabindex="0"></div>
+
+            <div class="score dislikes">0</div>
+            <div class="score unvoted">5</div>
+            <div class="score likes">5</div>
+
+                <div class="arrow-downvote login-required" onclick="voteDownSubmission(194124);" role="button" aria-label="downvote" tabindex="0"></div>
+
+        </div>
+        <div class="scorebar" title="Blue = likes, violet = dislikes">
+            <div class="scorebar-likes" style="height: 100%"></div>
+            <div class="scorebar-dislikes" style="height: 0%"></div>
+        </div>
+
+
+                    
+
+
+
+        <div class="entry unvoted">
+            <p class="title">
+                <a class="title may-blank " href="https://voat.co/v/AskVoat/comments/194124" tabindex="1" title="What&#39;s your opinion on the drama happening over at Reddit today?">What's your opinion on the drama happening over at Reddit today?</a>
+                <span class="domain">(<a href="https://voat.co/v/AskVoat">self.AskVoat</a>)</span>
+            </p>
+
+                    <div title="Toggle Self Text" class="expando-button collapsed selftext" onclick="loadSelfText(this, 194124)"></div>
+                    <p class="tagline">
+                        submitted <time title="7/3/2015 2:34:43 AM" datetime="7/3/2015 2:34:43 AM">1 hour</time> ago by <a href="https://voat.co/user/matthew_" class="author may-blank userinfo tooltipstered" data-username="matthew_">matthew_</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/AskVoat" class="subverse hover may-blank">AskVoat</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+5</span>|<span class="post_downvotes">-0</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                        <a href="https://voat.co/v/AskVoat/comments/194124" class="comments may-blank">16 comments</a>
+
+                </li>
+                        <li>
+                            
+
+        <span class="option main active">
+            <a href="javascript:void(0)" class="togglebutton savelink" onclick="return toggleSaveSubmission(194124)">save</a>
+        </span>
+
+                        </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/v/askvoat#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            Please wait...
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="submission id-194055 even link self" data-fullname="194055" data-ups="1" data-downs="">
+                    <p class="parent"></p>
+
+                    
+
+        <div class="midcol unvoted">
+
+                <div class="arrow-upvote login-required" onclick="voteUpSubmission(194055);" role="button" aria-label="upvote" tabindex="0"></div>
+
+            <div class="score dislikes">0</div>
+            <div class="score unvoted">7</div>
+            <div class="score likes">7</div>
+
+                <div class="arrow-downvote login-required" onclick="voteDownSubmission(194055);" role="button" aria-label="downvote" tabindex="0"></div>
+
+        </div>
+        <div class="scorebar" title="Blue = likes, violet = dislikes">
+            <div class="scorebar-likes" style="height: 100%"></div>
+            <div class="scorebar-dislikes" style="height: 0%"></div>
+        </div>
+
+
+                    
+
+
+
+        <div class="entry unvoted">
+            <p class="title">
+                <a class="title may-blank " href="https://voat.co/v/AskVoat/comments/194055" tabindex="1" title="Has the Gov been studying social networks to produce more effective propaganda?">Has the Gov been studying social networks to produce more effective propaganda?</a>
+                <span class="domain">(<a href="https://voat.co/v/AskVoat">self.AskVoat</a>)</span>
+            </p>
+
+                    <div title="Toggle Self Text" class="expando-button collapsed selftext" onclick="loadSelfText(this, 194055)"></div>
+                    <p class="tagline">
+                        submitted <time title="7/3/2015 2:15:43 AM" datetime="7/3/2015 2:15:43 AM">2 hours</time> ago by <a href="https://voat.co/user/Anoxim" class="author may-blank userinfo tooltipstered" data-username="Anoxim">Anoxim</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/AskVoat" class="subverse hover may-blank">AskVoat</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+7</span>|<span class="post_downvotes">-0</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                        <a href="https://voat.co/v/AskVoat/comments/194055" class="comments may-blank">2 comments</a>
+
+                </li>
+                        <li>
+                            
+
+        <span class="option main active">
+            <a href="javascript:void(0)" class="togglebutton savelink" onclick="return toggleSaveSubmission(194055)">save</a>
+        </span>
+
+                        </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/v/askvoat#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            Please wait...
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="submission id-194071 odd link self" data-fullname="194071" data-ups="1" data-downs="">
+                    <p class="parent"></p>
+
+                    
+
+        <div class="midcol unvoted">
+
+                <div class="arrow-upvote login-required" onclick="voteUpSubmission(194071);" role="button" aria-label="upvote" tabindex="0"></div>
+
+            <div class="score dislikes">3</div>
+            <div class="score unvoted">34</div>
+            <div class="score likes">37</div>
+
+                <div class="arrow-downvote login-required" onclick="voteDownSubmission(194071);" role="button" aria-label="downvote" tabindex="0"></div>
+
+        </div>
+        <div class="scorebar" title="Blue = likes, violet = dislikes">
+            <div class="scorebar-likes" style="height: 92%"></div>
+            <div class="scorebar-dislikes" style="height: 8%"></div>
+        </div>
+
+
+                    
+
+
+
+        <div class="entry unvoted">
+            <p class="title">
+                <a class="title may-blank " href="https://voat.co/v/AskVoat/comments/194071" tabindex="1" title="How do we prevent Voat from becoming another shill-central (reddit)?">How do we prevent Voat from becoming another shill-central (reddit)?</a>
+                <span class="domain">(<a href="https://voat.co/v/AskVoat">self.AskVoat</a>)</span>
+            </p>
+
+                    <div title="Toggle Self Text" class="expando-button collapsed selftext" onclick="loadSelfText(this, 194071)"></div>
+                    <p class="tagline">
+                        submitted <time title="7/3/2015 2:20:28 AM" datetime="7/3/2015 2:20:28 AM">2 hours</time> ago by <a href="https://voat.co/user/ForgotMyName" class="author may-blank userinfo tooltipstered" data-username="ForgotMyName">ForgotMyName</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/AskVoat" class="subverse hover may-blank">AskVoat</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+37</span>|<span class="post_downvotes">-3</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                        <a href="https://voat.co/v/AskVoat/comments/194071" class="comments may-blank">21 comments</a>
+
+                </li>
+                        <li>
+                            
+
+        <span class="option main active">
+            <a href="javascript:void(0)" class="togglebutton savelink" onclick="return toggleSaveSubmission(194071)">save</a>
+        </span>
+
+                        </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/v/askvoat#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            Please wait...
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="submission id-193865 even link self" data-fullname="193865" data-ups="1" data-downs="">
+                    <p class="parent"></p>
+
+                    
+
+        <div class="midcol unvoted">
+
+                <div class="arrow-upvote login-required" onclick="voteUpSubmission(193865);" role="button" aria-label="upvote" tabindex="0"></div>
+
+            <div class="score dislikes">0</div>
+            <div class="score unvoted">15</div>
+            <div class="score likes">15</div>
+
+                <div class="arrow-downvote login-required" onclick="voteDownSubmission(193865);" role="button" aria-label="downvote" tabindex="0"></div>
+
+        </div>
+        <div class="scorebar" title="Blue = likes, violet = dislikes">
+            <div class="scorebar-likes" style="height: 100%"></div>
+            <div class="scorebar-dislikes" style="height: 0%"></div>
+        </div>
+
+
+                    
+
+
+
+        <div class="entry unvoted">
+            <p class="title">
+                <a class="title may-blank " href="https://voat.co/v/AskVoat/comments/193865" tabindex="1" title="What&#39;s a movie you love or think is genuinely great that others don&#39;t know about or appreciate? ">What's a movie you love or think is genuinely great that others don't know about or appreciate? </a>
+                <span class="domain">(<a href="https://voat.co/v/AskVoat">self.AskVoat</a>)</span>
+            </p>
+
+                    <div title="Toggle Self Text" class="expando-button collapsed selftext" onclick="loadSelfText(this, 193865)"></div>
+                    <p class="tagline">
+                        submitted <time title="7/3/2015 1:24:15 AM" datetime="7/3/2015 1:24:15 AM">3 hours</time> ago by <a href="https://voat.co/user/contains_nutsndBOLTS" class="author may-blank userinfo tooltipstered" data-username="contains_nutsndBOLTS">contains_nutsndBOLTS</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/AskVoat" class="subverse hover may-blank">AskVoat</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+15</span>|<span class="post_downvotes">-0</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                        <a href="https://voat.co/v/AskVoat/comments/193865" class="comments may-blank">30 comments</a>
+
+                </li>
+                        <li>
+                            
+
+        <span class="option main active">
+            <a href="javascript:void(0)" class="togglebutton savelink" onclick="return toggleSaveSubmission(193865)">save</a>
+        </span>
+
+                        </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/v/askvoat#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            Please wait...
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="submission id-194141 odd link self" data-fullname="194141" data-ups="1" data-downs="">
+                    <p class="parent"></p>
+
+                    
+
+        <div class="midcol unvoted">
+
+                <div class="arrow-upvote login-required" onclick="voteUpSubmission(194141);" role="button" aria-label="upvote" tabindex="0"></div>
+
+            <div class="score dislikes">0</div>
+            <div class="score unvoted">4</div>
+            <div class="score likes">4</div>
+
+                <div class="arrow-downvote login-required" onclick="voteDownSubmission(194141);" role="button" aria-label="downvote" tabindex="0"></div>
+
+        </div>
+        <div class="scorebar" title="Blue = likes, violet = dislikes">
+            <div class="scorebar-likes" style="height: 100%"></div>
+            <div class="scorebar-dislikes" style="height: 0%"></div>
+        </div>
+
+
+                    
+
+
+
+        <div class="entry unvoted">
+            <p class="title">
+                <a class="title may-blank " href="https://voat.co/v/AskVoat/comments/194141" tabindex="1" title="What&#39;s the best thing that you&#39;ve ever gotten for free? ">What's the best thing that you've ever gotten for free? </a>
+                <span class="domain">(<a href="https://voat.co/v/AskVoat">self.AskVoat</a>)</span>
+            </p>
+
+                    <div title="Toggle Self Text" class="expando-button collapsed selftext" onclick="loadSelfText(this, 194141)"></div>
+                    <p class="tagline">
+                        submitted <time title="7/3/2015 2:38:14 AM" datetime="7/3/2015 2:38:14 AM">1 hour</time> ago by <a href="https://voat.co/user/Iamsodonewithreddit" class="author may-blank userinfo tooltipstered" data-username="Iamsodonewithreddit">Iamsodonewithreddit</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/AskVoat" class="subverse hover may-blank">AskVoat</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+4</span>|<span class="post_downvotes">-0</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                        <a href="https://voat.co/v/AskVoat/comments/194141" class="comments may-blank">8 comments</a>
+
+                </li>
+                        <li>
+                            
+
+        <span class="option main active">
+            <a href="javascript:void(0)" class="togglebutton savelink" onclick="return toggleSaveSubmission(194141)">save</a>
+        </span>
+
+                        </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/v/askvoat#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            Please wait...
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="submission id-193876 even link self" data-fullname="193876" data-ups="1" data-downs="">
+                    <p class="parent"></p>
+
+                    
+
+        <div class="midcol unvoted">
+
+                <div class="arrow-upvote login-required" onclick="voteUpSubmission(193876);" role="button" aria-label="upvote" tabindex="0"></div>
+
+            <div class="score dislikes">3</div>
+            <div class="score unvoted">13</div>
+            <div class="score likes">16</div>
+
+                <div class="arrow-downvote login-required" onclick="voteDownSubmission(193876);" role="button" aria-label="downvote" tabindex="0"></div>
+
+        </div>
+        <div class="scorebar" title="Blue = likes, violet = dislikes">
+            <div class="scorebar-likes" style="height: 84%"></div>
+            <div class="scorebar-dislikes" style="height: 16%"></div>
+        </div>
+
+
+                    
+
+
+
+        <div class="entry unvoted">
+            <p class="title">
+                <a class="title may-blank " href="https://voat.co/v/AskVoat/comments/193876" tabindex="1" title="Will we be running a secret Santa on voat this year?">Will we be running a secret Santa on voat this year?</a>
+                <span class="domain">(<a href="https://voat.co/v/AskVoat">self.AskVoat</a>)</span>
+            </p>
+
+                    <div title="Toggle Self Text" class="expando-button collapsed selftext" onclick="loadSelfText(this, 193876)"></div>
+                    <p class="tagline">
+                        submitted <time title="7/3/2015 1:28:38 AM" datetime="7/3/2015 1:28:38 AM">2 hours</time> ago by <a href="https://voat.co/user/TheGildedHydra" class="author may-blank userinfo tooltipstered" data-username="TheGildedHydra">TheGildedHydra</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/AskVoat" class="subverse hover may-blank">AskVoat</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+16</span>|<span class="post_downvotes">-3</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                        <a href="https://voat.co/v/AskVoat/comments/193876" class="comments may-blank">7 comments</a>
+
+                </li>
+                        <li>
+                            
+
+        <span class="option main active">
+            <a href="javascript:void(0)" class="togglebutton savelink" onclick="return toggleSaveSubmission(193876)">save</a>
+        </span>
+
+                        </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/v/askvoat#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            Please wait...
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="submission id-194053 odd link self" data-fullname="194053" data-ups="1" data-downs="">
+                    <p class="parent"></p>
+
+                    
+
+        <div class="midcol unvoted">
+
+                <div class="arrow-upvote login-required" onclick="voteUpSubmission(194053);" role="button" aria-label="upvote" tabindex="0"></div>
+
+            <div class="score dislikes">1</div>
+            <div class="score unvoted">6</div>
+            <div class="score likes">7</div>
+
+                <div class="arrow-downvote login-required" onclick="voteDownSubmission(194053);" role="button" aria-label="downvote" tabindex="0"></div>
+
+        </div>
+        <div class="scorebar" title="Blue = likes, violet = dislikes">
+            <div class="scorebar-likes" style="height: 88%"></div>
+            <div class="scorebar-dislikes" style="height: 12%"></div>
+        </div>
+
+
+                    
+
+
+
+        <div class="entry unvoted">
+            <p class="title">
+                <a class="title may-blank " href="https://voat.co/v/AskVoat/comments/194053" tabindex="1" title="Why are upvotes called upgoats?">Why are upvotes called upgoats?</a>
+                <span class="domain">(<a href="https://voat.co/v/AskVoat">self.AskVoat</a>)</span>
+            </p>
+
+                    <div title="Toggle Self Text" class="expando-button collapsed selftext" onclick="loadSelfText(this, 194053)"></div>
+                    <p class="tagline">
+                        submitted <time title="7/3/2015 2:15:05 AM" datetime="7/3/2015 2:15:05 AM">2 hours</time> ago by <a href="https://voat.co/user/nandoschicken" class="author may-blank userinfo tooltipstered" data-username="nandoschicken">nandoschicken</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/AskVoat" class="subverse hover may-blank">AskVoat</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+7</span>|<span class="post_downvotes">-1</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                        <a href="https://voat.co/v/AskVoat/comments/194053" class="comments may-blank">8 comments</a>
+
+                </li>
+                        <li>
+                            
+
+        <span class="option main active">
+            <a href="javascript:void(0)" class="togglebutton savelink" onclick="return toggleSaveSubmission(194053)">save</a>
+        </span>
+
+                        </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/v/askvoat#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            Please wait...
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="submission id-194181 even link self" data-fullname="194181" data-ups="1" data-downs="">
+                    <p class="parent"></p>
+
+                    
+
+        <div class="midcol unvoted">
+
+                <div class="arrow-upvote login-required" onclick="voteUpSubmission(194181);" role="button" aria-label="upvote" tabindex="0"></div>
+
+            <div class="score dislikes">0</div>
+            <div class="score unvoted">3</div>
+            <div class="score likes">3</div>
+
+                <div class="arrow-downvote login-required" onclick="voteDownSubmission(194181);" role="button" aria-label="downvote" tabindex="0"></div>
+
+        </div>
+        <div class="scorebar" title="Blue = likes, violet = dislikes">
+            <div class="scorebar-likes" style="height: 100%"></div>
+            <div class="scorebar-dislikes" style="height: 0%"></div>
+        </div>
+
+
+                    
+
+
+
+        <div class="entry unvoted">
+            <p class="title">
+                <a class="title may-blank " href="https://voat.co/v/AskVoat/comments/194181" tabindex="1" title="[poll] What if you could snap your fingers to turn electronic gadgets on or off, but for it to work you need to plug a charger into your butt for a night once a month - would you do it?">[poll] What if you could snap your fingers to turn electronic gadgets on or off, but for it to work you need to plug a charger into your butt for a night once a month - would you do it?</a>
+                <span class="domain">(<a href="https://voat.co/v/AskVoat">self.AskVoat</a>)</span>
+            </p>
+
+                    <div title="Toggle Self Text" class="expando-button collapsed selftext" onclick="loadSelfText(this, 194181)"></div>
+                    <p class="tagline">
+                        submitted <time title="7/3/2015 2:46:40 AM" datetime="7/3/2015 2:46:40 AM">1 hour</time> ago by <a href="https://voat.co/user/haveallthebananas" class="author may-blank userinfo tooltipstered" data-username="haveallthebananas">haveallthebananas</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/AskVoat" class="subverse hover may-blank">AskVoat</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+3</span>|<span class="post_downvotes">-0</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                        <a href="https://voat.co/v/AskVoat/comments/194181" class="comments may-blank">5 comments</a>
+
+                </li>
+                        <li>
+                            
+
+        <span class="option main active">
+            <a href="javascript:void(0)" class="togglebutton savelink" onclick="return toggleSaveSubmission(194181)">save</a>
+        </span>
+
+                        </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/v/askvoat#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            Please wait...
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="submission id-194170 odd link self" data-fullname="194170" data-ups="1" data-downs="">
+                    <p class="parent"></p>
+
+                    
+
+        <div class="midcol unvoted">
+
+                <div class="arrow-upvote login-required" onclick="voteUpSubmission(194170);" role="button" aria-label="upvote" tabindex="0"></div>
+
+            <div class="score dislikes">0</div>
+            <div class="score unvoted">3</div>
+            <div class="score likes">3</div>
+
+                <div class="arrow-downvote login-required" onclick="voteDownSubmission(194170);" role="button" aria-label="downvote" tabindex="0"></div>
+
+        </div>
+        <div class="scorebar" title="Blue = likes, violet = dislikes">
+            <div class="scorebar-likes" style="height: 100%"></div>
+            <div class="scorebar-dislikes" style="height: 0%"></div>
+        </div>
+
+
+                    
+
+
+
+        <div class="entry unvoted">
+            <p class="title">
+                <a class="title may-blank " href="https://voat.co/v/AskVoat/comments/194170" tabindex="1" title="Who is someone you personally admire?">Who is someone you personally admire?</a>
+                <span class="domain">(<a href="https://voat.co/v/AskVoat">self.AskVoat</a>)</span>
+            </p>
+
+                    <div title="Toggle Self Text" class="expando-button collapsed selftext" onclick="loadSelfText(this, 194170)"></div>
+                    <p class="tagline">
+                        submitted <time title="7/3/2015 2:44:50 AM" datetime="7/3/2015 2:44:50 AM">1 hour</time> ago by <a href="https://voat.co/user/Shakshuka" class="author may-blank userinfo tooltipstered" data-username="Shakshuka">Shakshuka</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/AskVoat" class="subverse hover may-blank">AskVoat</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+3</span>|<span class="post_downvotes">-0</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                        <a href="https://voat.co/v/AskVoat/comments/194170" class="comments may-blank">2 comments</a>
+
+                </li>
+                        <li>
+                            
+
+        <span class="option main active">
+            <a href="javascript:void(0)" class="togglebutton savelink" onclick="return toggleSaveSubmission(194170)">save</a>
+        </span>
+
+                        </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/v/askvoat#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            Please wait...
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="submission id-194495 even link self" data-fullname="194495" data-ups="1" data-downs="">
+                    <p class="parent"></p>
+
+                    
+
+        <div class="midcol unvoted">
+
+                <div class="arrow-upvote login-required" onclick="voteUpSubmission(194495);" role="button" aria-label="upvote" tabindex="0"></div>
+
+            <div class="score dislikes">0</div>
+            <div class="score unvoted">6</div>
+            <div class="score likes">6</div>
+
+                <div class="arrow-downvote login-required" onclick="voteDownSubmission(194495);" role="button" aria-label="downvote" tabindex="0"></div>
+
+        </div>
+        <div class="scorebar" title="Blue = likes, violet = dislikes">
+            <div class="scorebar-likes" style="height: 100%"></div>
+            <div class="scorebar-dislikes" style="height: 0%"></div>
+        </div>
+
+
+                    
+
+
+
+        <div class="entry unvoted">
+            <p class="title">
+                <a class="title may-blank " href="https://voat.co/v/AskVoat/comments/194495" tabindex="1" title="Come on goats, can we help out VOAT!">Come on goats, can we help out VOAT!</a>
+                <span class="domain">(<a href="https://voat.co/v/AskVoat">self.AskVoat</a>)</span>
+            </p>
+
+                    <div title="Toggle Self Text" class="expando-button collapsed selftext" onclick="loadSelfText(this, 194495)"></div>
+                    <p class="tagline">
+                        submitted <time title="7/3/2015 3:53:27 AM" datetime="7/3/2015 3:53:27 AM">33 minutes</time> ago by <a href="https://voat.co/user/ilovepussy" class="author may-blank userinfo tooltipstered" data-username="ilovepussy">ilovepussy</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/AskVoat" class="subverse hover may-blank">AskVoat</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+6</span>|<span class="post_downvotes">-0</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                        <a href="https://voat.co/v/AskVoat/comments/194495" class="comments may-blank">discuss</a>
+
+                </li>
+                        <li>
+                            
+
+        <span class="option main active">
+            <a href="javascript:void(0)" class="togglebutton savelink" onclick="return toggleSaveSubmission(194495)">save</a>
+        </span>
+
+                        </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/v/askvoat#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            Please wait...
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="submission id-194482 odd link self" data-fullname="194482" data-ups="1" data-downs="">
+                    <p class="parent"></p>
+
+                    
+
+        <div class="midcol unvoted">
+
+                <div class="arrow-upvote login-required" onclick="voteUpSubmission(194482);" role="button" aria-label="upvote" tabindex="0"></div>
+
+            <div class="score dislikes">0</div>
+            <div class="score unvoted">5</div>
+            <div class="score likes">5</div>
+
+                <div class="arrow-downvote login-required" onclick="voteDownSubmission(194482);" role="button" aria-label="downvote" tabindex="0"></div>
+
+        </div>
+        <div class="scorebar" title="Blue = likes, violet = dislikes">
+            <div class="scorebar-likes" style="height: 100%"></div>
+            <div class="scorebar-dislikes" style="height: 0%"></div>
+        </div>
+
+
+                    
+
+
+
+        <div class="entry unvoted">
+            <p class="title">
+                <a class="title may-blank " href="https://voat.co/v/AskVoat/comments/194482" tabindex="1" title="Goats, what is one thing you want to accomplish before you die?">Goats, what is one thing you want to accomplish before you die?</a>
+                <span class="domain">(<a href="https://voat.co/v/AskVoat">self.AskVoat</a>)</span>
+            </p>
+
+                    <div title="Toggle Self Text" class="expando-button collapsed selftext" onclick="loadSelfText(this, 194482)"></div>
+                    <p class="tagline">
+                        submitted <time title="7/3/2015 3:50:43 AM" datetime="7/3/2015 3:50:43 AM">35 minutes</time> ago by <a href="https://voat.co/user/Ryuhwan" class="author may-blank userinfo tooltipstered" data-username="Ryuhwan">Ryuhwan</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/AskVoat" class="subverse hover may-blank">AskVoat</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+5</span>|<span class="post_downvotes">-0</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                        <a href="https://voat.co/v/AskVoat/comments/194482" class="comments may-blank">13 comments</a>
+
+                </li>
+                        <li>
+                            
+
+        <span class="option main active">
+            <a href="javascript:void(0)" class="togglebutton savelink" onclick="return toggleSaveSubmission(194482)">save</a>
+        </span>
+
+                        </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/v/askvoat#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            Please wait...
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="submission id-193851 even link self" data-fullname="193851" data-ups="1" data-downs="">
+                    <p class="parent"></p>
+
+                    
+
+        <div class="midcol unvoted">
+
+                <div class="arrow-upvote login-required" onclick="voteUpSubmission(193851);" role="button" aria-label="upvote" tabindex="0"></div>
+
+            <div class="score dislikes">0</div>
+            <div class="score unvoted">6</div>
+            <div class="score likes">6</div>
+
+                <div class="arrow-downvote login-required" onclick="voteDownSubmission(193851);" role="button" aria-label="downvote" tabindex="0"></div>
+
+        </div>
+        <div class="scorebar" title="Blue = likes, violet = dislikes">
+            <div class="scorebar-likes" style="height: 100%"></div>
+            <div class="scorebar-dislikes" style="height: 0%"></div>
+        </div>
+
+
+                    
+
+
+
+        <div class="entry unvoted">
+            <p class="title">
+                <a class="title may-blank " href="https://voat.co/v/AskVoat/comments/193851" tabindex="1" title="If you were an employer, would you hire a person with a felony on their record?  Why or why not?">If you were an employer, would you hire a person with a felony on their record?  Why or why not?</a>
+                <span class="domain">(<a href="https://voat.co/v/AskVoat">self.AskVoat</a>)</span>
+            </p>
+
+                    <p class="tagline">
+                        submitted <time title="7/3/2015 1:16:35 AM" datetime="7/3/2015 1:16:35 AM">3 hours</time> ago by <a href="https://voat.co/user/Dumbtickles" class="author may-blank userinfo tooltipstered" data-username="Dumbtickles">Dumbtickles</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/AskVoat" class="subverse hover may-blank">AskVoat</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+6</span>|<span class="post_downvotes">-0</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                        <a href="https://voat.co/v/AskVoat/comments/193851" class="comments may-blank">10 comments</a>
+
+                </li>
+                        <li>
+                            
+
+        <span class="option main active">
+            <a href="javascript:void(0)" class="togglebutton savelink" onclick="return toggleSaveSubmission(193851)">save</a>
+        </span>
+
+                        </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/v/askvoat#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            Please wait...
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="submission id-193617 odd link self" data-fullname="193617" data-ups="1" data-downs="">
+                    <p class="parent"></p>
+
+                    
+
+        <div class="midcol unvoted">
+
+                <div class="arrow-upvote login-required" onclick="voteUpSubmission(193617);" role="button" aria-label="upvote" tabindex="0"></div>
+
+            <div class="score dislikes">0</div>
+            <div class="score unvoted">15</div>
+            <div class="score likes">15</div>
+
+                <div class="arrow-downvote login-required" onclick="voteDownSubmission(193617);" role="button" aria-label="downvote" tabindex="0"></div>
+
+        </div>
+        <div class="scorebar" title="Blue = likes, violet = dislikes">
+            <div class="scorebar-likes" style="height: 100%"></div>
+            <div class="scorebar-dislikes" style="height: 0%"></div>
+        </div>
+
+
+                    
+
+
+
+        <div class="entry unvoted">
+            <p class="title">
+                <a class="title may-blank " href="https://voat.co/v/AskVoat/comments/193617" tabindex="1" title="American Goats: How would it affect you if the minimum wage was raised to $15 dollars?">American Goats: How would it affect you if the minimum wage was raised to $15 dollars?</a>
+                <span class="domain">(<a href="https://voat.co/v/AskVoat">self.AskVoat</a>)</span>
+            </p>
+
+                    <p class="tagline">
+                        submitted <time title="7/2/2015 11:34:31 PM" datetime="7/2/2015 11:34:31 PM">4 hours</time> ago by <a href="https://voat.co/user/Dumbtickles" class="author may-blank userinfo tooltipstered" data-username="Dumbtickles">Dumbtickles</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/AskVoat" class="subverse hover may-blank">AskVoat</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+15</span>|<span class="post_downvotes">-0</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                        <a href="https://voat.co/v/AskVoat/comments/193617" class="comments may-blank">105 comments</a>
+
+                </li>
+                        <li>
+                            
+
+        <span class="option main active">
+            <a href="javascript:void(0)" class="togglebutton savelink" onclick="return toggleSaveSubmission(193617)">save</a>
+        </span>
+
+                        </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/v/askvoat#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            Please wait...
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="submission id-194461 even link self" data-fullname="194461" data-ups="1" data-downs="">
+                    <p class="parent"></p>
+
+                    
+
+        <div class="midcol unvoted">
+
+                <div class="arrow-upvote login-required" onclick="voteUpSubmission(194461);" role="button" aria-label="upvote" tabindex="0"></div>
+
+            <div class="score dislikes">1</div>
+            <div class="score unvoted">4</div>
+            <div class="score likes">5</div>
+
+                <div class="arrow-downvote login-required" onclick="voteDownSubmission(194461);" role="button" aria-label="downvote" tabindex="0"></div>
+
+        </div>
+        <div class="scorebar" title="Blue = likes, violet = dislikes">
+            <div class="scorebar-likes" style="height: 83%"></div>
+            <div class="scorebar-dislikes" style="height: 17%"></div>
+        </div>
+
+
+                    
+
+
+
+        <div class="entry unvoted">
+            <p class="title">
+                <a class="title may-blank " href="https://voat.co/v/AskVoat/comments/194461" tabindex="1" title="Redditors turning to Voat, what do you think that Voat is missing which Reddit currently has?">Redditors turning to Voat, what do you think that Voat is missing which Reddit currently has?</a>
+                <span class="domain">(<a href="https://voat.co/v/AskVoat">self.AskVoat</a>)</span>
+            </p>
+
+                    <div title="Toggle Self Text" class="expando-button collapsed selftext" onclick="loadSelfText(this, 194461)"></div>
+                    <p class="tagline">
+                        submitted <time title="7/3/2015 3:47:37 AM" datetime="7/3/2015 3:47:37 AM">38 minutes</time> ago by <a href="https://voat.co/user/TwinkleDick" class="author may-blank userinfo tooltipstered" data-username="TwinkleDick">TwinkleDick</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/AskVoat" class="subverse hover may-blank">AskVoat</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+5</span>|<span class="post_downvotes">-1</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                        <a href="https://voat.co/v/AskVoat/comments/194461" class="comments may-blank">5 comments</a>
+
+                </li>
+                        <li>
+                            
+
+        <span class="option main active">
+            <a href="javascript:void(0)" class="togglebutton savelink" onclick="return toggleSaveSubmission(194461)">save</a>
+        </span>
+
+                        </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/v/askvoat#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            Please wait...
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="submission id-194317 odd link self" data-fullname="194317" data-ups="1" data-downs="">
+                    <p class="parent"></p>
+
+                    
+
+        <div class="midcol unvoted">
+
+                <div class="arrow-upvote login-required" onclick="voteUpSubmission(194317);" role="button" aria-label="upvote" tabindex="0"></div>
+
+            <div class="score dislikes">0</div>
+            <div class="score unvoted">6</div>
+            <div class="score likes">6</div>
+
+                <div class="arrow-downvote login-required" onclick="voteDownSubmission(194317);" role="button" aria-label="downvote" tabindex="0"></div>
+
+        </div>
+        <div class="scorebar" title="Blue = likes, violet = dislikes">
+            <div class="scorebar-likes" style="height: 100%"></div>
+            <div class="scorebar-dislikes" style="height: 0%"></div>
+        </div>
+
+
+                    
+
+
+
+        <div class="entry unvoted">
+            <p class="title">
+                <a class="title may-blank " href="https://voat.co/v/AskVoat/comments/194317" tabindex="1" title="What is the best mobile client for Voat?">What is the best mobile client for Voat?</a>
+                <span class="domain">(<a href="https://voat.co/v/AskVoat">self.AskVoat</a>)</span>
+            </p>
+
+                    <div title="Toggle Self Text" class="expando-button collapsed selftext" onclick="loadSelfText(this, 194317)"></div>
+                    <p class="tagline">
+                        submitted <time title="7/3/2015 3:17:32 AM" datetime="7/3/2015 3:17:32 AM">1 hour</time> ago by <a href="https://voat.co/user/JHam0" class="author may-blank userinfo tooltipstered" data-username="JHam0">JHam0</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/AskVoat" class="subverse hover may-blank">AskVoat</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+6</span>|<span class="post_downvotes">-0</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                        <a href="https://voat.co/v/AskVoat/comments/194317" class="comments may-blank">15 comments</a>
+
+                </li>
+                        <li>
+                            
+
+        <span class="option main active">
+            <a href="javascript:void(0)" class="togglebutton savelink" onclick="return toggleSaveSubmission(194317)">save</a>
+        </span>
+
+                        </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/v/askvoat#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            Please wait...
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="submission id-193986 even link self" data-fullname="193986" data-ups="1" data-downs="">
+                    <p class="parent"></p>
+
+                    
+
+        <div class="midcol unvoted">
+
+                <div class="arrow-upvote login-required" onclick="voteUpSubmission(193986);" role="button" aria-label="upvote" tabindex="0"></div>
+
+            <div class="score dislikes">0</div>
+            <div class="score unvoted">3</div>
+            <div class="score likes">3</div>
+
+                <div class="arrow-downvote login-required" onclick="voteDownSubmission(193986);" role="button" aria-label="downvote" tabindex="0"></div>
+
+        </div>
+        <div class="scorebar" title="Blue = likes, violet = dislikes">
+            <div class="scorebar-likes" style="height: 100%"></div>
+            <div class="scorebar-dislikes" style="height: 0%"></div>
+        </div>
+
+
+                    
+
+
+
+        <div class="entry unvoted">
+            <p class="title">
+                <a class="title may-blank " href="https://voat.co/v/AskVoat/comments/193986" tabindex="1" title="What&#39;s something interesting that you do but are unsure if anyone here would care to see or know about it?">What's something interesting that you do but are unsure if anyone here would care to see or know about it?</a>
+                <span class="domain">(<a href="https://voat.co/v/AskVoat">self.AskVoat</a>)</span>
+            </p>
+
+                    <p class="tagline">
+                        submitted <time title="7/3/2015 1:58:45 AM" datetime="7/3/2015 1:58:45 AM">2 hours</time> ago by <a href="https://voat.co/user/Dumbtickles" class="author may-blank userinfo tooltipstered" data-username="Dumbtickles">Dumbtickles</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/AskVoat" class="subverse hover may-blank">AskVoat</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+3</span>|<span class="post_downvotes">-0</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                        <a href="https://voat.co/v/AskVoat/comments/193986" class="comments may-blank">5 comments</a>
+
+                </li>
+                        <li>
+                            
+
+        <span class="option main active">
+            <a href="javascript:void(0)" class="togglebutton savelink" onclick="return toggleSaveSubmission(193986)">save</a>
+        </span>
+
+                        </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/v/askvoat#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            Please wait...
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="submission id-193803 odd link self" data-fullname="193803" data-ups="1" data-downs="">
+                    <p class="parent"></p>
+
+                    
+
+        <div class="midcol unvoted">
+
+                <div class="arrow-upvote login-required" onclick="voteUpSubmission(193803);" role="button" aria-label="upvote" tabindex="0"></div>
+
+            <div class="score dislikes">0</div>
+            <div class="score unvoted">6</div>
+            <div class="score likes">6</div>
+
+                <div class="arrow-downvote login-required" onclick="voteDownSubmission(193803);" role="button" aria-label="downvote" tabindex="0"></div>
+
+        </div>
+        <div class="scorebar" title="Blue = likes, violet = dislikes">
+            <div class="scorebar-likes" style="height: 100%"></div>
+            <div class="scorebar-dislikes" style="height: 0%"></div>
+        </div>
+
+
+                    
+
+
+
+        <div class="entry unvoted">
+            <p class="title">
+                <a class="title may-blank " href="https://voat.co/v/AskVoat/comments/193803" tabindex="1" title="Knowledgable Voaters, what are other government equivalents to Area-51 around the world?">Knowledgable Voaters, what are other government equivalents to Area-51 around the world?</a>
+                <span class="domain">(<a href="https://voat.co/v/AskVoat">self.AskVoat</a>)</span>
+            </p>
+
+                    <div title="Toggle Self Text" class="expando-button collapsed selftext" onclick="loadSelfText(this, 193803)"></div>
+                    <p class="tagline">
+                        submitted <time title="7/3/2015 12:55:21 AM" datetime="7/3/2015 12:55:21 AM">3 hours</time> ago by <a href="https://voat.co/user/Phader" class="author may-blank userinfo tooltipstered" data-username="Phader">Phader</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/AskVoat" class="subverse hover may-blank">AskVoat</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+6</span>|<span class="post_downvotes">-0</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                        <a href="https://voat.co/v/AskVoat/comments/193803" class="comments may-blank">2 comments</a>
+
+                </li>
+                        <li>
+                            
+
+        <span class="option main active">
+            <a href="javascript:void(0)" class="togglebutton savelink" onclick="return toggleSaveSubmission(193803)">save</a>
+        </span>
+
+                        </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/v/askvoat#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            Please wait...
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="submission id-193475 even link self" data-fullname="193475" data-ups="1" data-downs="">
+                    <p class="parent"></p>
+
+                    
+
+        <div class="midcol unvoted">
+
+                <div class="arrow-upvote login-required" onclick="voteUpSubmission(193475);" role="button" aria-label="upvote" tabindex="0"></div>
+
+            <div class="score dislikes">0</div>
+            <div class="score unvoted">17</div>
+            <div class="score likes">17</div>
+
+                <div class="arrow-downvote login-required" onclick="voteDownSubmission(193475);" role="button" aria-label="downvote" tabindex="0"></div>
+
+        </div>
+        <div class="scorebar" title="Blue = likes, violet = dislikes">
+            <div class="scorebar-likes" style="height: 100%"></div>
+            <div class="scorebar-dislikes" style="height: 0%"></div>
+        </div>
+
+
+                    
+
+
+
+        <div class="entry unvoted">
+            <p class="title">
+                <a class="title may-blank " href="https://voat.co/v/AskVoat/comments/193475" tabindex="1" title="What is the most difficult known problem? ">What is the most difficult known problem? </a>
+                <span class="domain">(<a href="https://voat.co/v/AskVoat">self.AskVoat</a>)</span>
+            </p>
+
+                    <div title="Toggle Self Text" class="expando-button collapsed selftext" onclick="loadSelfText(this, 193475)"></div>
+                    <p class="tagline">
+                        submitted <time title="7/2/2015 10:31:23 PM" datetime="7/2/2015 10:31:23 PM">5 hours</time> ago by <a href="https://voat.co/user/big_fat_dangus" class="author may-blank userinfo tooltipstered" data-username="big_fat_dangus">big_fat_dangus</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/AskVoat" class="subverse hover may-blank">AskVoat</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+17</span>|<span class="post_downvotes">-0</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                        <a href="https://voat.co/v/AskVoat/comments/193475" class="comments may-blank">60 comments</a>
+
+                </li>
+                        <li>
+                            
+
+        <span class="option main active">
+            <a href="javascript:void(0)" class="togglebutton savelink" onclick="return toggleSaveSubmission(193475)">save</a>
+        </span>
+
+                        </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/v/askvoat#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            Please wait...
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+                <div class="submission id-194533 odd link self" data-fullname="194533" data-ups="1" data-downs="">
+                    <p class="parent"></p>
+
+                    
+
+        <div class="midcol unvoted">
+
+                <div class="arrow-upvote login-required" onclick="voteUpSubmission(194533);" role="button" aria-label="upvote" tabindex="0"></div>
+
+            <div class="score dislikes">0</div>
+            <div class="score unvoted">3</div>
+            <div class="score likes">3</div>
+
+                <div class="arrow-downvote login-required" onclick="voteDownSubmission(194533);" role="button" aria-label="downvote" tabindex="0"></div>
+
+        </div>
+        <div class="scorebar" title="Blue = likes, violet = dislikes">
+            <div class="scorebar-likes" style="height: 100%"></div>
+            <div class="scorebar-dislikes" style="height: 0%"></div>
+        </div>
+
+
+                    
+
+
+
+        <div class="entry unvoted">
+            <p class="title">
+                <a class="title may-blank " href="https://voat.co/v/AskVoat/comments/194533" tabindex="1" title="What do you think is the best course of action to keep mods from abusing their powers?">What do you think is the best course of action to keep mods from abusing their powers?</a>
+                <span class="domain">(<a href="https://voat.co/v/AskVoat">self.AskVoat</a>)</span>
+            </p>
+
+                    <div title="Toggle Self Text" class="expando-button collapsed selftext" onclick="loadSelfText(this, 194533)"></div>
+                    <p class="tagline">
+                        submitted <time title="7/3/2015 4:01:15 AM" datetime="7/3/2015 4:01:15 AM">25 minutes</time> ago by <a href="https://voat.co/user/Alias_Unknown" class="author may-blank userinfo tooltipstered" data-username="Alias_Unknown">Alias_Unknown</a>
+                        <span class="userattrs"></span> to <a href="https://voat.co/v/AskVoat" class="subverse hover may-blank">AskVoat</a>
+                        <span class="commentvotesratio">(<span class="post_upvotes">+3</span>|<span class="post_downvotes">-0</span>)</span>
+                    </p>
+
+            <ul class="flat-list buttons">
+                <li class="first">
+                        <a href="https://voat.co/v/AskVoat/comments/194533" class="comments may-blank">2 comments</a>
+
+                </li>
+                        <li>
+                            
+
+        <span class="option main active">
+            <a href="javascript:void(0)" class="togglebutton savelink" onclick="return toggleSaveSubmission(194533)">save</a>
+        </span>
+
+                        </li>
+            </ul>
+            <div class="expando" style="display: none">
+                <form style="" novalidate="novalidate" class="usertext" action="https://voat.co/v/askvoat#">
+                    <div class="usertext-body may-blank-within">
+                        <div class="md">
+                            Please wait...
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+
+                    <div class="child"></div>
+                    <div class="clearleft"></div>
+                </div>
+        </div>
+
+        <div class="pagination-container">
+            <ul>
+
+                    <li class="btn-whoaverse-paging">
+                        <a href="https://voat.co/v/askvoat?page=1" rel="next">next ›</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+    
+
+<div class="footer-container">
+    <div class="footer">
+        <div>
+            <span class="separator"></span><a href="https://voat.co/about">about</a>
+            <span class="separator"></span><a href="https://voat.co/help/faq">faq</a>
+            <span class="separator"></span><a href="https://voat.co/help/markdown">markdown</a>
+            <span class="separator"></span><a href="https://github.com/voat/voat">source code</a>
+            <span class="separator"></span><a href="https://voat.co/api/help">API</a>
+            <span class="separator"></span><a href="https://voat.co/rss">RSS</a>
+            <span class="separator"></span><a href="https://voat.co/p/partnerprogram">become a partner</a>
+        </div>
+        <p class="bottommenu">
+            Use of this site constitutes acceptance of our <a href="https://voat.co/help/useragreement">User Agreement</a> and <a href="https://voat.co/help/privacy">Privacy Policy</a>.
+        </p>
+        <p class="bottommenu">
+            © 2015 Voat.co. All rights reserved. Voat and the Voat Mascot are trademarks of Voat.co.
+        </p>
+    </div>
+</div>
+
+    <script type="text/javascript" src="./links_files/javascript" defer=""></script>
+
+    <script type="text/javascript" src="./links_files/bootstrap" defer=""></script>
+
+    
+
+    
+    <script src="./links_files/jquery.signalR-2.2.0.min.js" defer=""></script>
+    
+    <script src="./links_files/hubs" defer=""></script>
+
+
+<script id="hiddenlpsubmitdiv" style="display: none;"></script><script>try{for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){ var lastpass_f = document.forms[lastpass_iter]; if(typeof(lastpass_f.lpsubmitorig2)=="undefined"){ lastpass_f.lpsubmitorig2 = lastpass_f.submit; if (typeof(lastpass_f.lpsubmitorig2)=='object'){ continue;}lastpass_f.submit = function(){ var form=this; var customEvent = document.createEvent("Event"); customEvent.initEvent("lpCustomEvent", true, true); var d = document.getElementById("hiddenlpsubmitdiv"); if (d) {for(var i = 0; i < document.forms.length; i++){ if(document.forms[i]==form){ if (typeof(d.innerText) != 'undefined') { d.innerText=i.toString(); } else { d.textContent=i.toString(); } } } d.dispatchEvent(customEvent); }form.lpsubmitorig2(); } } }}catch(e){}</script></body></html>
