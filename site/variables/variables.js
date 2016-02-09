@@ -356,44 +356,15 @@ Variable.readQueryString = function(colors, query) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- /*
 (function() {
   var ABITS = 4;
   var HSCALE = 256;
 
-// h - 0 to 359
-// s - 0 to 1
-// v - 0 to 255
+// h - 0 to 359 times 16 / 180
+// s - 0 to 1 times 16 * 255
+// v - 0 to 255 times 16
+
+  // real (float) HSV: { hue: r.h / 180 * 16, saturation: r.s/16/255, value: r.v/16 };
 Variable.hsvToRgbLossless = function(h, s, v) {
   var r = { r: 0, b: 0, g: 0 };
   var c = { h: h, s: s, v: v };
@@ -458,20 +429,13 @@ Variable.hsvToRgbLossless = function(h, s, v) {
           break;
     }
   }
-  return r;
+  return { red: r.r, green: r.g, blue: r.b };
 }
 
 
 
-  return { red: Math.round(r), green: Math.round(g), blue: Math.round(b) };
-};
-*/
-
-
 // Returned value is 16x what v should be.
 // Returned saturation is 16*255x what s should be.
-/*
-
 Variable.rgbToHsvLossless = function(r, g, b) {
   var c = { r: r, g: g, b: b, };
   var r = {};
@@ -512,31 +476,27 @@ Variable.rgbToHsvLossless = function(r, g, b) {
   return { hue: r.h, saturation: r.s, value: r.v };
   // real (float) HSV: { hue: r.h / 180 * 16, saturation: r.s/16/255, value: r.v/16 };
 };
-/*
-  var h, s, v;
-  var min = Math.min(r, g, b);
-  var max = Math.max(r, g, b);
-  v = max;
-  var delta = max - min;
-  if (max != 0) {
-    s = delta / max;
-  } else {
-    // r = g = b = 0
-    s = 0;
-    h = 0;
-    return { hue: Math.round(h), saturation: s, value: Math.round(v) };
+})();
+
+Variable.hsvLosslessToHsv = function(hsv) {
+  return {
+    hue: hsv.hue / 180 * 16,
+    saturation: hsv.saturation / 16 / 266,
+    value: hsv.value / 16
+  };
+}
+
+function testRgbToHsvLossless() {
+  for (var r = 0; r <= 255; r++) {
+    console.log(r);
+    for (var g = 0; g <= 255; g++) {
+      for (var b = 0; b <= 255; b++) {
+        var hsv = Variable.rgbToHsvLossless(r, g, b);
+        var rgb = Variable.hsvToRgbLossless(hsv.hue, hsv.saturation, hsv.value);
+        if(!(r == rgb.red && g == rgb.green && b == rgb.blue)) {
+          console.error('Failed', [r, g, b], rgb, hsv);
+        }
+      }
+    }
   }
-
-  if (r == max)
-    h = (g - b) / delta;
-  else if (g == max)
-    h = 2 + (b - r) / delta;
-  else
-    h = 4 + (r - g) / delta;
-
-  h *= 60;
-  if (h < 0)
-    h += 360;
-  return { hue: Math.round(h), saturation: s, value: Math.round(v) };
-};
-*/
+}
